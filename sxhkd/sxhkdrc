@@ -339,8 +339,7 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-#record screen
-super + 
+# open at percent
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
@@ -377,12 +376,15 @@ super + ctrl + r
 	name=`Xdialog --stdout --inputbox "Recording name:" 400x150`; \
 	rename "temp" $name "$HOME/Desktop/temp.ogv"
 
-super + shift+ r
+super + shift + r
 	pkill -x --signal 'SIGUSR1' recordmydesktop
 
 #print screen
-super + F5
-	flameshot full -p ~/Pictures/screenshots
+super + {_, shift, ctrl} + F5
+        date=`date`; \
+	maim {_,-s,-i $(xdotool getactivewindow)} "$HOME/Pictures/screenshots/$date.png"; \
+	name=`Xdialog --stdout --inputbox "Screenshot name:" 400x150`; \
+	rename $date $name "$HOME/Pictures/screenshots/$date.png"
 
-super + shift + F5
-	flameshot gui
+super + alt + {_, shift, ctrl} + F5
+        maim {_,-s,-i $(xdotool getactivewindow)} | xclip -selection clipboard -t image/png

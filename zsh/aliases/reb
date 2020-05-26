@@ -1,0 +1,2 @@
+cd ~/code/rebox-voxel
+vi src/*.rs src/shaders/* Cargo.toml

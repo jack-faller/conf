@@ -1,0 +1,15 @@
+[General]
+kmines_reset=false
+question mark=false
+
+[KgDifficulty]
+Level=Hard
+
+[KgTheme]
+Theme=themes/classic.desktop
+
+[MainWindow]
+Height 1080=498
+State=AAAA/wAAAAD9AAAAAAAAAu8AAAGIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=751

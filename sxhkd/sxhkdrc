@@ -380,11 +380,11 @@ super + shift + r
 	pkill -x --signal 'SIGUSR1' recordmydesktop
 
 #print screen
-super + {_, shift, ctrl} + F5
+super + {_, shift, ctrl} + Print
         date=`date`; \
 	maim {_,-s,-i $(xdotool getactivewindow)} "$HOME/Pictures/screenshots/$date.png"; \
 	name=`Xdialog --stdout --inputbox "Screenshot name:" 400x150`; \
 	rename $date $name "$HOME/Pictures/screenshots/$date.png"
 
-super + alt + {_, shift, ctrl} + F5
+super + alt + {_, shift, ctrl} + Print
         maim {_,-s,-i $(xdotool getactivewindow)} | xclip -selection clipboard -t image/png

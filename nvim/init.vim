@@ -1,5 +1,3 @@
-"in vim run :PlugInstall
-
 let mapleader = " "
 
 colorscheme delek
@@ -16,7 +14,8 @@ set nocompatible "no longer emulate vi
 set wildmode=longest,list,full "other autocomplete
 set smarttab expandtab autoindent smartindent "change tabs to spaces infer no spaces
 set noshowmode "don't show mode at bottom eg --INSERT--
-set updatetime=300 timeoutlen=100 "autocomplete update
+set updatetime=300 "autocomplete update
+set timeoutlen=200 "change speed of imput timeout in normal mode
 
 "stop auto comment next line on enter
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -61,6 +60,9 @@ autocmd VimEnter *
 "file edit
 let g:netrw_banner = 0
 let g:netrw_browse_split = 1
+
+"airline
+let g:airline_section_z = "%p%% %#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
 colorscheme wal
 "change tab colours

@@ -20,6 +20,12 @@ set timeoutlen=200 "change speed of imput timeout in normal mode
 "stop auto comment next line on enter
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+"install vim plug
+if empty(glob('~/.config/nvim/.vim/plugged'))
+  silent execute "!curl -fLo ~/.config/nvim/.vim/plugged --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+
 call plug#begin('~/.config/nvim/.vim/plugged') "set plugin dir
 
 Plug 'vim-airline/vim-airline'
@@ -29,6 +35,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 so ~/.config/nvim/CoC.vim
 
 Plug 'jeetsukumaran/vim-indentwise' "move by indent
+
+Plug 'thaerkh/vim-indentguides' "indentguides
 
 Plug 'dylanaraps/wal.vim' "pywal colours
 
@@ -63,6 +71,11 @@ let g:netrw_browse_split = 1
 
 "airline
 let g:airline_section_z = "%p%% %#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
+
+"indentguides
+let g:indentguides_ignorelist = ['text']
+let g:indentguides_spacechar = '┆'
+let g:indentguides_tabchar = '|'
 
 colorscheme wal
 "change tab colours

@@ -116,5 +116,5 @@ super + {_, shift, ctrl} + Print
 	name=`Xdialog --stdout --inputbox "Screenshot name:" 400x150`; \
 	rename $date $name "$HOME/Pictures/screenshots/$date.png"
 
-super + alt + {_, shift, ctrl} + Print
+{_, shift, ctrl} + Print
         maim {_,-s,-i $(xdotool getactivewindow)} | xclip -selection clipboard -t image/png

@@ -13,7 +13,8 @@ nnoremap <Left> :vsplit<CR>
 nnoremap <Right> :below vsplit<CR>
 
 "mappings
-map <Leader>n :set number!<CR>:set relativenumber!<CR>:set signcolomn=no<CR>
+map <Leader>n :set nonumber<CR>:set norelativenumber<CR>:set signcolumn=no<CR>
+map <Leader>nn :set number<CR>:set relativenumber<CR>:set signcolumn=yes<CR>
 map <M-]> :n<CR>
 map <M-[> :prev<CR>
 map <M-h> <Plug>(IndentWisePreviousLesserIndent)zz

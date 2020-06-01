@@ -21,10 +21,12 @@ set timeoutlen=200 "change speed of imput timeout in normal mode
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 "install vim plug
-if empty(glob('~/.config/nvim/.vim/plugged'))
-  silent execute "!curl -fLo ~/.config/nvim/.vim/plugged --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+if empty(glob('~/.config/nvim/.vim/autoload/plug.vim'))
+  silent execute "!curl -fLo ~/.config/nvim/.vim/plug --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
+
+so ~/.config/nvim/.vim/autoload/plug.vim
 
 call plug#begin('~/.config/nvim/.vim/plugged') "set plugin dir
 

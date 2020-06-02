@@ -55,7 +55,7 @@ autocmd FileType rust inoremap <silent> \f for<Space><Esc>mZa<Space>in<Space>/*j
 autocmd FileType rust inoremap <silent> \l loop<Space>{<Enter>/*jmptag*/<Enter>}<Enter>/*jmptag*/<Esc>`Z:delm Z<CR>a
 autocmd FileType rust imap <silent> \e else{
 autocmd FileType rust inoremap <silent> \p println!("<Esc>mZa",<Space>/*jmptag*/);<Enter>/*jmptag*/<Esc>`Z:delm Z<CR>a
-autocmd FileType rust inoremap <silent> \o Iprintln!("{:#?}",<Space><Esc>A);
+autocmd FileType rust inoremap <silent> \o <Esc>Iprintln!("{:#?}",<Space><Esc>A);
 autocmd FileType rust imap <silent> \t #[test]<Enter>
 autocmd FileType rust noremap <silent> \d :%s#/*jmptag*/##g<Enter>
 

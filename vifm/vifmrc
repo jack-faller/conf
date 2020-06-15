@@ -530,4 +530,4 @@ nnoremap <f8> :delete<cr>
     map < :!vifmimg dec<CR>
 set relativenumber
 set number
-source icons
+source /home/jack/.config/vifm/icons

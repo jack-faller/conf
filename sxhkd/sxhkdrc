@@ -99,7 +99,7 @@ super + alt + shift + {h,j,k,l}
 
 #record screen
 super + r
-	recordmydesktop --device pulse -o "$HOME/Desktop/temp.ogv"
+	recordmydesktop --full-shots --device pulse -o "$HOME/Desktop/temp.ogv"
 
 super + ctrl + r
 	pkill -x --signal 'SIGINT' recordmydesktop; \

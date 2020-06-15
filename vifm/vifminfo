@@ -38,54 +38,177 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/code/rebox-voxel/target
-	doc
-2
-d/home/jack/code/rebox-voxel/target/doc
-	rebox_voxel
-4
-d/home/jack/code/rebox-voxel/target/doc/rebox_voxel
-	all.html
-3
-d/home/jack
-	code
-11
-d/home
-	jack
+d/home/jack/.config/vifm/colors
+	Default.vifm
 1
-d/
-	tmp
-17
-d/tmp
-	dumps
-12
-d/tmp/dumps
-	jack_stdout.txt
-3
-d/tmp
-	steam_chrome_shmem_uid1000_spid1869
+d/home/jack/.config/vifm
+	colors
+1
+d/home/jack/.config
+	wal
+35
+d/home/jack/.config/wal
+	colorschemes
+1
+d/home/jack/.config/wal/colorschemes
+	light
+2
+d/home/jack/.config/wal
+	templates
+2
+d/home/jack/.config
+	vifm
+34
+d/home/jack/.config/nvim
+	maps.vim
+5
+d/home/jack/.config
+	nvim
+6
+d/home/jack
+	Pictures
+16
+d/home/jack/Pictures
+	rope_01.png
 18
 d/home/jack
-	.gnome2_private
+	Desktop
 4
+d/home/jack/Desktop
+	..
+0
+d/home/jack
+	Pictures
+9
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack/Pictures/screenshots
+	best quote.png
+1
+d/home/jack
+	Pictures
+17
+d/home/jack/Pictures
+	other
+6
+d/home/jack/Pictures/other
+	totoro (scary).jpg
+12
+d/home/jack/Pictures
+	other
+6
+d/home/jack
+	Videos
+20
+d/home/jack/Videos
+	opsy.webm
+6
+d/home/jack
+	Downloads
+14
+d/home/jack/Downloads
+	Collection_of_250_decrypted_3DS_ROMs_for_Citra_Emulator.torrent
+8
+d/home/jack
+	Music
+16
+d/home/jack/Music
+	musik
+2
+d/home/jack/Music/musik
+	V9:Holy
+10
+d/home/jack/Music/musik/V9:Holy
+	..
+0
+d/home/jack/Music/musik
+	V10:Blossoms
+11
+d/home/jack
+	Music
+16
+d/home/jack/Music
+	musik
+2
+d/home/jack/Music/musik
+	V10:Blossoms
+11
+d/home/jack/Music/musik/V10:Blossoms
+	..
+0
+d/home/jack/Music/musik
+	V10:Blossoms
+11
+d/home/jack/Music
+	musik
+2
+d/home/jack
+	Music
+16
 d/home
 	jack
 1
 d/home/jack
-	.gnome2_private
-4
-d/home
-	jack
+	Music
+16
+d/home/jack/Music
+	musik
+2
+d/home/jack/Music/musik
+	V10:Blossoms
+11
+d/home/jack/Music
+	musik
+2
+d/home/jack
+	Documents
+13
+d/home/jack/Documents
+	..
+0
+d/home/jack
+	Downloads
+14
+d/home/jack/Downloads
+	acsegg.txt
+12
+d/home/jack
+	Documents
+13
+d/home/jack/Documents
+	..
+0
+d/home/jack
+	Downloads
+14
+d/home/jack/Downloads
+	totoro (scary).jpg
+15
+d/home/jack
+	Music
+16
+d/home/jack/Music
+	musik
+2
+d/home/jack/Music/musik
+	V10:Blossoms
+11
+d/home/jack/Music/musik/V10:Blossoms
+	Vol. 10 Spring.rar
 1
-d/
-	home
-5
+d/home/jack/code/rebox-voxel
+	..
+0
+d/home/jack/code
+	rebox-voxel
+6
 d/home/jack
 	.config
 4
 d/home/jack/.config
 	nvim
-22
+24
 d/home/jack/.config/nvim
 	.vim
 1
@@ -96,248 +219,125 @@ d/home/jack/.config/nvim/.vim/plugged
 	coc.nvim
 1
 d/home/jack/.config/nvim/.vim/plugged/coc.nvim
-	plugin
-7
-d/home/jack/.config/nvim/.vim/plugged/coc.nvim/plugin
-	coc.vim
-1
-d/home/jack
-	Desktop
-29
-d/home/jack/Desktop
-	Screen Capture_20200515210732.png
+	autoload
 2
-d/home/jack
-	Desktop
-29
-d/home/jack/Desktop
-	Screen Capture_20200515210732.png
-2
-d/home/jack
-	yarn.lock
-48
-d/home/jack/.config/nvim
-	CoC.vim
-3
-d/home/jack
-	.config
-4
-d/home/jack/.config
-	nvim
-22
-d/home/jack/.config/nvim
-	.vim
-1
-d/home/jack/.config/nvim/.vim
-	plugged
-2
-d/home/jack/.config/nvim/.vim/plugged
-	fzf
-2
-d/home/jack
-	.config
-4
-d/home/jack/.config
+d/home/jack/.config/nvim/.vim/plugged/coc.nvim/autoload
 	coc
-8
-d/home/jack/.config/coc
-	extensions
 1
-d/home/jack/.config/coc/extensions
-	db.json
+d/home/jack/.config/nvim/.vim/plugged/coc.nvim/autoload/coc
+	util.vim
+8
+d/home/jack
+	Pictures
+37
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack/Pictures/screenshots
+	best quote.png
+1
+d/home/jack
+	aurcrap
+41
+d/home/jack/aurcrap
+	epub-thumbnailer
+1
+d/home/jack/Music
+	musik
 2
+d/home/jack/Music/musik
+	shuffle
+14
+d/home/jack/Music/musik/shuffle
+	Buoyant Boogie (Turquoise October) - Splatoon 2 Soundtrack.opus
+11
+d/home/jack/Music/musik
+	shuffle
+14
+d/home/jack/Music/musik/shuffle
+	Cara Mia Addio - Official Extended version.opus
+14
 d/home/jack
 	.config
 4
 d/home/jack/.config
-	cef_user_data
-12
-d/home/jack/.config/cef_user_data
-	Dictionaries
-1
-d/home/jack/.config/cef_user_data/Dictionaries
-	en-GB-8-0.bdic
-1
-d/home/jack/.config/cef_user_data
-	Dictionaries
-1
-d/home/jack/.config
-	deepin
-15
-d/home/jack/.config/deepin
-	deepin-screen-recorder
-1
-d/home/jack/.config/deepin/deepin-screen-recorder
-	config.conf
-1
-d/home/jack/.config/deepin
-	deepin-screenshot.conf
-3
-d/home/jack/.config
-	Dharkael
-3
-d/home/jack/.config/Dharkael
-	flameshot.ini
-1
-d/home/jack/.config
-	feh
-16
-d/home/jack/.config/feh
-	.fehbg
-1
-d/home/jack/.config
-	higan
-18
-d/home/jack/.config/higan
-	paths.bml
-1
-d/home/jack/.config
-	hiro
-18
-d/home/jack/.config/hiro
-	qt5.bml
-1
-d/home/jack/.config
-	pulse
-18
-d/home/jack/.config/pulse
-	cookie
-6
-d/home/jack/.config
-	PulseEffects
-5
-d/home/jack/.config/PulseEffects
-	output
-4
-d/home/jack/.config/PulseEffects/output
-	nromal.json
-1
-d/home/jack/.config/PulseEffects
-	output
-4
-d/home/jack/.config
-	spacefm
-5
-d/home/jack/.config/spacefm
-	session-prior
-3
-d/home/jack/.config
-	vifm
-8
-d/home/jack/.config/vifm
-	scripts
+	gtk-3.0
+19
+d/home/jack/.config/gtk-3.0
+	settings.ini
 2
-d/home/jack/.config/vifm/scripts
-	README
+d/home/jack
+	.fehbg
+31
+d/home
+	jack
 1
-d/home/jack/.config/vifm
-	vifmimg
-5
-d/home/jack/.config
-	.git
-1
-d/home/jack/.config/PulseEffects/output
-	nromal.json
-1
-d/home/jack/.config/PulseEffects
-	output
-4
-d/home/jack/.config
-	PulseEffects
-5
-d/home/jack/.config/PulseEffects
-	output
-4
-d/home/jack/.config
-	qutebrowser
-27
-d/home/jack/.config/qutebrowser
-	bookmarks
-1
-d/home/jack/.config/qutebrowser/bookmarks
-	urls
-1
-d/home/jack/.config/qutebrowser
-	bookmarks
-1
-d/home/jack/.config
-	..
-0
 d/home/jack
 	.config
 4
 d/home/jack/.config
 	x
-36
+37
 d/home/jack/.config/x
 	.xinitrc
 1
 d/home/jack/.config
-	zsh
-37
-d/home/jack/.config/zsh
-	aliases
+	gtk-3.0
+19
+d/home/jack/.config/gtk-3.0
+	settings.ini
+2
+d/home/jack/.config
+	gtk-2.0
+18
+d/home/jack/.config/gtk-2.0
+	gtkfilechooser.ini
 1
 d/home/jack/.config
-	hiro
-21
-d/home/jack/.config/hiro
-	qt5.bml
-1
-d/home/jack/.config
-	neofetch
-23
-d/home/jack/.config/neofetch
-	config.conf
-1
-d/home/jack/.config
-	nvim
-24
-d/home/jack/.config/nvim
-	.vim
-1
-d/home/jack/.config/nvim/.vim
-	autoload
-1
-d/home/jack/.config/nvim/.vim/autoload
-	plug.vim
-1
-d/home/jack/.config/nvim/.vim
-	autoload
-1
-d/home/jack/.config/nvim
-	.vim
-1
-d/home/jack/.config
-	vifm
+	nvim-qt
+26
+d/home/jack
+	Pictures
+38
+d/home/jack/Pictures
+	wallpapers
+12
+d/home/jack/Pictures/wallpapers
+	zues anubis.jpg
+48
+d/home/jack/Pictures
+	wallpapers
+12
+d/home/jack
+	Pictures
+35
+d/home/jack/Pictures
+	wallpapers
+12
+d/home/jack
+	useful docs
+44
+d/home/jack/useful docs
+	..
+0
+d/home/jack
+	Pictures
 34
-d/home/jack/.config/vifm
-	colors
-1
-d/home/jack/.config/vifm/colors
-	Default.vifm
-1
-d/home/jack/.config/vifm
-	scripts
-2
-d/home/jack/.config/vifm/scripts
-	README
-1
-d/home/jack/.config/vifm
-	scripts
-2
-d/home/jack/.config/vifm/scripts
-	vifmrun
-2
-d/home/jack/.config/vifm
-	scripts
-2
-d/home/jack/.config/vifm/scripts
-	vifmimg
-2
-d/home/jack/.config/vifm
-	vifmrc
+d/home/jack/Pictures
+	screenshots
 9
+d/home/jack/Pictures/screenshots
+	best quote.png
+1
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack
+	Desktop
+29
+d/home/jack/Desktop
+	cubes 1.ogv
+1
 d
 
 # Right window history (oldest to newest):
@@ -679,13 +679,11 @@ D
 :fzf
 :!fzf
 :mkdir mario galaxy
-:reg
 :trashes
 :clear
 :mkdir core
 :mkdir:
 :mkdir rr
-:empty
 :mkdir 1
 :mkdir 2
 :mkdir 10
@@ -703,7 +701,6 @@ D
 :mkdir BoB
 :set relativenumber
 :set number
-:so icons
 :w
 :!(cat ~/.cache/wal/sequences &)
 :!(cat ~/.cache/wal/sequences)
@@ -711,11 +708,17 @@ D
 :touch vert.glsl
 :mkdir shaders
 :wq
+:mkdir V10:Blossoms
+:reg
+:bin
+:empty
+:so icons
+:so ~/.config/vifm/icons
 :q
 
 # Search history (oldest to newest):
+/scre
 /bash
-/P
 /.gi
 /hom
 /co
@@ -726,7 +729,6 @@ D
 /tabs
 /astr
 /ost
-/au
 /sh
 /do
 /.xi
@@ -744,13 +746,21 @@ D
 /use
 /tmp
 /nv
-/.con
 /vif
 /Q
 /qu
 /rua
 /sou
 /swe
+/D
+/.config
+/au
+/.pat
+/cel
+/xin
+/.con
+/\.con
+/P
 
 # Prompt history (oldest to newest):
 pinit.vim
@@ -761,211 +771,34 @@ pmario galaxy
 pmonodevelop-master.zip
 pmonodevelop-git1
 preb
+pV9:Holy
+pV9:Sanctus
+pn
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/jack/.config/vifm/vifmimg
+""/home/jack/.local/share/vifm/Trash/000_Celeste - Complete Soundtrack - Full OST Album.webm.part
 "a/home/jack/code/rebox-voxel/src/frag.glsl
 "a/home/jack/code/rebox-voxel/src/vert.glsl
 
 # Directory stack (oldest to newest):
 
 # Trash content:
-t/home/jack/.local/share/vifm/Trash/000_Screenshot_2020-04-25 vines that were in my likes when it was deleted(1).png
-	/home/jack/Downloads/Screenshot_2020-04-25 vines that were in my likes when it was deleted(1).png
-t/home/jack/.local/share/vifm/Trash/000_Screenshot_2020-04-25 vines that were in my likes when it was deleted.png
-	/home/jack/Downloads/Screenshot_2020-04-25 vines that were in my likes when it was deleted.png
-t/home/jack/.local/share/vifm/Trash/000_monodevelop-master.zip
-	/home/jack/Downloads/monodevelop-master.zip
-t/home/jack/.local/share/vifm/Trash/000_monodevelop-master.zip.part
-	/home/jack/Downloads/monodevelop-master.zip.part
-t/home/jack/.local/share/vifm/Trash/000_monodevelop-master.zip.zip
-	/home/jack/aurcrap/monodevelop-git/monodevelop-master.zip.zip
-t/home/jack/.local/share/vifm/Trash/000_monodevelop-master
-	/home/jack/aurcrap/monodevelop-git/monodevelop-master
-t/home/jack/.local/share/vifm/Trash/000_README.md
-	/home/jack/aurcrap/monodevelop-git/README.md
-t/home/jack/.local/share/vifm/Trash/000_code_of_conduct.md
-	/home/jack/aurcrap/monodevelop-git/code_of_conduct.md
-t/home/jack/.local/share/vifm/Trash/000_configure
-	/home/jack/aurcrap/monodevelop-git/configure
-t/home/jack/.local/share/vifm/Trash/000_dependency_checker.rb
-	/home/jack/aurcrap/monodevelop-git/dependency_checker.rb
-t/home/jack/.local/share/vifm/Trash/000_top_level_monodevelop
-	/home/jack/aurcrap/monodevelop-git/top_level_monodevelop
-t/home/jack/.local/share/vifm/Trash/000_version-checks
-	/home/jack/aurcrap/monodevelop-git/version-checks
-t/home/jack/.local/share/vifm/Trash/000_version.config
-	/home/jack/aurcrap/monodevelop-git/version.config
-t/home/jack/.local/share/vifm/Trash/000_.git
-	/home/jack/aurcrap/monodevelop-git/.git
-t/home/jack/.local/share/vifm/Trash/000_.vscode
-	/home/jack/aurcrap/monodevelop-git/.vscode
-t/home/jack/.local/share/vifm/Trash/000_main
-	/home/jack/aurcrap/monodevelop-git/main
-t/home/jack/.local/share/vifm/Trash/000_profiles
-	/home/jack/aurcrap/monodevelop-git/profiles
-t/home/jack/.local/share/vifm/Trash/000_scripts
-	/home/jack/aurcrap/monodevelop-git/scripts
-t/home/jack/.local/share/vifm/Trash/000_setup
-	/home/jack/aurcrap/monodevelop-git/setup
-t/home/jack/.local/share/vifm/Trash/000_src
-	/home/jack/aurcrap/monodevelop-git/src
-t/home/jack/.local/share/vifm/Trash/000_.SRCINFO
-	/home/jack/aurcrap/monodevelop-git/.SRCINFO
-t/home/jack/.local/share/vifm/Trash/000_.editorconfig
-	/home/jack/aurcrap/monodevelop-git/.editorconfig
-t/home/jack/.local/share/vifm/Trash/000_.gitattributes
-	/home/jack/aurcrap/monodevelop-git/.gitattributes
-t/home/jack/.local/share/vifm/Trash/000_.gitignore
-	/home/jack/aurcrap/monodevelop-git/.gitignore
-t/home/jack/.local/share/vifm/Trash/000_.gitmodules
-	/home/jack/aurcrap/monodevelop-git/.gitmodules
-t/home/jack/.local/share/vifm/Trash/000_.mailmap
-	/home/jack/aurcrap/monodevelop-git/.mailmap
-t/home/jack/.local/share/vifm/Trash/000_CODEOWNERS
-	/home/jack/aurcrap/monodevelop-git/CODEOWNERS
-t/home/jack/.local/share/vifm/Trash/000_Makefile
-	/home/jack/aurcrap/monodevelop-git/Makefile
-t/home/jack/.local/share/vifm/Trash/000_MonoDevelop.mdw
-	/home/jack/aurcrap/monodevelop-git/MonoDevelop.mdw
-t/home/jack/.local/share/vifm/Trash/000_NuGet.config
-	/home/jack/aurcrap/monodevelop-git/NuGet.config
-t/home/jack/.local/share/vifm/Trash/001_src
-	/home/jack/aurcrap/monodevelop-git1/src
-t/home/jack/.local/share/vifm/Trash/000_sct
-	/home/jack/aurcrap/monodevelop-git1/sct
-t/home/jack/.local/share/vifm/Trash/000_JetBrains.Rider-2019.3.4.tar.gz
-	/home/jack/aurcrap/rider/JetBrains.Rider-2019.3.4.tar.gz
-t/home/jack/.local/share/vifm/Trash/000_rider-1:2019.3.4-1-any.pkg.tar.xz
-	/home/jack/aurcrap/rider/rider-1:2019.3.4-1-any.pkg.tar.xz
-t/home/jack/.local/share/vifm/Trash/000_rider.desktop
-	/home/jack/aurcrap/rider/rider.desktop
-t/home/jack/.local/share/vifm/Trash/000_rider
-	/home/jack/aurcrap/rider
-t/home/jack/.local/share/vifm/Trash/000_monodevelop-git1
-	/home/jack/aurcrap/monodevelop-git1
-t/home/jack/.local/share/vifm/Trash/000_monodevelop
-	/home/jack/aurcrap/monodevelop-git/monodevelop
-t/home/jack/.local/share/vifm/Trash/000_monodevelop.git
-	/home/jack/aurcrap/monodevelop-git/monodevelop.git
-t/home/jack/.local/share/vifm/Trash/000_PKGBUILD
-	/home/jack/aurcrap/monodevelop-git/PKGBUILD
-t/home/jack/.local/share/vifm/Trash/001_sct
-	/home/jack/aurcrap/monodevelop-git/sct
-t/home/jack/.local/share/vifm/Trash/000_monodevelop-git
-	/home/jack/aurcrap/monodevelop-git
-t/home/jack/.local/share/vifm/Trash/001_monodevelop
-	/home/jack/aurcrap/monodevelop
-t/home/jack/.local/share/vifm/Trash/000_wal.vim
-	/home/jack/.config/nvim/.vim/plugged/wal.vim
-t/home/jack/.local/share/vifm/Trash/000_reb
-	/home/jack/reb
-t/home/jack/.local/share/vifm/Trash/001_scripts
-	/home/jack/.config/vifm/scripts
-t/home/jack/.local/share/vifm/Trash/000_vifmimg
-	/home/jack/aurcrap/vifmimg
-t/home/jack/.local/share/vifm/Trash/000_vifmimgpdffile
-	/home/jack/.config/vifm/vifmimgpdffile
-t/home/jack/.local/share/vifm/Trash/000_vifmimgpdfpage
-	/home/jack/.config/vifm/vifmimgpdfpage
-t/home/jack/.local/share/vifm/Trash/000_]
-	/home/jack/]
-t/home/jack/.local/share/vifm/Trash/000_out.ogv
-	/home/jack/out.ogv
-t/home/jack/.local/share/vifm/Trash/000_out-1.ogv
-	/home/jack/out-1.ogv
-t/home/jack/.local/share/vifm/Trash/000_out-2.ogv
-	/home/jack/out-2.ogv
-t/home/jack/.local/share/vifm/Trash/000_out-3.ogv
-	/home/jack/out-3.ogv
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427161915.png
-	/home/jack/Desktop/DeepinScreenshot_20200427161915.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427162027.png
-	/home/jack/Desktop/DeepinScreenshot_20200427162027.png
-t/home/jack/.local/share/vifm/Trash/000_out-4.ogv
-	/home/jack/out-4.ogv
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427163905.png
-	/home/jack/Desktop/DeepinScreenshot_20200427163905.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427163920.png
-	/home/jack/Desktop/DeepinScreenshot_20200427163920.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427163938.png
-	/home/jack/Desktop/DeepinScreenshot_20200427163938.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427163940.png
-	/home/jack/Desktop/DeepinScreenshot_20200427163940.png
-t/home/jack/.local/share/vifm/Trash/000_ks.ogv
-	/home/jack/ks.ogv
-t/home/jack/.local/share/vifm/Trash/000_temp-1.ogv
-	/home/jack/Desktop/temp-1.ogv
-t/home/jack/.local/share/vifm/Trash/000_temp.ogv
-	/home/jack/Desktop/temp.ogv
-t/home/jack/.local/share/vifm/Trash/000_sdsd.ogv
-	/home/jack/Desktop/sdsd.ogv
-t/home/jack/.local/share/vifm/Trash/000_temp-2.ogv
-	/home/jack/Desktop/temp-2.ogv
-t/home/jack/.local/share/vifm/Trash/000_dsfaffdafsdasd.ogv
-	/home/jack/Desktop/dsfaffdafsdasd.ogv
-t/home/jack/.local/share/vifm/Trash/000_temp-3.ogv
-	/home/jack/Desktop/temp-3.ogv
-t/home/jack/.local/share/vifm/Trash/000_jjcg.ogv
-	/home/jack/Desktop/jjcg.ogv
-t/home/jack/.local/share/vifm/Trash/000_itsfd.ogv
-	/home/jack/Desktop/itsfd.ogv
-t/home/jack/.local/share/vifm/Trash/000_th.ogv
-	/home/jack/Desktop/th.ogv
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_select-area_20200427180557.png
-	/home/jack/Desktop/DeepinScreenshot_select-area_20200427180557.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427180705.png
-	/home/jack/Desktop/DeepinScreenshot_20200427180705.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_select-area_20200427181134.png
-	/home/jack/DeepinScreenshot_select-area_20200427181134.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_20200427181248.png
-	/home/jack/Desktop/DeepinScreenshot_20200427181248.png
-t/home/jack/.local/share/vifm/Trash/000_DeepinScreenshot_select-area_20200427181341.png
-	/home/jack/Pictures/DeepinScreenshot_select-area_20200427181341.png
-t/home/jack/.local/share/vifm/Trash/000_rainbow rocks.jpg
-	/home/jack/Pictures/wallpapers/rainbow rocks.jpg
-t/home/jack/.local/share/vifm/Trash/000_2020-05-15_21-25.png
-	/home/jack/Pictures/screenshots/2020-05-15_21-25.png
-t/home/jack/.local/share/vifm/Trash/000_2020-05-15_21-23.png
-	/home/jack/Pictures/screenshots/2020-05-15_21-23.png
-t/home/jack/.local/share/vifm/Trash/000_fsharp-10.2.3.tar.gz
-	/home/jack/Downloads/fsharp-10.2.3.tar.gz
-t/home/jack/.local/share/vifm/Trash/000_fsharp-10.2.3.tar.gz.part
-	/home/jack/Downloads/fsharp-10.2.3.tar.gz.part
-t/home/jack/.local/share/vifm/Trash/000_archlinux-2020.03.01-x86_64.iso
-	/home/jack/Downloads/archlinux-2020.03.01-x86_64.iso
-t/home/jack/.local/share/vifm/Trash/000_archlinux-2020.04.01-x86_64.iso.torrent
-	/home/jack/Downloads/archlinux-2020.04.01-x86_64.iso.torrent
-t/home/jack/.local/share/vifm/Trash/000_Theme 1 Pre Listening  Vocab Grid No Eng.docx
-	/home/jack/Downloads/Theme 1 Pre Listening  Vocab Grid No Eng.docx
-t/home/jack/.local/share/vifm/Trash/000_e
-	/home/jack/.config/zsh/aliases/e
-t/home/jack/.local/share/vifm/Trash/000_quick_scripts
-	/home/jack/useful docs/quick_scripts
-t/home/jack/.local/share/vifm/Trash/000_frag.glsl
-	/home/jack/code/rebox-voxel/src/frag.glsl
-t/home/jack/.local/share/vifm/Trash/000_vert.glsl
-	/home/jack/code/rebox-voxel/src/vert.glsl
-t/home/jack/.local/share/vifm/Trash/000_coc-tabnine-data
-	/home/jack/.config/coc/extensions/coc-tabnine-data
-t/home/jack/.local/share/vifm/Trash/000_deepin
-	/home/jack/.config/deepin
-t/home/jack/.local/share/vifm/Trash/000_higan
-	/home/jack/.config/higan
-t/home/jack/.local/share/vifm/Trash/000_TabNine
-	/home/jack/.config/TabNine
-t/home/jack/.local/share/vifm/Trash/000_tilda
-	/home/jack/.config/tilda
-t/home/jack/.local/share/vifm/Trash/001_.git
-	/home/jack/.config/.git
-t/home/jack/.local/share/vifm/Trash/000_sweeperrc
-	/home/jack/.config/sweeperrc
-t/home/jack/.local/share/vifm/Trash/001_vifmimg
-	/home/jack/.config/vifm/vifmimg
-t/home/jack/.local/share/vifm/Trash/000_vifmrun
-	/home/jack/.config/vifm/vifmrun
+t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:21:20 BST 2020.png
+	/home/jack/Pictures/screenshots/Wed 27 May 23:21:20 BST 2020.png
+t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:23:41 BST 2020.png
+	/home/jack/Pictures/screenshots/Wed 27 May 23:23:41 BST 2020.png
+t/home/jack/.local/share/vifm/Trash/000_asdfa.png
+	/home/jack/Pictures/screenshots/asdfa.png
+t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:29:43 BST 2020.png
+	/home/jack/Pictures/screenshots/Wed 27 May 23:29:43 BST 2020.png
+t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:30:53 BST 2020.png
+	/home/jack/Pictures/screenshots/Wed 27 May 23:30:53 BST 2020.png
+t/home/jack/.local/share/vifm/Trash/000_Bibata_Cursor_Transulent
+	/home/jack/aurcrap/Bibata_Cursor_Transulent
+t/home/jack/.local/share/vifm/Trash/000_Celeste - Complete Soundtrack - Full OST Album.webm.part
+	/home/jack/Music/musik/shuffle/Celeste - Complete Soundtrack - Full OST Album.webm.part
 
 # State:
 f

@@ -38,18 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/.config/vifm/colors
-	Default.vifm
-1
-d/home/jack/.config/vifm
-	colors
-1
-d/home/jack/.config
-	wal
-35
-d/home/jack/.config/wal
-	colorschemes
-1
 d/home/jack/.config/wal/colorschemes
 	light
 2
@@ -338,6 +326,18 @@ d/home/jack
 d/home/jack/Desktop
 	cubes 1.ogv
 1
+d/home/jack
+	Desktop
+16
+d/home/jack/Desktop
+	cubes 2.ogv
+2
+d/home/jack
+	Desktop
+16
+d/home/jack/Desktop
+	cubes 2.ogv
+2
 d
 
 # Right window history (oldest to newest):
@@ -778,7 +778,7 @@ pn
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/jack/.local/share/vifm/Trash/000_Celeste - Complete Soundtrack - Full OST Album.webm.part
+""/home/jack/.local/share/vifm/Trash/000_delet.ogv
 "a/home/jack/code/rebox-voxel/src/frag.glsl
 "a/home/jack/code/rebox-voxel/src/vert.glsl
 
@@ -799,6 +799,10 @@ t/home/jack/.local/share/vifm/Trash/000_Bibata_Cursor_Transulent
 	/home/jack/aurcrap/Bibata_Cursor_Transulent
 t/home/jack/.local/share/vifm/Trash/000_Celeste - Complete Soundtrack - Full OST Album.webm.part
 	/home/jack/Music/musik/shuffle/Celeste - Complete Soundtrack - Full OST Album.webm.part
+t/home/jack/.local/share/vifm/Trash/000_dd.ogv
+	/home/jack/Desktop/dd.ogv
+t/home/jack/.local/share/vifm/Trash/000_delet.ogv
+	/home/jack/Desktop/delet.ogv
 
 # State:
 f

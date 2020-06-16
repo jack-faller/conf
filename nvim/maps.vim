@@ -46,7 +46,7 @@ autocmd FileType rust inoremap [] []
 autocmd FileType rust inoremap { {<CR>}/*jmptag*/<Esc>kA
 autocmd FileType rust inoremap ( ()/*jmptag*/<Esc>?(<Enter>:noh<Enter>a
 autocmd FileType rust inoremap [ []/*jmptag*/<Esc>?[<Enter>:noh<Enter>a
-autocmd FileType rust inoremap <silent> <Escape> <Esc>mZ:%s#]/*jmptag*/##ge<CR>:%s#\n^\s*}/*jmptag*/##ge<CR>:%s#)/*jmptag*/##ge<CR>`Z:delm Z<CR>
+autocmd FileType rust inoremap <silent> <Esc> <Esc>mZ:%s#]/\*jmptag\*/##ge<CR>:%s#\n^\s*}/\*jmptag\*/##ge<CR>:%s#)/\*jmptag\*/##ge<CR>`Z:delm Z<CR>:%s#/\*jmptag\*/##g<Enter>
 autocmd FileType rust inoremap <silent> \m let<Space>mut<Space><Esc>mZa<Space>=<Space>/*jmptag*/;<Enter>/*jmptag*/<Esc>`Z:delm Z<CR>a
 autocmd FileType rust inoremap <silent> \n let<Space><Esc>mZa<Space>=<Space>/*jmptag*/;<Enter>/*jmptag*/<Esc>`Z:delm Z<CR>a
 autocmd FileType rust inoremap <silent> \i if<Space><Esc>mZa<Space>{
@@ -57,7 +57,7 @@ autocmd FileType rust imap <silent> \e else{
 autocmd FileType rust inoremap <silent> \p println!("<Esc>mZa",<Space>/*jmptag*/);<Enter>/*jmptag*/<Esc>`Z:delm Z<CR>a
 autocmd FileType rust inoremap <silent> \o <Esc>Iprintln!("{:#?}",<Space><Esc>A);
 autocmd FileType rust imap <silent> \t #[test]<Enter>
-autocmd FileType rust noremap <silent> \d :%s#/*jmptag*/##g<Enter>
+autocmd FileType rust noremap <silent> \d :%s#/\*jmptag\*/##g<Enter>
 
 autocmd BufNewFile,BufRead Xresources map <F8> :w<CR>:!xrdb "/home/jack/.config/Xresources"<CR><CR>
 autocmd BufNewFile,BufRead Xresources map! <F8> <CR>:w<CR>:!xrdb "/home/jack/.config/Xresources"<CR><CR>

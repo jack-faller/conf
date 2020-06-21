@@ -38,15 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/.config/wal/colorschemes
-	light
-2
-d/home/jack/.config/wal
-	templates
-2
-d/home/jack/.config
-	vifm
-34
 d/home/jack/.config/nvim
 	maps.vim
 5
@@ -336,8 +327,17 @@ d/home/jack
 	Desktop
 16
 d/home/jack/Desktop
-	cubes 2.ogv
-2
+	temp.ogv
+3
+d/home/jack
+	Pictures
+21
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack/Pictures/screenshots
+	services.png
+4
 d
 
 # Right window history (oldest to newest):
@@ -778,7 +778,7 @@ pn
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/jack/.local/share/vifm/Trash/000_delet.ogv
+""/home/jack/.local/share/vifm/Trash/000_Fri 19 Jun 16:45:04 BST 2020.png
 "a/home/jack/code/rebox-voxel/src/frag.glsl
 "a/home/jack/code/rebox-voxel/src/vert.glsl
 
@@ -803,6 +803,8 @@ t/home/jack/.local/share/vifm/Trash/000_dd.ogv
 	/home/jack/Desktop/dd.ogv
 t/home/jack/.local/share/vifm/Trash/000_delet.ogv
 	/home/jack/Desktop/delet.ogv
+t/home/jack/.local/share/vifm/Trash/000_Fri 19 Jun 16:45:04 BST 2020.png
+	/home/jack/Pictures/screenshots/Fri 19 Jun 16:45:04 BST 2020.png
 
 # State:
 f

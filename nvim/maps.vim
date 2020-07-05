@@ -31,6 +31,7 @@ autocmd FileType rust map <F6> :wa <bar> :!cargo build <CR>
 autocmd FileType rust map <F8> :RustFmt<CR>
 map <F7> :wqa <CR>
 map <F3> :BLines <CR>
+nnoremap <F2> :UndotreeToggle<cr>
 nnoremap S :%s//g<Left><Left>
 
 autocmd FileType rust map! <F5> <Esc>:wa <bar> :!cargo run <CR>

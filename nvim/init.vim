@@ -37,6 +37,8 @@ call plug#begin('~/.config/nvim/.vim/plugged') "set plugin dir
 
 Plug 'vim-airline/vim-airline'
 
+Plug 'preservim/nerdtree'
+
 "autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 so ~/.config/nvim/CoC.vim

@@ -41,6 +41,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 so ~/.config/nvim/CoC.vim
 
+Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
+
 Plug 'mbbill/undotree'
 
 Plug 'jeetsukumaran/vim-indentwise' "move by indent

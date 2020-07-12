@@ -1,7 +1,5 @@
 let mapleader = " "
 
-colorscheme delek
-
 filetype plugin indent on "activates filetype detection
 
 syntax on "activates syntax highlighting among other things
@@ -14,11 +12,12 @@ set nocompatible "no longer emulate vi
 set wildmode=longest,list,full "other autocomplete
 set smarttab expandtab autoindent smartindent "change tabs to spaces infer no spaces
 set noshowmode "don't show mode at bottom eg --INSERT--
+set noshowcmd "don't show last command at bottom
 set updatetime=300 "autocomplete update
 set timeoutlen=200 "change speed of imput timeout in normal mode
 
 if has('persistent_undo')                       "check if your vim version supports it
-  set undofile                                  "turn on the feature  
+  set undofile                                  "turn on the feature
   set undodir=$HOME/.config/nvim/histfiles      "directory where the undo files will be stored
 endif
 
@@ -36,12 +35,21 @@ so ~/.config/nvim/.vim/autoload/plug.vim
 call plug#begin('~/.config/nvim/.vim/plugged') "set plugin dir
 
 Plug 'vim-airline/vim-airline'
+let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
+
+Plug 'wesQ3/vim-windowswap'
 
 Plug 'preservim/nerdtree'
+"open nerdtree on empty buffers
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
+"stop underline on selected file
 
 "autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 so ~/.config/nvim/CoC.vim
+"change coc colours
+hi CocFloating ctermbg=black
 
 Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
 
@@ -50,6 +58,9 @@ Plug 'mbbill/undotree'
 Plug 'jeetsukumaran/vim-indentwise' "move by indent
 
 Plug 'thaerkh/vim-indentguides' "indentguides
+let g:indentguides_ignorelist = ['text']
+let g:indentguides_spacechar = '┆'
+let g:indentguides_tabchar = '|'
 
 Plug 'dylanaraps/wal.vim' "pywal colours
 
@@ -57,7 +68,11 @@ Plug 'rust-lang/rust.vim' "rust syntax
 
 Plug 'preservim/nerdcommenter' "comment lines
 
+"optional color previews, i do not use as would require termguicolors which messes with my wal colorscheme
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' } "show colours
+"set termguicolors
+"let g:Hexokinase_highlighters = ['backgroundfull']
+"let g:Hexokinase_refreshEvents = ['InsertLeave']
 
 Plug 'junegunn/vim-slash' "highlight while searching
 
@@ -73,31 +88,14 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-"deal with other colour previews
-"set termguicolors
-"let g:Hexokinase_highlighters = ['backgroundfull']
-"let g:Hexokinase_refreshEvents = ['InsertLeave']
-
-"file edit
-let g:netrw_banner = 0
-let g:netrw_browse_split = 1
-
-"airline
-let g:airline_section_z = "%p%% %#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
-
-"indentguides
-let g:indentguides_ignorelist = ['text']
-let g:indentguides_spacechar = '┆'
-let g:indentguides_tabchar = '|'
-
-colorscheme wal
 "change tab colours
 hi TabLine cterm=NONE ctermbg=0 ctermfg=4
 hi TabLineFill ctermbg=4 ctermfg=0
 hi TabLineSel ctermbg=NONE ctermfg=8
-"change coc colours
-hi CocFloating ctermbg=black
 
+"this needs to be at the bottom
+colorscheme wal
+hi CursorLine cterm=NONE
 set cmdheight=1 "merge text and cmd at bottom
 
 so ~/.config/nvim/maps.vim "maps

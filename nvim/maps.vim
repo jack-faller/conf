@@ -42,6 +42,7 @@ map! <F7> <Esc>:wqa <CR>
 map! <F3> <Esc>:BLines <CR>
 
 autocmd FileType rust inoremap <silent> \<Space> <Esc>/jmptag<Enter>:noh<Enter>2h"_c10l
+autocmd FileType rust inoremap <silent> \\ \
 autocmd FileType rust inoremap <silent> {} {}
 autocmd FileType rust inoremap <silent> () ()
 autocmd FileType rust inoremap <silent> [] []

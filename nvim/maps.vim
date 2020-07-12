@@ -41,13 +41,13 @@ autocmd FileType rust map! <F8> <Esc>:RustFmt<CR>
 map! <F7> <Esc>:wqa <CR>
 map! <F3> <Esc>:BLines <CR>
 
-autocmd FileType rust inoremap \<Space> <Esc>/jmptag<Enter>:noh<Enter>2h"_c10l
-autocmd FileType rust inoremap {} {}
-autocmd FileType rust inoremap () ()
-autocmd FileType rust inoremap [] []
-autocmd FileType rust inoremap { {<CR>}/*jmptag*/<Esc>kA
-autocmd FileType rust inoremap ( ()/*jmptag*/<Esc>?(<Enter>:noh<Enter>a
-autocmd FileType rust inoremap [ []/*jmptag*/<Esc>?[<Enter>:noh<Enter>a
+autocmd FileType rust inoremap <silent> \<Space> <Esc>/jmptag<Enter>:noh<Enter>2h"_c10l
+autocmd FileType rust inoremap <silent> {} {}
+autocmd FileType rust inoremap <silent> () ()
+autocmd FileType rust inoremap <silent> [] []
+autocmd FileType rust inoremap <silent> { {<CR>}/*jmptag*/<Esc>kA
+autocmd FileType rust inoremap <silent> ( ()/*jmptag*/<Esc>?(<Enter>:noh<Enter>a
+autocmd FileType rust inoremap <silent> [ []/*jmptag*/<Esc>?[<Enter>:noh<Enter>a
 autocmd FileType rust inoremap <silent> <Esc> <Esc>mZ:%s#]/\*jmptag\*/##ge<CR>:%s#\n^\s*}/\*jmptag\*/##ge<CR>:%s#)/\*jmptag\*/##ge<CR>`Z:delm Z<CR>:%s#/\*jmptag\*/##ge<Enter>
 autocmd FileType rust inoremap <silent> \m let<Space>mut<Space><Esc>mZa<Space>=<Space>/*jmptag*/;<Enter>/*jmptag*/<Esc>`Z:delm Z<CR>a
 autocmd FileType rust inoremap <silent> \n let<Space><Esc>mZa<Space>=<Space>/*jmptag*/;<Enter>/*jmptag*/<Esc>`Z:delm Z<CR>a

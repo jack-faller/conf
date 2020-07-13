@@ -12,7 +12,6 @@ set nocompatible "no longer emulate vi
 set wildmode=longest,list,full "other autocomplete
 set smarttab expandtab autoindent smartindent "change tabs to spaces infer no spaces
 set noshowmode "don't show mode at bottom eg --INSERT--
-set noshowcmd "don't show last command at bottom
 set updatetime=300 "autocomplete update
 set timeoutlen=200 "change speed of imput timeout in normal mode
 

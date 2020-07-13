@@ -13,14 +13,14 @@ nnoremap <silent> <Left> :vsplit<CR>
 nnoremap <silent> <Right> :below vsplit<CR>
 
 "move indent wise
-noremap <silent> <M-h> <Plug>(IndentWisePreviousLesserIndent)zz
-noremap <silent> <M-H> <Plug>(IndentWiseNextLesserIndent)zz
-noremap <silent> <M-j> <Plug>(IndentWiseNextEqualIndent)zz
-noremap <silent> <M-J> <Plug>(IndentWiseBlockScopeBoundaryEnd)zz
-noremap <silent> <M-k> <Plug>(IndentWisePreviousEqualIndent)zz
-noremap <silent> <M-K> <Plug>(IndentWiseBlockScopeBoundaryBegin)zz
-noremap <silent> <M-l> <Plug>(IndentWiseNextGreaterIndent)zz
-noremap <silent> <M-L> <Plug>(IndentWisePreviousGreaterIndent)zz
+map <silent> <M-h> <Plug>(IndentWisePreviousLesserIndent)zz
+map <silent> <M-H> <Plug>(IndentWiseNextLesserIndent)zz
+map <silent> <M-j> <Plug>(IndentWiseNextEqualIndent)zz
+map <silent> <M-J> <Plug>(IndentWiseBlockScopeBoundaryEnd)zz
+map <silent> <M-k> <Plug>(IndentWisePreviousEqualIndent)zz
+map <silent> <M-K> <Plug>(IndentWiseBlockScopeBoundaryBegin)zz
+map <silent> <M-l> <Plug>(IndentWiseNextGreaterIndent)zz
+map <silent> <M-L> <Plug>(IndentWisePreviousGreaterIndent)zz
 "move files
 noremap <silent> <M-]> :n<CR>
 noremap <silent> <M-[> :prev<CR>

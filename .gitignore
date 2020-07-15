@@ -31,4 +31,5 @@ user-dirs.locale
 VirtualBox/
 nvim/.netrwhist
 nvim/.vim/
+nvim/histfiles/
 vifm/icons

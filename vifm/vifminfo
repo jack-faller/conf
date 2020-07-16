@@ -38,123 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/.config/nvim
-	maps.vim
-5
-d/home/jack/.config
-	nvim
-6
-d/home/jack
-	Pictures
-16
-d/home/jack/Pictures
-	rope_01.png
-18
-d/home/jack
-	Desktop
-4
-d/home/jack/Desktop
-	..
-0
-d/home/jack
-	Pictures
-9
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack/Pictures/screenshots
-	best quote.png
-1
-d/home/jack
-	Pictures
-17
-d/home/jack/Pictures
-	other
-6
-d/home/jack/Pictures/other
-	totoro (scary).jpg
-12
-d/home/jack/Pictures
-	other
-6
-d/home/jack
-	Videos
-20
-d/home/jack/Videos
-	opsy.webm
-6
-d/home/jack
-	Downloads
-14
-d/home/jack/Downloads
-	Collection_of_250_decrypted_3DS_ROMs_for_Citra_Emulator.torrent
-8
-d/home/jack
-	Music
-16
-d/home/jack/Music
-	musik
-2
-d/home/jack/Music/musik
-	V9:Holy
-10
-d/home/jack/Music/musik/V9:Holy
-	..
-0
-d/home/jack/Music/musik
-	V10:Blossoms
-11
-d/home/jack
-	Music
-16
-d/home/jack/Music
-	musik
-2
-d/home/jack/Music/musik
-	V10:Blossoms
-11
-d/home/jack/Music/musik/V10:Blossoms
-	..
-0
-d/home/jack/Music/musik
-	V10:Blossoms
-11
-d/home/jack/Music
-	musik
-2
-d/home/jack
-	Music
-16
-d/home
-	jack
-1
-d/home/jack
-	Music
-16
-d/home/jack/Music
-	musik
-2
-d/home/jack/Music/musik
-	V10:Blossoms
-11
-d/home/jack/Music
-	musik
-2
-d/home/jack
-	Documents
-13
-d/home/jack/Documents
-	..
-0
-d/home/jack
-	Downloads
-14
-d/home/jack/Downloads
-	acsegg.txt
-12
-d/home/jack
-	Documents
-13
 d/home/jack/Documents
 	..
 0
@@ -336,8 +219,125 @@ d/home/jack/Pictures
 	screenshots
 9
 d/home/jack/Pictures/screenshots
-	services.png
+	rifle.png
 4
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack
+	Pictures
+40
+d/home
+	jack
+1
+d/
+	home
+5
+d/home
+	jack
+1
+d/home/jack
+	Pictures
+40
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack/Pictures/screenshots
+	services.png
+5
+d/home/jack/Pictures
+	memes
+4
+d/home/jack/Pictures/memes
+	stop math.png
+19
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack/Pictures/screenshots
+	best quote.png
+1
+d/home/jack/Pictures
+	other
+6
+d/home/jack
+	Downloads
+37
+d/home/jack/Downloads
+	server.jar
+20
+d/home/jack
+	Downloads
+37
+d/home/jack/.local/share/multimc/instances/1.15.2
+	.minecraft
+1
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
+	versions
+12
+d/home/jack/.local/share/multimc/instances/1.15.2
+	.minecraft
+1
+d/home/jack/.local/share/multimc/instances
+	1.15.2
+1
+d/home/jack/.local/share/multimc
+	instances
+5
+d/home/jack/.local/share
+	multimc
+22
+d/home/jack/.local/share/multimc
+	instances
+5
+d/home/jack/.local/share
+	multimc
+22
+d/home/jack/.local/share/multimc
+	instances
+5
+d/home/jack/.local/share/multimc/instances
+	1.15.2
+1
+d/home/jack/.local/share/multimc/instances/1.15.2
+	.minecraft
+1
+d/home/jack/.local/share/multimc/instances
+	1.15.2
+1
+d/home/jack/.local/share/multimc/instances/1.15.2
+	.minecraft
+1
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
+	backups
+2
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft/backups
+	..
+0
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
+	backups
+2
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft/backups
+	2018-12-11_20-18-05_general.zip
+2
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
+	libraries
+4
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft/libraries
+	..
+0
+d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
+	libraries
+4
+d/home/jack/Downloads/mine_server
+	server.jar
+6
+d/home/jack/Downloads
+	mine_server
+7
+d/home/jack/Downloads/mine_server
+	server.jar
+6
 d
 
 # Right window history (oldest to newest):
@@ -761,6 +761,7 @@ D
 /.con
 /\.con
 /P
+/multi
 
 # Prompt history (oldest to newest):
 pinit.vim
@@ -778,7 +779,7 @@ pn
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/jack/.local/share/vifm/Trash/000_Fri 19 Jun 16:45:04 BST 2020.png
+""/home/jack/.local/share/vifm/Trash/000_Tue  7 Jul 21:05:57 BST 2020.png
 "a/home/jack/code/rebox-voxel/src/frag.glsl
 "a/home/jack/code/rebox-voxel/src/vert.glsl
 
@@ -805,6 +806,10 @@ t/home/jack/.local/share/vifm/Trash/000_delet.ogv
 	/home/jack/Desktop/delet.ogv
 t/home/jack/.local/share/vifm/Trash/000_Fri 19 Jun 16:45:04 BST 2020.png
 	/home/jack/Pictures/screenshots/Fri 19 Jun 16:45:04 BST 2020.png
+t/home/jack/.local/share/vifm/Trash/000_Sun 28 Jun 22:05:48 BST 2020.png
+	/home/jack/Pictures/screenshots/Sun 28 Jun 22:05:48 BST 2020.png
+t/home/jack/.local/share/vifm/Trash/000_Tue  7 Jul 21:05:57 BST 2020.png
+	/home/jack/Pictures/screenshots/Tue  7 Jul 21:05:57 BST 2020.png
 
 # State:
 f

@@ -75,6 +75,7 @@ setxkbmap gb
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Created by `userpath` on 2020-05-20 11:08:33
 export PATH="$PATH:/home/jack/.local/bin"

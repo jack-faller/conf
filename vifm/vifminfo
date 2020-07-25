@@ -38,18 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/Documents
-	..
-0
-d/home/jack
-	Downloads
-14
-d/home/jack/Downloads
-	totoro (scary).jpg
-15
-d/home/jack
-	Music
-16
 d/home/jack/Music
 	musik
 2
@@ -338,6 +326,18 @@ d/home/jack/Downloads
 d/home/jack/Downloads/mine_server
 	server.jar
 6
+d/home/jack/Downloads
+	mine_server
+7
+d/home/jack
+	Downloads
+37
+d/home
+	jack
+1
+d/
+	etc
+4
 d
 
 # Right window history (oldest to newest):

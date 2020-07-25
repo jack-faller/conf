@@ -1,7 +1,7 @@
 #! /bin/zsh
 if mkdir /tmp/backspt
 then
-	wal -i "/home/jack/Pictures/wallpapers"
+	wal -i "$HOME/Pictures/wallpapers"
 	sleep 3s
 	firefox &
 	steam &
@@ -12,7 +12,7 @@ then
 	do
 		sleep 10m
 		eval $(xdotool getmouselocation --shell)
-		wal -i "/home/jack/Pictures/wallpapers"
+		wal -i "$HOME/Pictures/wallpapers"
 		xdotool mousemove $X $Y
 	done
 fi

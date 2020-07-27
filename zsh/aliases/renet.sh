@@ -1,1 +1,1 @@
-netctl restart wlp8s0-VM6816203
+sudo netctl restart wlp8s0-VM6816203

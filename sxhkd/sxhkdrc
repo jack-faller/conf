@@ -118,3 +118,7 @@ super + {_, shift, ctrl} + Print
 
 {_, shift, ctrl} + Print
         maim {_,-s,-i $(xdotool getactivewindow)} | xclip -selection clipboard -t image/png
+
+#make capslock work
+super + Caps_Lock
+        xdotool key Caps_Lock

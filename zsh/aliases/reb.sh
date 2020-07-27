@@ -1,1 +1,2 @@
-git 
+cd ~/code/rebox-voxel/src
+nvim

@@ -52,7 +52,7 @@ xrdb ~/.config/Xresources
 export PS1="%K{red}%F{black}%n@%m%f%k %F{blue}%~%f %#"
 
 for alias in `ls $HOME/.config/zsh/aliases/`; do
-	alias $alias="`cat "$HOME/.config/zsh/aliases/$alias" | awk '{print $0}'`"
+	alias `echo $alias | sed 's/\.sh//'`="`cat "$HOME/.config/zsh/aliases/$alias" | awk '{print $0}'`"
 done
 alias vim="nvim"
 alias vi="nvim"

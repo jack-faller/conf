@@ -54,6 +54,8 @@ Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
 
 Plug 'mbbill/undotree'
 
+Plug 'tpope/vim-fugitive'
+
 Plug 'jeetsukumaran/vim-indentwise' "move by indent
 
 Plug 'thaerkh/vim-indentguides' "indentguides

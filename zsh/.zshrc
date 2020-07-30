@@ -62,6 +62,7 @@ alias off="sudo shutdown now"
 alias vifm="~/.config/vifm/scripts/vifmrun"
 alias glances="glances -1"
 alias fm="vifm ."
+alias please="sudo"
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 	exec startx

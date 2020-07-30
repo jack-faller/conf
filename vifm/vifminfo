@@ -38,12 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/Music
-	musik
-2
-d/home/jack/Music/musik
-	V10:Blossoms
-11
 d/home/jack/Music/musik/V10:Blossoms
 	Vol. 10 Spring.rar
 1
@@ -338,6 +332,12 @@ d/home
 d/
 	etc
 4
+d/home/jack/Pictures
+	wallpapers
+12
+d/home/jack/Pictures/wallpapers
+	snowy mountain sunrise.jpg
+11
 d
 
 # Right window history (oldest to newest):
@@ -762,6 +762,13 @@ D
 /\.con
 /P
 /multi
+/no
+/dwi
+/swi
+/skull
+/wiz
+/sor
+/magi
 
 # Prompt history (oldest to newest):
 pinit.vim
@@ -779,7 +786,7 @@ pn
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/jack/.local/share/vifm/Trash/000_Tue  7 Jul 21:05:57 BST 2020.png
+""/home/jack/.local/share/vifm/Trash/000_feh_021135_000004_no swimming.jpg
 "a/home/jack/code/rebox-voxel/src/frag.glsl
 "a/home/jack/code/rebox-voxel/src/vert.glsl
 
@@ -810,6 +817,14 @@ t/home/jack/.local/share/vifm/Trash/000_Sun 28 Jun 22:05:48 BST 2020.png
 	/home/jack/Pictures/screenshots/Sun 28 Jun 22:05:48 BST 2020.png
 t/home/jack/.local/share/vifm/Trash/000_Tue  7 Jul 21:05:57 BST 2020.png
 	/home/jack/Pictures/screenshots/Tue  7 Jul 21:05:57 BST 2020.png
+t/home/jack/.local/share/vifm/Trash/000_feh_021135_000001_no swimming.jpg
+	/home/jack/Pictures/wallpapers/feh_021135_000001_no swimming.jpg
+t/home/jack/.local/share/vifm/Trash/000_feh_021135_000002_no swimming.jpg
+	/home/jack/Pictures/wallpapers/feh_021135_000002_no swimming.jpg
+t/home/jack/.local/share/vifm/Trash/000_feh_021135_000003_no swimming.jpg
+	/home/jack/Pictures/wallpapers/feh_021135_000003_no swimming.jpg
+t/home/jack/.local/share/vifm/Trash/000_feh_021135_000004_no swimming.jpg
+	/home/jack/Pictures/wallpapers/feh_021135_000004_no swimming.jpg
 
 # State:
 f

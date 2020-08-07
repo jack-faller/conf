@@ -1,4 +1,4 @@
-let mapleader = " "
+let mapleader=" "
 
 filetype plugin indent on "activates filetype detection
 
@@ -37,6 +37,8 @@ Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
 Plug 'wesQ3/vim-windowswap'
+
+Plug 'cohama/lexima.vim'
 
 Plug 'preservim/nerdtree'
 "open nerdtree on empty buffers

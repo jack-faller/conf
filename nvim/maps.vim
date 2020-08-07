@@ -63,6 +63,7 @@ noremap! <F3> <Esc>:BLines <CR>
 noremap <F7> :wqa <CR>
 noremap! <F7> <Esc>:wqa <CR>
 
+"rust
 autocmd FileType rust noremap <F5> :wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap <F6> :wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap <F8> :RustFmt<CR>
@@ -71,26 +72,7 @@ autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :Cargo run <CR>:nnoremap <buf
 autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap! <F8> <Esc>:RustFmt<CR>
 
-autocmd FileType rust inoremap <silent> \<Space> <Esc>:let prev_hist=@/<CR>/jmptag<CR>:let @/=prev_hist<CR>:noh<Enter>2h"_c10l
-autocmd FileType rust inoremap <silent> <Esc> <Esc>:let prev_hist=@/<CR>mZ:%s#]/\*jmptag\*/##ge<CR>:%s#\n^\s*}/\*jmptag\*/##ge<CR>:%s#)/\*jmptag\*/##ge<CR>`Z:%s#/\*jmptag\*/##ge<Enter>:let @/=prev_hist<CR>
-autocmd FileType rust inoremap <silent> \\ \
-autocmd FileType rust inoremap <silent> {} {}
-autocmd FileType rust inoremap <silent> () ()
-autocmd FileType rust inoremap <silent> [] []
-autocmd FileType rust inoremap <silent> { {<CR>}/*jmptag*/<Esc>kA
-autocmd FileType rust inoremap <silent> ( ()/*jmptag*/<Esc>?(<Enter>:noh<Enter>a
-autocmd FileType rust inoremap <silent> [ []/*jmptag*/<Esc>?[<Enter>:noh<Enter>a
-autocmd FileType rust inoremap <silent> \m let<Space>mut<Space><Esc>mZa<Space>=<Space>/*jmptag*/;/*jmptag*/<Esc>`Za
-autocmd FileType rust inoremap <silent> \n let<Space><Esc>mZa<Space>=<Space>/*jmptag*/;/*jmptag*/<Esc>`Za
-autocmd FileType rust inoremap <silent> \i if<Space><Esc>mZa<Space>{
-autocmd FileType rust inoremap <silent> \w while<Space><Esc>mZa<Space>{<Enter>/*jmptag*/<Enter>}/*jmptag*/<Esc>`Za
-autocmd FileType rust inoremap <silent> \f for<Space><Esc>mZa<Space>in<Space>/*jmptag*/<Space>{<Enter>/*jmptag*/<Enter>}/*jmptag*/<Esc>`Za
-autocmd FileType rust inoremap <silent> \l loop<Space>{<Enter>/*jmptag*/<Enter>}/*jmptag*/<Esc>`Za
-autocmd FileType rust imap <silent> \e else{
-autocmd FileType rust inoremap <silent> \p println!("<Esc>mZa",<Space>/*jmptag*/);/*jmptag*/<Esc>`Za
 autocmd FileType rust inoremap <silent> \o <Esc>Iprintln!("{:#?}",<Space><Esc>A);
-autocmd FileType rust inoremap <silent> \t #[test]<Enter>
-autocmd FileType rust inoremap <silent> \d <Esc>mZ:let prev_hist=@/<CR>:%s#/\*jmptag\*/##ge<Enter>:let @/=prev_hist<CR>`Za
 
 autocmd BufNewFile,BufRead Xresources noremap <F8> :w<CR>:!xrdb "$HOME/.config/Xresources"<CR><CR>
 autocmd BufNewFile,BufRead Xresources noremap! <F8> <CR>:w<CR>:!xrdb "$HOME/.config/Xresources"<CR><CR>

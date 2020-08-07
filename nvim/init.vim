@@ -38,7 +38,7 @@ let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#
 
 Plug 'wesQ3/vim-windowswap'
 
-Plug 'cohama/lexima.vim'
+Plug 'cohama/lexima.vim' "close parens
 
 Plug 'preservim/nerdtree'
 "open nerdtree on empty buffers
@@ -56,7 +56,7 @@ Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
 
 Plug 'mbbill/undotree'
 
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive' "git commands
 
 Plug 'jeetsukumaran/vim-indentwise' "move by indent
 

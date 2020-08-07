@@ -63,6 +63,8 @@ noremap! <F3> <Esc>:BLines <CR>
 noremap <F7> :wqa <CR>
 noremap! <F7> <Esc>:wqa <CR>
 
+inoremap \\ \
+
 "rust
 autocmd FileType rust noremap <F5> :wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap <F6> :wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G

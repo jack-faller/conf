@@ -16,7 +16,11 @@ set updatetime=300 "autocomplete update
 set timeoutlen=200 "change speed of imput timeout in normal mode
 
 "centre cursor
-set scrolloff=99999
+augroup VCenterCursor
+  au!
+  au BufEnter,WinEnter,WinNew,VimResized *,*.*
+        \ let &scrolloff=99999
+augroup END
 
 if has('persistent_undo')                       "check if your vim version supports it
   set undofile                                  "turn on the feature

@@ -15,6 +15,13 @@ set noshowmode "don't show mode at bottom eg --INSERT--
 set updatetime=300 "autocomplete update
 set timeoutlen=200 "change speed of imput timeout in normal mode
 
+"centre cursor
+augroup VCenterCursor
+  au!
+  au BufEnter,WinEnter,WinNew,VimResized *,*.*
+        \ let &scrolloff=winheight(win_getid())/2
+augroup END
+
 if has('persistent_undo')                       "check if your vim version supports it
   set undofile                                  "turn on the feature
   set undodir=$HOME/.config/nvim/histfiles      "directory where the undo files will be stored

@@ -13,7 +13,7 @@ set wildmode=longest,list,full "other autocomplete
 set smarttab expandtab autoindent smartindent "change tabs to spaces infer no spaces
 set noshowmode "don't show mode at bottom eg --INSERT--
 set updatetime=300 "autocomplete update
-set timeoutlen=200 "change speed of imput timeout in normal mode
+set timeoutlen=200 "change speed of input timeout in normal mode
 
 "centre cursor
 augroup VCenterCursor
@@ -109,3 +109,11 @@ hi CursorLine cterm=NONE
 set cmdheight=1 "merge text and cmd at bottom
 
 so ~/.config/nvim/maps.vim "maps
+
+"coc actions menu
+" Remap for do codeAction of selected region
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@

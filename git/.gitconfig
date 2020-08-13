@@ -5,3 +5,7 @@
 	postBuffer = 15728640
 [url "https://"]
 	insteadOf = git://
+[credential]
+	helper = store
+[credentials]
+	helper = store

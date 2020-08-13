@@ -33,7 +33,7 @@ inoremap <A-l> <Right>
 "do so wordwise
 inoremap <A-H> <C-Left>
 inoremap <A-L> <C-Right>
-"these are here just to make it concistant
+"these are here just to make it consistent
 inoremap <A-K> <C-Up>
 inoremap <A-J> <C-Down>
 

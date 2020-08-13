@@ -58,6 +58,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 so ~/.config/nvim/CoC.vim
 "change coc colours
 hi CocFloating ctermbg=black
+"coc spelling
+vmap <leader>a <Plug>(coc-codeaction-selected)
+nmap <leader>a <Plug>(coc-codeaction-selected)
 
 Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
 
@@ -109,11 +112,3 @@ hi CursorLine cterm=NONE
 set cmdheight=1 "merge text and cmd at bottom
 
 so ~/.config/nvim/maps.vim "maps
-
-"coc actions menu
-" Remap for do codeAction of selected region
-function! s:cocActionsOpenFromSelected(type) abort
-  execute 'CocCommand actions.open ' . a:type
-endfunction
-xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@

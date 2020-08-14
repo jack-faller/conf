@@ -7,11 +7,13 @@ bindkey -v
 
 # Basic auto/tab complete:
 autoload -U compinit
-zstyle ':completion:*' menu select
+zstyle ':completion:*' menu
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*' #moar fuzz
+
+bindkey '^[[Z' reverse-menu-complete
 
 export editor nvim
 
@@ -20,7 +22,6 @@ bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -78,3 +79,12 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Created by `userpath` on 2020-05-20 11:08:33
 export PATH="$PATH:/home/jack/.local/bin"
+
+# needs to be twice for some reason
+bindkey '^[[3~' vi-delete-char
+bindkey '^[[3~' vi-delete-char
+
+bindkey '^[j' vi-down-line-or-history
+bindkey '^[k' vi-up-line-or-history
+bindkey '^[h' vi-backward-char
+bindkey '^[l' vi-forward-char

@@ -39,6 +39,9 @@ inoremap <A-L> <C-Right>
 "these are here just to make it consistent
 inoremap <A-K> <C-Up>
 inoremap <A-J> <C-Down>
+"delete
+inoremap <C-h> <BS>
+inoremap <C-l> <Del>
 
 "hide numbers
 noremap <silent> <Leader>n :set nonumber<CR>:set norelativenumber<CR>:set signcolumn=no<CR>

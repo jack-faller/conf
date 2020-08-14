@@ -1,3 +1,6 @@
+"make Y consistent with D and C
+nnoremap Y y$
+
 "splits
 nnoremap <silent> <C-J> <C-W><C-J>
 nnoremap <silent> <C-K> <C-W><C-K>

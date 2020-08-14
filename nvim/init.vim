@@ -43,15 +43,18 @@ call plug#begin('~/.config/nvim/.vim/plugged') "set plugin dir
 Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
 Plug 'wesQ3/vim-windowswap'
 
 Plug 'cohama/lexima.vim' "close parens
 
 Plug 'preservim/nerdtree'
 "open nerdtree on empty buffers
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
-"stop underline on selected file
+if !exists('g:started_by_firenvim')
+        autocmd StdinReadPre * let s:std_in=1
+        autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
+endif
 
 "autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

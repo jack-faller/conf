@@ -14,6 +14,7 @@ _comp_options+=(globdots)		# Include hidden files.
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*' #moar fuzz
 
 bindkey '^[[Z' reverse-menu-complete
+bindkey '^[[Z' reverse-menu-complete
 
 export editor nvim
 
@@ -81,13 +82,10 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export PATH="$PATH:/home/jack/.local/bin"
 
 # needs to be twice for some reason
-bindkey '^[[3~' vi-delete-char
-bindkey '^[[3~' vi-delete-char
+bindkey '^[L' vi-delete-char
+bindkey '^[H' vi-backward-delete-char
 
-bindkey '^L' vi-delete-char
-bindkey '^H' vi-backward-delete-char
-
-bindkey '^[j' vi-down-line-or-history
-bindkey '^[k' vi-up-line-or-history
-bindkey '^[h' vi-backward-char
-bindkey '^[l' vi-forward-char
+bindkey '^[^j' vi-down-line-or-history
+bindkey '^[^k' vi-up-line-or-history
+bindkey '^[^h' vi-backward-char
+bindkey '^[^l' vi-forward-char

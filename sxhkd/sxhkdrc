@@ -122,32 +122,3 @@ super + {_, shift, ctrl} + Print
 #make capslock work
 super + Caps_Lock
         xdotool key Caps_Lock
-
-
-super + Up
-        xdotool mousemove_relative -- 0 -30
-
-super + Down
-        xdotool mousemove_relative -- 0 30
-
-super + Right
-        xdotool mousemove_relative -- 30 0
-
-super + Left
-        xdotool mousemove_relative -- -30 0
-
-super + ctrl + Up
-        xdotool mousemove_relative -- 0 -3
-
-super + ctrl + Down
-        xdotool mousemove_relative -- 0 3
-
-super + ctrl + Right
-        xdotool mousemove_relative -- 3 0
-
-super + ctrl + Left
-        xdotool mousemove_relative -- -3 0
-
-Insert
-        xdotool mousedown 1; \
-        xdotool mouseup 1

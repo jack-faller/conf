@@ -82,8 +82,9 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export PATH="$PATH:/home/jack/.local/bin"
 
 # needs to be twice for some reason
-bindkey '^[L' vi-delete-char
-bindkey '^[H' vi-backward-delete-char
+bindkey '^[[3~' vi-delete-char
+bindkey '^L' vi-delete-char
+bindkey '^H' vi-backward-delete-char
 
 bindkey '^[^j' vi-down-line-or-history
 bindkey '^[^k' vi-up-line-or-history

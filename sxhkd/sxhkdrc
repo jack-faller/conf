@@ -122,3 +122,8 @@ super + {_, shift, ctrl} + Print
 #make capslock work
 super + Caps_Lock
         xdotool key Caps_Lock
+
+#reload net
+super + n
+        connmanctl disconnect wifi_7c8bca1ddac5_564d36383136323033_managed_psk; \
+        connmanctl connect wifi_7c8bca1ddac5_564d36383136323033_managed_psk

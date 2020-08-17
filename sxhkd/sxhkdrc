@@ -99,12 +99,15 @@ super + alt + shift + {h,j,k,l}
 
 #record screen
 super + r
-	recordmydesktop --full-shots --device pulse -o "$HOME/Desktop/temp.ogv"
+	recordmydesktop --full-shots -o "$HOME/Videos/raw footage/temp.ogv"
 
 super + ctrl + r
 	pkill -x --signal 'SIGINT' recordmydesktop; \
 	name=`Xdialog --stdout --inputbox "Recording name:" 400x150`; \
-	rename "temp" $name "$HOME/Desktop/temp.ogv"
+        if [ "$name" -eq "" ]; then; \
+        name=`date`; \
+        fi; \
+	rename "temp" $name "$HOME/Videos/raw footage/temp.ogv"
 
 super + shift + r
 	pkill -x --signal 'SIGUSR1' recordmydesktop

@@ -1,20 +1,20 @@
 let mapleader=" "
 
-filetype plugin indent on "activates filetype detection
-f23
+filetype plugin indent on "activates file type detection
+
 syntax on "activates syntax highlighting among other things
 
-set path+=** wildmenu "allow fuzzyfind with complete
+set path+=** wildmenu "allow fuzzy find with complete
 set number relativenumber "set the side numbers
 set hidden " allows you to deal with multiple unsaved buffers simultaneously without resorting to misusing tabs
 set backspace=indent,eol,start " just hit backspace without this one and see for yourself
 set nocompatible "no longer emulate vi
-set wildmode=longest,list,full "other autocomplete
+set wildmode=longest,list,full "other auto-complete
 set smarttab expandtab autoindent smartindent "change tabs to spaces infer no spaces
-set noshowmode "don't show mode at bottom eg --INSERT--
-set updatetime=300 "autocomplete update
+set noshowmode "don't show mode at bottom e.g. --INSERT--
+set updatetime=300 "auto-complete update
 set timeoutlen=200 "change speed of input timeout in normal mode
-set spell spelllang=en_gb "spellcheck
+set spell spelllang=en_gb
 
 "centre cursor
 augroup VCenterCursor
@@ -49,13 +49,13 @@ Plug 'wesQ3/vim-windowswap'
 Plug 'cohama/lexima.vim' "close parens
 
 Plug 'preservim/nerdtree'
-"open nerdtree on empty buffers
+"open nerd tree on empty buffers
 if !exists('g:started_by_firenvim')
         autocmd StdinReadPre * let s:std_in=1
         autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
 endif
 
-"autocomplete
+"auto-complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 so ~/.config/nvim/CoC.vim
 "change coc colours
@@ -72,7 +72,7 @@ Plug 'tpope/vim-fugitive' "git commands
 
 Plug 'jeetsukumaran/vim-indentwise' "move by indent
 
-Plug 'thaerkh/vim-indentguides' "indentguides
+Plug 'thaerkh/vim-indentguides' "indent guides
 let g:indentguides_ignorelist = ['text']
 let g:indentguides_spacechar = '┆'
 let g:indentguides_tabchar = '|'

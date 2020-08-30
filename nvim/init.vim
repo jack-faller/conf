@@ -14,6 +14,7 @@ set smarttab expandtab autoindent smartindent "change tabs to spaces infer no sp
 set noshowmode "don't show mode at bottom eg --INSERT--
 set updatetime=300 "autocomplete update
 set timeoutlen=200 "change speed of input timeout in normal mode
+set spell spelllang=en_GB "spellcheck
 
 "centre cursor
 augroup VCenterCursor

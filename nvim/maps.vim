@@ -19,6 +19,10 @@ nnoremap <silent> <Down> :below split<CR>
 nnoremap <silent> <Left> :vsplit<CR>
 nnoremap <silent> <Right> :below vsplit<CR>
 
+"move
+noremap <M-e> ge
+noremap <M-E> gE
+
 "move indent wise
 map <silent> <M-h> <Plug>(IndentWisePreviousLesserIndent)zz
 map <silent> <M-H> <Plug>(IndentWiseNextLesserIndent)zz

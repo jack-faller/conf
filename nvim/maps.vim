@@ -1,6 +1,10 @@
 "make Y consistent with D and C
 nnoremap Y y$
 
+"toggle hlsearch (<s-F3> is <F15>)
+let hlstate=0
+nnoremap <silent> <F15> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+
 "splits
 nnoremap <silent> <C-J> <C-W><C-J>
 nnoremap <silent> <C-K> <C-W><C-K>

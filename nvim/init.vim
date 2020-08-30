@@ -10,7 +10,7 @@ set hidden " allows you to deal with multiple unsaved buffers simultaneously wit
 set backspace=indent,eol,start " just hit backspace without this one and see for yourself
 set nocompatible "no longer emulate vi
 set wildmode=longest,list,full "other auto-complete
-set smarttab expandtab autoindent smartindent "change tabs to spaces infer no spaces
+set tabstop=4 shiftwidth=4 smarttab expandtab autoindent smartindent "change tabs to 4 spaces
 set noshowmode "don't show mode at bottom e.g. --INSERT--
 set updatetime=300 "auto-complete update
 set timeoutlen=200 "change speed of input timeout in normal mode

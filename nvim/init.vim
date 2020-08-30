@@ -1,7 +1,7 @@
 let mapleader=" "
 
 filetype plugin indent on "activates filetype detection
-
+f23
 syntax on "activates syntax highlighting among other things
 
 set path+=** wildmenu "allow fuzzyfind with complete
@@ -14,7 +14,7 @@ set smarttab expandtab autoindent smartindent "change tabs to spaces infer no sp
 set noshowmode "don't show mode at bottom eg --INSERT--
 set updatetime=300 "autocomplete update
 set timeoutlen=200 "change speed of input timeout in normal mode
-set spell spelllang=en_GB "spellcheck
+set spell spelllang=en_gb "spellcheck
 
 "centre cursor
 augroup VCenterCursor

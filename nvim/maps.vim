@@ -84,8 +84,8 @@ autocmd FileType cs noremap <silent> <F8> :w<CR>:! astyle %<CR>:e<CR>
 autocmd FileType cs inoremap <silent> <F8> <esc>:w<CR>:! astyle %<CR>:e<CR>
 autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>
 autocmd FileType cs inoremap <F6> <esc>:w<CR>:! dotnet build<CR>
-autocmd FileType cs noremap <F5> :w<CR>:! alacritty -e dotnet run<CR>
-autocmd FileType cs inoremap <F5> <esc>:w<CR>:! alacritty -e dotnet run<CR>
+autocmd FileType cs noremap <silent> <F5> :w<CR>:! alacritty -e dotnet run<CR><CR>
+autocmd FileType cs inoremap <silent> <F5> <esc>:w<CR>:! alacritty -e dotnet run<CR><CR>
 
 "rust
 autocmd FileType rust noremap <F5> :wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G

@@ -80,8 +80,8 @@ noremap! <F7> <Esc>:wqa <CR>
 inoremap \\ \
 
 "cs
-autocmd FileType cs noremap <silent> <F8> :w<CR>:! astyle %<CR>:e<CR>
-autocmd FileType cs inoremap <silent> <F8> <esc>:w<CR>:! astyle %<CR>:e<CR>
+autocmd FileType cs noremap <silent> <F8> :w<CR>:! astyle -p -n %<CR>:e<CR>
+autocmd FileType cs inoremap <silent> <F8> <esc>:w<CR>:! astyle -p -n %<CR>:e<CR>
 autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>
 autocmd FileType cs inoremap <F6> <esc>:w<CR>:! dotnet build<CR>
 autocmd FileType cs noremap <silent> <F5> :w<CR>:! alacritty -e dotnet run<CR><CR>

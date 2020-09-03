@@ -38,225 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/Music/musik/V10:Blossoms
-	Vol. 10 Spring.rar
-1
-d/home/jack/code/rebox-voxel
-	..
-0
-d/home/jack/code
-	rebox-voxel
-6
-d/home/jack
-	.config
-4
-d/home/jack/.config
-	nvim
-24
-d/home/jack/.config/nvim
-	.vim
-1
-d/home/jack/.config/nvim/.vim
-	plugged
-2
-d/home/jack/.config/nvim/.vim/plugged
-	coc.nvim
-1
-d/home/jack/.config/nvim/.vim/plugged/coc.nvim
-	autoload
-2
-d/home/jack/.config/nvim/.vim/plugged/coc.nvim/autoload
-	coc
-1
-d/home/jack/.config/nvim/.vim/plugged/coc.nvim/autoload/coc
-	util.vim
-8
-d/home/jack
-	Pictures
-37
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack/Pictures/screenshots
-	best quote.png
-1
-d/home/jack
-	aurcrap
-41
-d/home/jack/aurcrap
-	epub-thumbnailer
-1
-d/home/jack/Music
-	musik
-2
-d/home/jack/Music/musik
-	shuffle
-14
-d/home/jack/Music/musik/shuffle
-	Buoyant Boogie (Turquoise October) - Splatoon 2 Soundtrack.opus
-11
-d/home/jack/Music/musik
-	shuffle
-14
-d/home/jack/Music/musik/shuffle
-	Cara Mia Addio - Official Extended version.opus
-14
-d/home/jack
-	.config
-4
-d/home/jack/.config
-	gtk-3.0
-19
-d/home/jack/.config/gtk-3.0
-	settings.ini
-2
-d/home/jack
-	.fehbg
-31
-d/home
-	jack
-1
-d/home/jack
-	.config
-4
-d/home/jack/.config
-	x
-37
-d/home/jack/.config/x
-	.xinitrc
-1
-d/home/jack/.config
-	gtk-3.0
-19
-d/home/jack/.config/gtk-3.0
-	settings.ini
-2
-d/home/jack/.config
-	gtk-2.0
-18
-d/home/jack/.config/gtk-2.0
-	gtkfilechooser.ini
-1
-d/home/jack/.config
-	nvim-qt
-26
-d/home/jack
-	Pictures
-38
-d/home/jack/Pictures
-	wallpapers
-12
-d/home/jack/Pictures/wallpapers
-	zues anubis.jpg
-48
-d/home/jack/Pictures
-	wallpapers
-12
-d/home/jack
-	Pictures
-35
-d/home/jack/Pictures
-	wallpapers
-12
-d/home/jack
-	useful docs
-44
-d/home/jack/useful docs
-	..
-0
-d/home/jack
-	Pictures
-34
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack/Pictures/screenshots
-	best quote.png
-1
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack
-	Desktop
-29
-d/home/jack/Desktop
-	cubes 1.ogv
-1
-d/home/jack
-	Desktop
-16
-d/home/jack/Desktop
-	cubes 2.ogv
-2
-d/home/jack
-	Desktop
-16
-d/home/jack/Desktop
-	temp.ogv
-3
-d/home/jack
-	Pictures
-21
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack/Pictures/screenshots
-	rifle.png
-4
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack
-	Pictures
-40
-d/home
-	jack
-1
-d/
-	home
-5
-d/home
-	jack
-1
-d/home/jack
-	Pictures
-40
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack/Pictures/screenshots
-	services.png
-5
-d/home/jack/Pictures
-	memes
-4
-d/home/jack/Pictures/memes
-	stop math.png
-19
-d/home/jack/Pictures
-	screenshots
-9
-d/home/jack/Pictures/screenshots
-	best quote.png
-1
-d/home/jack/Pictures
-	other
-6
-d/home/jack
-	Downloads
-37
-d/home/jack/Downloads
-	server.jar
-20
-d/home/jack
-	Downloads
-37
-d/home/jack/.local/share/multimc/instances/1.15.2
-	.minecraft
-1
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
-	versions
-12
 d/home/jack/.local/share/multimc/instances/1.15.2
 	.minecraft
 1
@@ -338,6 +119,225 @@ d/home/jack/Pictures
 d/home/jack/Pictures/wallpapers
 	snowy mountain sunrise.jpg
 11
+d/home/jack/.steam/steam/steamapps/common/Team Fortress 2/tf/download
+	..
+0
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
+	browser
+9
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/browser
+	blocklist.xml
+3
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
+	TorBrowser
+8
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/TorBrowser
+	..
+0
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
+	Downloads
+7
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
+	Saved Tabs
+1
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads/Saved Tabs
+	..
+0
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
+	index.html
+3
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
+	Downloads
+7
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
+	Saved Tabs
+1
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
+	Downloads
+7
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
+	Saved Tabs
+1
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads/Saved Tabs
+	..
+0
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
+	Saved Tabs
+1
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
+	TorBrowser
+8
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/TorBrowser
+	Data
+1
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
+	libssl3.so
+37
+d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US
+	Browser
+1
+d/home/jack/.local/share/torbrowser/tbb/x86_64
+	tor-browser_en-US
+1
+d/home/jack/.local/share/torbrowser/tbb
+	x86_64
+1
+d/home/jack/.local/share/torbrowser
+	tbb
+2
+d/home/jack/.local/share
+	torbrowser
+35
+d/home/jack/.local
+	share
+7
+d/home/jack
+	drives
+46
+d/home
+	jack
+1
+d/
+	home
+5
+d/home/jack/old_phone
+	104APPLE
+1
+d/home/jack/old_phone/104APPLE
+	IMG_4990.JPG
+21
+d/home/jack/old_phone
+	105APPLE
+2
+d/home/jack/old_phone/105APPLE
+	IMG_5234.JPG
+44
+d/home/jack/old_phone
+	104APPLE
+1
+d/home/jack/old_phone/104APPLE
+	..
+0
+d/home/jack/old_phone
+	105APPLE
+2
+d/home/jack/old_phone/105APPLE
+	IMG_5186.JPG
+28
+d/home/jack/old_phone
+	105APPLE
+2
+d/home/jack
+	code
+11
+d/home/jack/code
+	itertest
+4
+d/home/jack/code/itertest
+	src
+2
+d/home/jack/code/itertest/src
+	main.rs
+3
+d/home/jack/code/itertest
+	src
+2
+d/home/jack/code
+	itertest
+4
+d/home/jack
+	code
+11
+d/home/jack/code
+	kakoune
+4
+d/home/jack/code/kakoune
+	tramp
+1
+d/home/jack/code
+	game
+2
+d/home/jack/code/game
+	src
+2
+d/home/jack/code/game/src
+	main.rs
+2
+d/home/jack/code/game
+	src
+2
+d/home/jack/code
+	arv17
+1
+d/home/jack/code/arv17
+	src
+2
+d/home/jack/code/arv17/src
+	main.rs
+1
+d/home/jack/code/arv17
+	src
+2
+d/home/jack/code
+	vimlang
+7
+d/home/jack/code/vimlang
+	game_of_life
+3
+d/home/jack/code
+	vimlang
+7
+d/home/jack
+	aurcrap
+10
+d/home/jack/aurcrap
+	rua
+3
+d/home/jack
+	useful docs
+19
+d/home/jack/useful docs
+	1024 common words
+5
+d/home/jack/code/testing
+	fizzbuzz
+7
+d/home/jack/code
+	testing
+9
+d/home/jack/code/testing
+	Cargo.toml
+6
+d/home/jack/code
+	strbench
+7
+d/home/jack/code/strbench
+	tostringbench.cs
+4
+d/home/jack/code/test/temp
+	..
+0
+d/home/jack/code/test
+	temp
+1
+d/home/jack/code
+	alm
+1
+d/home/jack/code/alm
+	Program.cs
+3
+d/home/jack/code
+	alm
+1
+d/home/jack/code/alm
+	Program.cs
+3
+d/home/jack/code
+	alm
+1
+d/home/jack/code/alm
+	Program.cs
+3
 d
 
 # Right window history (oldest to newest):
@@ -711,9 +711,10 @@ D
 :mkdir V10:Blossoms
 :reg
 :bin
-:empty
 :so icons
 :so ~/.config/vifm/icons
+:empty
+:mkdir :Q
 :q
 
 # Search history (oldest to newest):
@@ -769,6 +770,8 @@ D
 /wiz
 /sor
 /magi
+/drives
+/dri
 
 # Prompt history (oldest to newest):
 pinit.vim
@@ -786,45 +789,20 @@ pn
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/jack/.local/share/vifm/Trash/000_feh_021135_000004_no swimming.jpg
 "a/home/jack/code/rebox-voxel/src/frag.glsl
 "a/home/jack/code/rebox-voxel/src/vert.glsl
 
 # Directory stack (oldest to newest):
 
 # Trash content:
-t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:21:20 BST 2020.png
-	/home/jack/Pictures/screenshots/Wed 27 May 23:21:20 BST 2020.png
-t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:23:41 BST 2020.png
-	/home/jack/Pictures/screenshots/Wed 27 May 23:23:41 BST 2020.png
-t/home/jack/.local/share/vifm/Trash/000_asdfa.png
-	/home/jack/Pictures/screenshots/asdfa.png
-t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:29:43 BST 2020.png
-	/home/jack/Pictures/screenshots/Wed 27 May 23:29:43 BST 2020.png
-t/home/jack/.local/share/vifm/Trash/000_Wed 27 May 23:30:53 BST 2020.png
-	/home/jack/Pictures/screenshots/Wed 27 May 23:30:53 BST 2020.png
-t/home/jack/.local/share/vifm/Trash/000_Bibata_Cursor_Transulent
-	/home/jack/aurcrap/Bibata_Cursor_Transulent
-t/home/jack/.local/share/vifm/Trash/000_Celeste - Complete Soundtrack - Full OST Album.webm.part
-	/home/jack/Music/musik/shuffle/Celeste - Complete Soundtrack - Full OST Album.webm.part
-t/home/jack/.local/share/vifm/Trash/000_dd.ogv
-	/home/jack/Desktop/dd.ogv
-t/home/jack/.local/share/vifm/Trash/000_delet.ogv
-	/home/jack/Desktop/delet.ogv
-t/home/jack/.local/share/vifm/Trash/000_Fri 19 Jun 16:45:04 BST 2020.png
-	/home/jack/Pictures/screenshots/Fri 19 Jun 16:45:04 BST 2020.png
-t/home/jack/.local/share/vifm/Trash/000_Sun 28 Jun 22:05:48 BST 2020.png
-	/home/jack/Pictures/screenshots/Sun 28 Jun 22:05:48 BST 2020.png
-t/home/jack/.local/share/vifm/Trash/000_Tue  7 Jul 21:05:57 BST 2020.png
-	/home/jack/Pictures/screenshots/Tue  7 Jul 21:05:57 BST 2020.png
-t/home/jack/.local/share/vifm/Trash/000_feh_021135_000001_no swimming.jpg
-	/home/jack/Pictures/wallpapers/feh_021135_000001_no swimming.jpg
-t/home/jack/.local/share/vifm/Trash/000_feh_021135_000002_no swimming.jpg
-	/home/jack/Pictures/wallpapers/feh_021135_000002_no swimming.jpg
-t/home/jack/.local/share/vifm/Trash/000_feh_021135_000003_no swimming.jpg
-	/home/jack/Pictures/wallpapers/feh_021135_000003_no swimming.jpg
-t/home/jack/.local/share/vifm/Trash/000_feh_021135_000004_no swimming.jpg
-	/home/jack/Pictures/wallpapers/feh_021135_000004_no swimming.jpg
+t/home/jack/.local/share/vifm/Trash/000_itertest
+	/home/jack/code/itertest
+t/home/jack/.local/share/vifm/Trash/000_helloTriangle
+	/home/jack/code/helloTriangle
+t/home/jack/.local/share/vifm/Trash/000_game
+	/home/jack/code/game
+t/home/jack/.local/share/vifm/Trash/000_aurcrap
+	/home/jack/aurcrap
 
 # State:
 f

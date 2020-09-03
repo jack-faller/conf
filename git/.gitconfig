@@ -9,3 +9,9 @@
 	helper = store
 [credentials]
 	helper = store
+[pull]
+	ff = only
+[mergetool]
+	keepBackup = true
+[core]
+	editor = nvim

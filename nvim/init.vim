@@ -13,7 +13,7 @@ set wildmode=longest,list,full "other auto-complete
 set tabstop=4 shiftwidth=4 smarttab expandtab autoindent smartindent "change tabs to 4 spaces
 set noshowmode "don't show mode at bottom e.g. --INSERT--
 set updatetime=300 "auto-complete update
-set timeoutlen=200 "change speed of input timeout in normal mode
+set timeoutlen=1500 "change speed of input timeout in normal mode
 set spell spelllang=en_gb
 
 "centre cursor
@@ -45,7 +45,7 @@ Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
 Plug 'wesQ3/vim-windowswap'
-
+Plug 'tpope/vim-surround' "delete surrounding
 Plug 'cohama/lexima.vim' "close parens
 
 Plug 'preservim/nerdtree'

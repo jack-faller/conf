@@ -48,14 +48,14 @@ inoremap <C-h> <BS>
 inoremap <C-l> <Del>
 
 
-"toggle hlsearch (<s-F3> is <F15>)
-let hlstate=0
-nnoremap <silent> <leader>th :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+"toggle hlsearch
+nnoremap <silent> <leader>th :set hls!<CR>
 
 "toggle numbers
-map <leader>tn ¬NumOff
-noremap <silent> ¬NumOff :set nonumber<CR>:set norelativenumber<CR>:set signcolumn=no<CR>:map <leader>tn ¬NumOn<CR>
-noremap <silent> ¬NumOn :set number<CR>:set relativenumber<CR>:set signcolumn=yes<CR>:map <leader>tn ¬NumOff<CR>
+noremap <silent> <leader>tn :set number!<CR>:set relativenumber!<CR>
+
+"toggle sign column
+noremap <silent> <leader>ts :if (&scl == "auto") \| set scl=no \| else \| set scl=auto \| endif<CR>
 
 "toggle indent guides
 nnoremap <silent> <leader>ti :IndentGuidesToggle<CR>

@@ -1,10 +1,6 @@
 "make Y consistent with D and C
 nnoremap Y y$
 
-"toggle hlsearch (<s-F3> is <F15>)
-let hlstate=0
-nnoremap <silent> <F15> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
-
 "splits
 nnoremap <silent> <C-J> <C-W><C-J>
 nnoremap <silent> <C-K> <C-W><C-K>
@@ -51,9 +47,18 @@ inoremap <A-J> <C-Down>
 inoremap <C-h> <BS>
 inoremap <C-l> <Del>
 
-"hide numbers
-noremap <silent> <Leader>n :set nonumber<CR>:set norelativenumber<CR>:set signcolumn=no<CR>
-noremap <silent> <Leader>nn :set number<CR>:set relativenumber<CR>:set signcolumn=yes<CR>
+
+"toggle hlsearch (<s-F3> is <F15>)
+let hlstate=0
+nnoremap <silent> <leader>th :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+
+"toggle numbers
+map <leader>tn ¬NumOff
+noremap <silent> ¬NumOff :set nonumber<CR>:set norelativenumber<CR>:set signcolumn=no<CR>:map <leader>tn ¬NumOn<CR>
+noremap <silent> ¬NumOn :set number<CR>:set relativenumber<CR>:set signcolumn=yes<CR>:map <leader>tn ¬NumOff<CR>
+
+"toggle indent guides
+nnoremap <silent> <leader>ti :IndentGuidesToggle<CR>
 
 "windowswap
 let g:windowswap_map_keys = 0 "prevent default bindings

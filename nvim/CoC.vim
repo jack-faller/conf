@@ -12,9 +12,9 @@ set cmdheight=2
 " delays and poor user experience.
 set updatetime=300 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
+"this always causes flickering
 set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.

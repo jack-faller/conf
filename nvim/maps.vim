@@ -20,14 +20,14 @@ noremap <M-e> ge
 noremap <M-E> gE
 
 "move indent wise
-map <silent> <M-h> <Plug>(IndentWisePreviousLesserIndent)zz
-map <silent> <M-H> <Plug>(IndentWiseNextLesserIndent)zz
-map <silent> <M-j> <Plug>(IndentWiseNextEqualIndent)zz
-map <silent> <M-J> <Plug>(IndentWiseBlockScopeBoundaryEnd)zz
-map <silent> <M-k> <Plug>(IndentWisePreviousEqualIndent)zz
-map <silent> <M-K> <Plug>(IndentWiseBlockScopeBoundaryBegin)zz
-map <silent> <M-l> <Plug>(IndentWiseNextGreaterIndent)zz
-map <silent> <M-L> <Plug>(IndentWisePreviousGreaterIndent)zz
+map <silent> <M-h> <Plug>(IndentWisePreviousLesserIndent)
+map <silent> <M-H> <Plug>(IndentWiseNextLesserIndent)
+map <silent> <M-j> <Plug>(IndentWiseNextEqualIndent)
+map <silent> <M-J> <Plug>(IndentWiseBlockScopeBoundaryEnd)
+map <silent> <M-k> <Plug>(IndentWisePreviousEqualIndent)
+map <silent> <M-K> <Plug>(IndentWiseBlockScopeBoundaryBegin)
+map <silent> <M-l> <Plug>(IndentWiseNextGreaterIndent)
+map <silent> <M-L> <Plug>(IndentWisePreviousGreaterIndent)
 "move files
 noremap <silent> <M-]> :n<CR>
 noremap <silent> <M-[> :prev<CR>

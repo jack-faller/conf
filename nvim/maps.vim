@@ -87,8 +87,8 @@ noremap! <F7> <Esc>:wqa <CR>
 
 inoremap \\ \
 
-noremap <F8> :Neoformat<CR>
-noremap! <silent> <F8> <Esc>Neoformat<CR>
+noremap <silent> <F8> :Neoformat<CR>
+noremap! <silent> <F8> <Esc>:Neoformat<CR>
 
 "cs
 autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>

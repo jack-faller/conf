@@ -1,3 +1,4 @@
+mkdir -p "$HOME/bkp"
 name="$HOME/bkp/$(pwd | tr '/' '%' | tr " " "_").bkp"
-mkdir $name
-cp * $name
+mkdir -p $name
+cp -r * $name

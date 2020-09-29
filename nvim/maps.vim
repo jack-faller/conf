@@ -87,9 +87,10 @@ noremap! <F7> <Esc>:wqa <CR>
 
 inoremap \\ \
 
+noremap <F8> :Neoformat<CR>
+noremap! <silent> <F8> <Esc>Neoformat<CR>
+
 "cs
-autocmd FileType cs noremap <silent> <F8> :w<CR>:! astyle -p -n %<CR>:e<CR>
-autocmd FileType cs inoremap <silent> <F8> <esc>:w<CR>:! astyle -p -n %<CR>:e<CR>
 autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>
 autocmd FileType cs inoremap <F6> <esc>:w<CR>:! dotnet build<CR>
 autocmd FileType cs noremap <silent> <F5> :w<CR>:! alacritty -e dotnet run<CR><CR>
@@ -99,13 +100,8 @@ autocmd FileType cs inoremap <silent> \o <Esc>IConsole.WriteLine(<Esc>A.ToString
 "rust
 autocmd FileType rust noremap <F5> :wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap <F6> :wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
-autocmd FileType rust noremap <F8> :RustFmt<CR>
 
 autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
-autocmd FileType rust noremap! <F8> <Esc>:RustFmt<CR>
 
 autocmd FileType rust inoremap <silent> \o <Esc>Iprintln!("{:#?}",<Space><Esc>A);
-
-autocmd BufNewFile,BufRead Xresources noremap <F8> :w<CR>:!xrdb "$HOME/.config/Xresources"<CR><CR>
-autocmd BufNewFile,BufRead Xresources noremap! <F8> <CR>:w<CR>:!xrdb "$HOME/.config/Xresources"<CR><CR>

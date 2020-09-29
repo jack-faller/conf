@@ -1,5 +1,8 @@
 "make Y consistent with D and C
 nnoremap Y y$
+"paste from paste register
+noremap <M-p> "0p
+noremap <M-P> "0P
 
 "splits
 nnoremap <silent> <C-J> <C-W><C-J>

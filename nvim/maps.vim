@@ -58,7 +58,7 @@ nnoremap <silent> <leader>th :set hls!<CR>
 noremap <silent> <leader>tn :set number!<CR>:set relativenumber!<CR>
 
 "toggle sign column
-noremap <silent> <leader>ts :if (&scl == "on") \| set scl=no \| else \| set scl=on \| endif<CR>
+noremap <silent> <leader>ts :if (&scl == "yes") \| set scl=no \| else \| set scl=yes \| endif<CR>
 
 "toggle indent guides
 nnoremap <silent> <leader>ti :IndentGuidesToggle<CR>

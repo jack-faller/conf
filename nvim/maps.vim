@@ -50,6 +50,16 @@ inoremap <A-J> <C-Down>
 inoremap <C-h> <BS>
 inoremap <C-l> <Del>
 
+"escape various
+inoremap \\ <C-V>\
+inoremap \( <C-V>(
+inoremap \{ <C-V>{
+inoremap \[ <C-V>[
+inoremap \t <tab>
+inoremap \T <C-v><tab>
+
+"easy <C-r>
+inoremap \r <C-r>
 
 "toggle hlsearch
 nnoremap <silent> <leader>th :set hls!<CR>
@@ -84,8 +94,6 @@ noremap <F3> :BLines <CR>
 noremap! <F3> <Esc>:BLines <CR>
 noremap <F7> :wqa <CR>
 noremap! <F7> <Esc>:wqa <CR>
-
-inoremap \\ \
 
 noremap <silent> <F8> :Neoformat<CR>
 noremap! <silent> <F8> <Esc>:Neoformat<CR>

@@ -65,6 +65,7 @@ alias vifm="~/.config/vifm/scripts/vifmrun"
 alias glances="glances -1"
 alias fm="vifm ."
 alias please="sudo"
+alias tm="mv -t /tmp"
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 	exec startx
@@ -90,3 +91,4 @@ bindkey '^[^j' vi-down-line-or-history
 bindkey '^[^k' vi-up-line-or-history
 bindkey '^[^h' vi-backward-char
 bindkey '^[^l' vi-forward-char
+if [ -e /home/jack/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jack/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

@@ -1,0 +1,2 @@
+cd ~/code/rebox-voxel/src
+nvim `find -xdev | sed 's/\.\///; s/^\..*//; s/^target.*//; /.*\..*/!d' | fzf`

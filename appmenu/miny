@@ -1,0 +1,3 @@
+$HOME/Downloads/miny/miny -d3 &
+sleep 0.1
+bspc node newest -t floating

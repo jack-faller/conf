@@ -1,3 +1,5 @@
 $HOME/Downloads/miny/miny -d3 &
-sleep 0.1
-bspc node newest -t floating
+sleep 0.2
+bspc node focused -t floating
+bspc node focused -t fullscreen
+bspc node focused -t floating

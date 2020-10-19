@@ -17,6 +17,7 @@ bindkey '^[[Z' reverse-menu-complete
 bindkey '^[[Z' reverse-menu-complete
 
 export editor nvim
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -71,8 +72,7 @@ if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]
 	exec startx
 fi
 
-setxkbmap -option "caps:escape"
-setxkbmap gb
+setxkbmap gb -option "caps:escape"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

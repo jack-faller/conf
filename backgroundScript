@@ -1,18 +1,20 @@
 #! /bin/zsh
 if mkdir /tmp/backspt
 then
-	wal -i "$HOME/Pictures/wallpapers"
-	sleep 3s
-	firefox &
-	steam &
-	discord &
-	pulseeffects &
-        qbittorrent &
-	while :
-	do
-		sleep 10m
-		eval $(xdotool getmouselocation --shell)
-		wal -i "$HOME/Pictures/wallpapers"
-		xdotool mousemove $X $Y
-	done
+    sleep 1s
+    wal -i "$HOME/Pictures/wallpapers"
+    sleep 3s
+    firefox &
+    steam &
+    discord &
+    pulseaudio &
+    pulseeffects &
+    qbittorrent &
+    while :
+    do
+        sleep 10m
+        eval $(xdotool getmouselocation --shell)
+        wal -i "$HOME/Pictures/wallpapers"
+        xdotool mousemove $X $Y
+    done
 fi

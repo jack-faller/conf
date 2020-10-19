@@ -38,138 +38,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/jack/.local/share/multimc/instances/1.15.2
-	.minecraft
-1
-d/home/jack/.local/share/multimc/instances
-	1.15.2
-1
-d/home/jack/.local/share/multimc
-	instances
-5
-d/home/jack/.local/share
-	multimc
-22
-d/home/jack/.local/share/multimc
-	instances
-5
-d/home/jack/.local/share
-	multimc
-22
-d/home/jack/.local/share/multimc
-	instances
-5
-d/home/jack/.local/share/multimc/instances
-	1.15.2
-1
-d/home/jack/.local/share/multimc/instances/1.15.2
-	.minecraft
-1
-d/home/jack/.local/share/multimc/instances
-	1.15.2
-1
-d/home/jack/.local/share/multimc/instances/1.15.2
-	.minecraft
-1
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
-	backups
-2
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft/backups
-	..
-0
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
-	backups
-2
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft/backups
-	2018-12-11_20-18-05_general.zip
-2
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
-	libraries
-4
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft/libraries
-	..
-0
-d/home/jack/.local/share/multimc/instances/1.15.2/.minecraft
-	libraries
-4
-d/home/jack/Downloads/mine_server
-	server.jar
-6
-d/home/jack/Downloads
-	mine_server
-7
-d/home/jack/Downloads/mine_server
-	server.jar
-6
-d/home/jack/Downloads
-	mine_server
-7
-d/home/jack
-	Downloads
-37
-d/home
-	jack
-1
-d/
-	etc
-4
-d/home/jack/Pictures
-	wallpapers
-12
-d/home/jack/Pictures/wallpapers
-	snowy mountain sunrise.jpg
-11
-d/home/jack/.steam/steam/steamapps/common/Team Fortress 2/tf/download
-	..
-0
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
-	browser
-9
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/browser
-	blocklist.xml
-3
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
-	TorBrowser
-8
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/TorBrowser
-	..
-0
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
-	Downloads
-7
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
-	Saved Tabs
-1
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads/Saved Tabs
-	..
-0
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
-	index.html
-3
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
-	Downloads
-7
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
-	Saved Tabs
-1
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
-	Downloads
-7
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
-	Saved Tabs
-1
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads/Saved Tabs
-	..
-0
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/Downloads
-	Saved Tabs
-1
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
-	TorBrowser
-8
-d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/TorBrowser
-	Data
-1
 d/home/jack/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser
 	libssl3.so
 37
@@ -338,6 +206,138 @@ d/home/jack/code
 d/home/jack/code/alm
 	Program.cs
 3
+d/home/jack/Pictures/screenshots
+	study test.png
+7
+d/home/jack/Pictures
+	other
+6
+d/home/jack/Pictures/other
+	totoro (scary).jpg
+13
+d/home/jack/Pictures
+	..
+0
+d/home/jack
+	Pictures
+6
+d/home/jack/Pictures
+	react
+8
+d/home/jack/Pictures/react
+	you shall know.png
+40
+d/home/jack/Pictures
+	screenshots
+9
+d/home/jack/Pictures/screenshots
+	why i hate nvidia.png
+11
+d/home/jack/Pictures
+	vid pics
+11
+d/home/jack/Pictures/vid pics
+	ach ach ach
+1
+d/home/jack/Pictures/vid pics/ach ach ach
+	1.jpeg
+1
+d/home/jack/Pictures/vid pics
+	ach ach ach
+1
+d/home/jack/Pictures
+	wallpapers
+12
+d/home/jack/Pictures/wallpapers
+	snowy mountain sunrise.jpg
+11
+d/home/jack/Pictures
+	wallpapers
+12
+d/home/jack/Pictures/wallpapers
+	so much aesthetic.jpg
+12
+d/home/jack/Pictures
+	wallpapers
+12
+d/home/jack/Pictures/wallpapers
+	so much aesthetic.jpg
+12
+d/home/jack/Pictures
+	suck medic.png
+26
+d/home/jack
+	Videos
+9
+d/home/jack/Videos
+	opsy.webm
+6
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/orb.db
+	..
+0
+d/home/jack
+	orb.db
+18
+d/home/jack/Pictures/screenshots
+	all art is political.png
+1
 d
 
 # Right window history (oldest to newest):
@@ -639,7 +639,7 @@ D/home/jack/Pictures/BoB
 	wish.jpg
 19
 D/tmp
-	
+	..
 0
 D
 
@@ -694,10 +694,8 @@ D
 :echo $PATH
 :fileviewer
 :file
-:split
 :vspit
 :only
-:vsplit
 :mkdir BoB
 :set relativenumber
 :set number
@@ -716,6 +714,10 @@ D
 :empty
 :mkdir :Q
 :q
+:help rename
+:vsp
+:split
+:vsplit
 
 # Search history (oldest to newest):
 /scre

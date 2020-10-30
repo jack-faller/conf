@@ -53,15 +53,11 @@ inoremap <C-l> <Del>
 inoremap  
 
 "escape various
-inoremap \\ <C-V>\
-inoremap \( <C-V>(
-inoremap \{ <C-V>{
-inoremap \[ <C-V>[
-inoremap \t <tab>
-inoremap \T <C-v><tab>
+inoremap zt <tab>
+inoremap zT <C-v><tab>
 
 "easy <C-r>
-inoremap \r <C-r>
+inoremap zr <C-r>
 
 "toggle hlsearch
 nnoremap <silent> <leader>th :set hls!<CR>
@@ -105,7 +101,7 @@ autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>
 autocmd FileType cs inoremap <F6> <esc>:w<CR>:! dotnet build<CR>
 autocmd FileType cs noremap <silent> <F5> :w<CR>:! alacritty -e dotnet run<CR><CR>
 autocmd FileType cs inoremap <silent> <F5> <esc>:w<CR>:! alacritty -e dotnet run<CR><CR>
-autocmd FileType cs inoremap <silent> \o <Esc>IConsole.WriteLine(<Esc>A.ToString());
+autocmd FileType cs inoremap <silent> zo <Esc>IConsole.WriteLine(<Esc>A.ToString());
 
 "rust
 autocmd FileType rust noremap <F5> :wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
@@ -114,4 +110,4 @@ autocmd FileType rust noremap <F6> :wa <bar> :Cargo build <CR>:nnoremap <buffer>
 autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 
-autocmd FileType rust inoremap <silent> \o <Esc>Iprintln!("{:#?}",<Space><Esc>A);
+autocmd FileType rust inoremap <silent> zo <Esc>Iprintln!("{:#?}"z<Space><Esc>A);

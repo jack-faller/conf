@@ -47,10 +47,10 @@ inoremap <A-L> <C-Right>
 inoremap <A-K> <C-Up>
 inoremap <A-J> <C-Down>
 "delete
-inoremap <C-h> <BS>
 inoremap <C-l> <Del>
 "<C-BS> to delete word
 inoremap  
+
 
 "escape various
 inoremap zt <tab>

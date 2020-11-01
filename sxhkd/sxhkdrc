@@ -1,7 +1,7 @@
 # terminal emulator
 
 super + Return
-    alacritty
+    alacritty || xterm
 
 # program launcher
 super + @space

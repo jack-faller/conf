@@ -16,6 +16,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 bindkey '^[[Z' reverse-menu-complete
 bindkey '^[[Z' reverse-menu-complete
 
+export EDITOR="/bin/nvim"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Use vim keys in tab complete menu:

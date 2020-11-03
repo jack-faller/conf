@@ -8,6 +8,9 @@ bspc config window_gap           6
 # source the colors.
 . "${HOME}/.cache/wal/colors.sh"
 
+#open notification daemon
+dunst &
+
 # Set the border colors.
 bspc config normal_border_color "$color1"
 bspc config active_border_color "$color2"

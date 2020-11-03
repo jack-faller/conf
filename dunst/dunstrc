@@ -11,8 +11,7 @@ font = Iosevka Term 10
 # <http://developer.gnome.org/pango/stable/PangoMarkupFormat.html>.
 # If markup is not allowed, those tags will be stripped out of the
 # message.
-markup = yes
-plain_text = no
+markup = full
 
 # The format of the message.  Possible variables are:
 #   %a  appname
@@ -220,6 +219,11 @@ timeout = 10
 # to "".
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
+
+[notify-send-no-summary]
+    summary = "none"
+    appname = notify-send
+    format = "%b"
 
 #[espeak]
 #    summary = "*"

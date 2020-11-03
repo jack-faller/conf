@@ -10,7 +10,7 @@ autoload -U compinit
 zstyle ':completion:*' menu
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+_comp_options+=(globdots)       # Include hidden files.
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*' #moar fuzz
 
 bindkey '^[[Z' reverse-menu-complete
@@ -55,7 +55,7 @@ xrdb ~/.config/Xresources
 export PS1="%K{red}%F{black}%n@%m%f%k %F{blue}%~%f %#"
 
 for alias in `ls $HOME/.config/zsh/aliases/`; do
-	alias `echo $alias | sed 's/\.sh//'`="$HOME/.config/zsh/aliases/$alias"
+    alias `echo $alias | sed 's/\.sh//'`="$HOME/.config/zsh/aliases/$alias"
 done
 alias vim="nvim"
 alias vi="nvim"
@@ -69,7 +69,7 @@ alias please="sudo"
 alias tm="mv -t /tmp"
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-	exec startx
+    exec startx
 fi
 
 setxkbmap gb -option "caps:escape"

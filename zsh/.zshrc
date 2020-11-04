@@ -54,9 +54,7 @@ xrdb ~/.config/Xresources
 
 export PS1="%K{red}%F{black}%n@%m%f%k %F{blue}%~%f %#"
 
-for alias in `ls $HOME/.config/zsh/aliases/`; do
-    alias `echo $alias | sed 's/\.sh//'`="$HOME/.config/zsh/aliases/$alias"
-done
+export PATH=$HOME/.config/zsh/aliases:$PATH
 alias vim="nvim"
 alias vi="nvim"
 alias la="lsd -a"

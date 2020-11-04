@@ -70,8 +70,9 @@ Plug 'mbbill/undotree'
 
 Plug 'tpope/vim-fugitive' "git commands
 function Gac(msg)
-    :G add %
-    :G commit -m msg
+    :w
+    :sil G add %
+    :sil G commit -m msg
 :endfunction
 
 Plug 'jeetsukumaran/vim-indentwise' "move by indent

@@ -1,0 +1,5 @@
+for file in "$@"
+do
+    name="`echo _$file | sed 's/\..*//g'`"
+    highlight --font iosevka -l --style edit-godot -I -O html $file | sed 's/﻿//g' | wkhtmltoimage - $name.png
+done

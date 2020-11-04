@@ -1,4 +1,4 @@
-setxkbmap gb
+setxkbmap gb -option "caps:escape"
 xrdb ~/.config/Xresources
 udiskie -N &
 sxhkd &

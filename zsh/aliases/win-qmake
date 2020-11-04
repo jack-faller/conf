@@ -1,2 +1,2 @@
 export PATH=/opt/mxe/usr/bin:$PATH
-make
+make -f "$1"

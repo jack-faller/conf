@@ -96,6 +96,10 @@ noremap! <F7> <Esc>:wqa <CR>
 noremap <silent> <F8> :Neoformat<CR>
 noremap! <silent> <F8> <Esc>:Neoformat<CR>
 
+"integrate git
+nnoremap <silent> <leader>Gc :G commit -m ""<Left>
+nnoremap <silent> <leader>Ga :w<cr>:G add %<cr>
+
 "cs
 autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>
 autocmd FileType cs inoremap <F6> <esc>:w<CR>:! dotnet build<CR>

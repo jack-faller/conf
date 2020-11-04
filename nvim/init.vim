@@ -69,6 +69,10 @@ Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
 Plug 'mbbill/undotree'
 
 Plug 'tpope/vim-fugitive' "git commands
+function Gac(msg)
+    :G add %
+    :G commit -m msg
+:endfunction
 
 Plug 'jeetsukumaran/vim-indentwise' "move by indent
 

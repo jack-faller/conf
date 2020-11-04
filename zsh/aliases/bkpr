@@ -1,7 +1,9 @@
 mkdir -p "$HOME/bkp"
 name="$HOME/bkp/$(pwd | tr '/' '%' | tr " " "_").bkp"
-for (( i=0;; i++ )) 
+i=0
+while true
 do
     mkdir "$name($i)" && break
+    i=$((i + 1))
 done
-cp -r * "$name($i)"
+cp -r ./* "$name($i)"

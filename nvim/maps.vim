@@ -97,7 +97,7 @@ noremap <silent> <F8> :Neoformat<CR>
 noremap! <silent> <F8> <Esc>:Neoformat<CR>
 
 "integrate git
-nnoremap <silent> <leader>Gc :G commit -m ""<Left>
+nnoremap <silent> <leader>Gc :sil G commit -m ""<Left>
 nnoremap <silent> <leader>Ga :w<cr>:G add %<cr>
 
 "cs

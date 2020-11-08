@@ -7,6 +7,9 @@ super + Return
 super + @space
     dmenu_run
 
+ctrl + alt + Delete
+    sudo reboot
+
 # appmenu
 super + shift + @space
     $HOME/.config/appmenu/`ls $HOME/.config/appmenu/ | dmenu`

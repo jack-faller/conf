@@ -67,7 +67,7 @@ alias please="sudo"
 alias tm="mv -t /tmp"
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-    exec startx
+    startx
 fi
 
 setxkbmap gb -option "caps:escape"

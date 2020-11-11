@@ -116,4 +116,4 @@ autocmd FileType rust noremap <F6> :wa <bar> :Cargo build <CR>:nnoremap <buffer>
 autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 
-autocmd FileType rust inoremap <silent> zo <Esc>Iprintln!("{:#?}"z<Space><Esc>A);
+autocmd FileType rust inoremap <silent> zo <Esc>Iprintln!("{:#?}", <Esc>A);

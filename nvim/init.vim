@@ -15,6 +15,7 @@ set noshowmode "don't show mode at bottom e.g. --INSERT--
 set updatetime=300 "auto-complete update
 set timeoutlen=1500 "change speed of input timeout in normal mode
 set spell spelllang=en_gb
+set nohls
 
 "centre cursor
 augroup VCenterCursor

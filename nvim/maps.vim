@@ -51,13 +51,8 @@ inoremap <C-l> <Del>
 "<C-BS> to delete word
 inoremap  
 
-
-"escape various
-inoremap zt <tab>
-inoremap zT <C-v><tab>
-
-"easy <C-r>
-inoremap zr <C-r>
+"escape tab complete
+inoremap <A-t> <tab>
 
 "toggle hlsearch
 nnoremap <silent> <leader>th :set hls!<CR>
@@ -73,8 +68,6 @@ nnoremap <silent> <leader>ti :IndentGuidesToggle<CR>
 
 "windowswap
 let g:windowswap_map_keys = 0 "prevent default bindings
-nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
-nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
 nnoremap <silent> <leader>w :call WindowSwap#EasyWindowSwap()<CR>
 noremap <silent> <C-q> :q<CR>
 
@@ -90,6 +83,7 @@ nnoremap <F2> :NERDTreeToggle<cr>
 
 noremap <F3> :BLines <CR>
 noremap! <F3> <Esc>:BLines <CR>
+
 noremap <F7> :wqa <CR>
 noremap! <F7> <Esc>:wqa <CR>
 
@@ -100,14 +94,13 @@ noremap! <silent> <F8> <Esc>:Neoformat<CR>
 nnoremap <silent> <leader>Gc :G commit -m ""<Left>
 nnoremap <silent> <leader>Ga :w<cr>:G add %<cr>
 nnoremap <leader>Gs :G status<cr>
-nnoremap <leader>Gp :G push<cr>
 
 "cs
 autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>
 autocmd FileType cs inoremap <F6> <esc>:w<CR>:! dotnet build<CR>
 autocmd FileType cs noremap <silent> <F5> :w<CR>:! alacritty -e dotnet run<CR><CR>
 autocmd FileType cs inoremap <silent> <F5> <esc>:w<CR>:! alacritty -e dotnet run<CR><CR>
-autocmd FileType cs inoremap <silent> zo <Esc>IConsole.WriteLine(<Esc>A.ToString());
+autocmd FileType cs inoremap <silent> <Home> <Esc>IConsole.WriteLine(<Esc>A.ToString());
 
 "rust
 autocmd FileType rust noremap <F5> :wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
@@ -116,4 +109,4 @@ autocmd FileType rust noremap <F6> :wa <bar> :Cargo build <CR>:nnoremap <buffer>
 autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 
-autocmd FileType rust inoremap <silent> zo <Esc>Iprintln!("{:#?}", <Esc>A);
+autocmd FileType rust inoremap <silent> <Home> <Esc>Iprintln!("{:#?}", <Esc>A);

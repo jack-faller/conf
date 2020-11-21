@@ -48,6 +48,8 @@ let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#
 Plug 'sbdchd/neoformat'
 Plug 'wesQ3/vim-windowswap'
 Plug 'tpope/vim-surround' "delete surrounding
+Plug 'inkarkat/vim-ReplaceWithRegister'
+Plug 'wellle/targets.vim'
 Plug 'cohama/lexima.vim' "close parens
 Plug 'preservim/nerdtree'
 "open nerd tree on empty buffers

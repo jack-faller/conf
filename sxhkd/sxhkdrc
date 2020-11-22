@@ -133,6 +133,10 @@ super + {_, shift, ctrl} + Print
 super + Caps_Lock
         xdotool key Caps_Lock
 
+#pass
+super + p
+        passmenu --type
+
 #reload net
 super + n
         connmanctl disconnect wifi_7c8bca1ddac5_564d36383136323033_managed_psk; \

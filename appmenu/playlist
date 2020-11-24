@@ -1,0 +1,4 @@
+out=`mpv --playlist=$HOME/Videos/playlist.txt | tac - | sed '1q'`
+if [ "$out" = 'Exiting... (End of file)' ]; then
+    echo "" > ~/Videos/playlist.txt
+fi;

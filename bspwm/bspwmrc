@@ -1,6 +1,5 @@
 #! /bin/bash
 bspc monitor -d I II III IV V VI VII VIII IX X
-bspc desktop II -l monocle
 
 bspc config border_width         4
 bspc config window_gap           6
@@ -31,6 +30,7 @@ bspc rule -a Screenkey 	manage=off
 
 
 bspc rule -a mpv 		state=fullscreen
+bspc rule -a qutebrowser 		state=fullscreen
 bspc rule -a Gnome-mines	state=floating
 bspc rule -a firefox 		desktop='^2' follow=off state=fullscreen
 bspc rule -a Firefox 		desktop='^2' follow=off state=fullscreen

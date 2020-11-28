@@ -82,8 +82,6 @@ let g:indentguides_tabchar = '|'
 
 Plug 'dylanaraps/wal.vim' "pywal colours
 
-Plug 'rust-lang/rust.vim' "rust syntax
-
 Plug 'preservim/nerdcommenter' "comment lines
 
 "optional color previews, i do not use as would require termguicolors which messes with my wal colorscheme

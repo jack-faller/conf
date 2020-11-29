@@ -71,6 +71,9 @@ let g:windowswap_map_keys = 0 "prevent default bindings
 nnoremap <silent> <leader>w :call WindowSwap#EasyWindowSwap()<CR>
 noremap <silent> <C-q> :q<CR>
 
+"quit terminal insert
+tnoremap <C-q> <C-\><C-n>:q<CR>
+
 "better cmd line
 nnoremap <silent> : q::let b:coc_suggest_disable = 1<CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>i
 nnoremap <silent> <M-:> :
@@ -96,17 +99,17 @@ nnoremap <silent> <leader>Ga :w<cr>:G add %<cr>
 nnoremap <leader>Gs :G status<cr>
 
 "cs
-autocmd FileType cs noremap <F6> :w<CR>:! dotnet build<CR>
-autocmd FileType cs inoremap <F6> <esc>:w<CR>:! dotnet build<CR>
-autocmd FileType cs noremap <silent> <F5> :w<CR>:! alacritty -e dotnet run<CR><CR>
-autocmd FileType cs inoremap <silent> <F5> <esc>:w<CR>:! alacritty -e dotnet run<CR><CR>
+autocmd FileType cs noremap <F6> :w<CR>:sp :terminal dotnet build<CR>
+autocmd FileType cs inoremap <F6> <esc>:w<CR>:sp :terminal dotnet build<CR>
+autocmd FileType cs noremap <silent> <F5> :w<CR>:sp :terminal dotnet run<CR><CR>
+autocmd FileType cs inoremap <silent> <F5> <esc>:w<CR>:sp :terminal dotnet run<CR><CR>
 autocmd FileType cs inoremap <silent> <Home> <Esc>IConsole.WriteLine(<Esc>A.ToString());
 
 "rust
-autocmd FileType rust noremap <F5> :wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
-autocmd FileType rust noremap <F6> :wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
+autocmd FileType rust noremap <F5> :wa <bar> :sp<CR>:terminal cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
+autocmd FileType rust noremap <F6> :wa <bar> :sp<CR>:terminal cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 
-autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :Cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
-autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :Cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
+autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :sp<CR>:terminal cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
+autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :sp<CR>:terminal cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 
 autocmd FileType rust inoremap <silent> <Home> <Esc>Idbg!(&<Esc>A);

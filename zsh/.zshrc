@@ -101,4 +101,3 @@ bindkey '^[^j' vi-down-line-or-history
 bindkey '^[^k' vi-up-line-or-history
 bindkey '^[^h' vi-backward-char
 bindkey '^[^l' vi-forward-char
-if [ -e /home/jack/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jack/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

@@ -14,7 +14,7 @@ ctrl + alt + Delete
 # appmenu
 super + shift + @space
     . "${HOME}/.cache/wal/colors.sh"; \
-    `$HOME/.config/appmenu/`ls $HOME/.config/appmenu/ \
+    `ls $HOME/.config/appmenu/ \
         | dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"`
 
 # make sxhkd reload its configuration files:

@@ -1,5 +1,5 @@
 #! /bin/sh
-pkill backgroundScrip
+pgrep backgroundScrip | sed "s/$$//g" | xargs kill 2> /dev/null
 sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
 sleep 3s

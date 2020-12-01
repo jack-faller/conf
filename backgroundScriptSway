@@ -1,0 +1,12 @@
+#! /bin/sh
+sleep 2s
+wal -i "$HOME/Pictures/wallpapers"
+sleep 3s
+pulseaudio &
+udiskie -N &
+export QT_QPA_PLATFORMTHEME="qt5ct"
+while :
+do
+	sleep 10m
+	wal -i "$HOME/Pictures/wallpapers"
+done

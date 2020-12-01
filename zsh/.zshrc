@@ -54,6 +54,11 @@ xrdb ~/.config/Xresources
 
 export PS1="%K{red}%F{black}%n@%m%f%k %F{blue}%~%f %#"
 
+#wal colors dmenu
+. "${HOME}/.cache/wal/colors.sh"
+alias dmenu='dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+alias dmenu_run='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+
 export PATH=$HOME/.config/zsh/aliases:$PATH
 alias vim="nvim"
 alias vi="nvim"

@@ -5,14 +5,17 @@ super + Return
 
 # program launcher
 super + @space
-    dmenu_run
+    . "${HOME}/.cache/wal/colors.sh"; \
+    dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
 
 ctrl + alt + Delete
     sudo reboot
 
 # appmenu
 super + shift + @space
-    $HOME/.config/appmenu/`ls $HOME/.config/appmenu/ | dmenu`
+    . "${HOME}/.cache/wal/colors.sh"; \
+    `$HOME/.config/appmenu/`ls $HOME/.config/appmenu/ \
+        | dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"`
 
 # make sxhkd reload its configuration files:
 super + Escape

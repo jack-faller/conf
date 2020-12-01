@@ -1,15 +1,14 @@
 #! /bin/sh
-if mkdir /tmp/backScript 2> /dev/null; then
-	sleep 2s
+pkill backgroundScrip
+sleep 2s
+wal -i "$HOME/Pictures/wallpapers"
+sleep 3s
+pulseaudio &
+udiskie -N &
+gammastep -l 50.721680:-1.878530 &
+export QT_QPA_PLATFORMTHEME="qt5ct"
+while :
+do
+	sleep 10m
 	wal -i "$HOME/Pictures/wallpapers"
-	sleep 3s
-	pulseaudio &
-	udiskie -N &
-	gammastep -l 50.721680:-1.878530 &
-	export QT_QPA_PLATFORMTHEME="qt5ct"
-	while :
-	do
-		sleep 10m
-		wal -i "$HOME/Pictures/wallpapers"
-	done
-fi
+done

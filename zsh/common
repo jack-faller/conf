@@ -49,6 +49,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 #load colours
 (cat ~/.cache/wal/sequences &)
 
+export PS1="%K{red}%F{black}%n@%m%f%k %F{blue}%~%f %#"
+
 export PATH=$HOME/.config/zsh/aliases:$PATH
 alias vim="nvim"
 alias vi="nvim"

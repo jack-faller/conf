@@ -6,7 +6,7 @@
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+w kill
 
     # Start your launcher
     bindsym $mod+Space exec $menu
@@ -19,10 +19,11 @@
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+escape reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Alt+q exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym Ctrl+Alt+Delete exec shutdown now
 #
 # Moving around:
 #
@@ -47,6 +48,15 @@
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+#
+# Media Keys
+#
+    bindsym XF86AudioRaiseVolume exec ~/.config/sway/scripts/vol+
+    bindsym XF86AudioLowerVolume exec ~/.config/sway/scripts/vol-
+    bindsym XF86AudioMute exec ~/.config/sway/scripts/mute
+    bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    bindsym XF86MonBrightnessUp exec ~/.config/sway/scripts/light+
+    bindsym XF86MonBrightnessDown exec ~/.config/sway/scripts/light-
 #
 # Workspaces:
 #
@@ -84,21 +94,23 @@
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
-
-    # Make the current focus fullscreen
+    bindsym $mod+r layout stacking
+    bindsym $mod+t layout toggle split
+    bindsym $mod+y layout tabbed
     bindsym $mod+f fullscreen
-
-    # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+f floating toggle
 
     # Swap focus between the tiling area and the floating area
-    #bindsym $mod+space focus mode_toggle
+    #bindsym $mod+Alt+f focus mode_toggle
 
-    # Move focus to the parent container
-    bindsym $mod+a focus parent
+    # Move focus to the parent/child container
+    bindsym $mod+p focus parent
+    bindsym $mod+Shift+p focus child
+
+    # Move focus to next/prev
+    bindsym $mod+c focus next
+    bindsym $mod+Shift+c focus prev
+
 #
 # Scratchpad:
 #
@@ -111,29 +123,14 @@
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
-#
-# Resizing containers:
-#
-mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
-
-    # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
-
-    # Return to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-bindsym $mod+r mode "resize"
 
 #
+# Print Screen:
+#
+    bindsym Print exec grim - | wl-copy
+    bindsym Shift+Print exec grim -g "$(slurp)" - | wl-copy
+    bindsym $mod+Print exec grim $(xdg-user-dir PICTURES)/$(date +'%s_grim.png')
+    bindsym $mod+Shift+Print exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'%s_grim.png')
+
+# Passwords:
+    bindsym $mod+SemiColon exec passmenu --type

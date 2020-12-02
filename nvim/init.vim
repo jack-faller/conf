@@ -39,6 +39,7 @@ if empty(glob('$HOME/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/.vim/plugged') "set plugin dir
+so ~/.config/nvim/local_plugins
 
 Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"

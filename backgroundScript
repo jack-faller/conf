@@ -2,7 +2,7 @@
 sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
 sleep 3s
-firefox &
+qutebrowser &
 steam &
 discord &
 pulseaudio &

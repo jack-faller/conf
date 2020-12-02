@@ -1,8 +1,8 @@
 /* use the below line for opaque waybar */
-@import url("../../.cache/wal/colors-waybar.css");
+/*@import url("../../.cache/wal/colors-waybar.css");*/
 
 /* use the below line for semi-transparent waybar */
-/*@import url("../../.cache/wal/colors-custom-gtk3.css");*/
+@import url("../../.cache/wal/colors-custom-gtk3.css");
 
 /* get your icons from the link below */
 /* https://aur.archlinux.org/packages/ttf-material-design-icons-git/ */

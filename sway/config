@@ -14,13 +14,14 @@ set {
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-    $menu dmenu_path | dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" | xargs swaymsg exec --
+    $menu dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
 }
 
 xwayland enable
 font Iosevka 9
 seat seat0 xcursor_theme Quintom_Ink 12
 include $HOME/.cache/wal/colors-sway
+for_window [title="mpv"] fullscreen enable
 focus_wrapping no
 
 default_border pixel 3

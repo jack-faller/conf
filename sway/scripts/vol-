@@ -1,0 +1,12 @@
+#!/bin/bash
+# requires pamixer package to read out volume
+
+volume=$(pamixer --get-volume)
+
+if [[ $(( $volume - 10 )) -le 0 ]]; then
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ 0%
+	volume=0
+else
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ -10%
+	volume=$(($volume - 10))
+fi

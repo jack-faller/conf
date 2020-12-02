@@ -1,0 +1,4 @@
+#!/bin/bash
+# requires pamixer to test whether audio is muted
+
+pactl set-sink-mute @DEFAULT_SINK@ toggle

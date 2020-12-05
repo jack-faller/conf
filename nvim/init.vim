@@ -53,7 +53,6 @@ Plug 'wesQ3/vim-windowswap'
 Plug 'tpope/vim-surround' "delete surrounding
 Plug 'inkarkat/vim-ReplaceWithRegister'
 Plug 'wellle/targets.vim'
-Plug 'cohama/lexima.vim' "close parens
 Plug 'preservim/nerdtree'
 "open nerd tree on empty buffers
 if !exists('g:started_by_firenvim')

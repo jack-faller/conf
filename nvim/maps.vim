@@ -6,6 +6,9 @@ noremap <M-P> "0P
 "clipboard wayland
 noremap <leader>gc :call  system("wl-copy --trim-newline", @")<CR>
 
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {; {<CR>};<ESC>O
+
 "splits
 nnoremap <silent> <C-J> <C-W><C-J>
 nnoremap <silent> <C-K> <C-W><C-K>
@@ -99,6 +102,8 @@ noremap! <silent> <F8> <Esc>:Neoformat<CR>
 nnoremap <silent> <leader>Gc :G commit -m ""<Left>
 nnoremap <silent> <leader>Ga :w<cr>:G add %<cr>
 nnoremap <leader>Gs :G status<cr>
+
+autocmd FileType cpp inoremap <silent> <Home> <Esc>Istd::cout << <esc>A << '\n';
 
 "cs
 autocmd FileType cs noremap <F6> :w<CR>:sp :terminal dotnet build<CR>

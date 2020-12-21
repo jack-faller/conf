@@ -104,7 +104,7 @@ nnoremap <silent> <leader>Ga :w<cr>:G add %<cr>
 nnoremap <leader>Gs :G status<cr>
 
 autocmd FileType cpp inoremap <silent> <Home> <Esc>Istd::cout << <esc>A << '\n';
-
+autocmd FileType cpp inoremap <silent> <S-Home> <Esc>_v$:s/,/ << ' ' << /g<CR>Istd::cout << <esc>A << '\n';
 "cs
 autocmd FileType cs noremap <F6> :w<CR>:sp :terminal dotnet build<CR>
 autocmd FileType cs inoremap <F6> <esc>:w<CR>:sp :terminal dotnet build<CR>

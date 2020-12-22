@@ -49,7 +49,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-peekaboo'
 
 Plug 'sbdchd/neoformat'
-Plug 'wesQ3/vim-windowswap'
 Plug 'tpope/vim-surround' "delete surrounding
 Plug 'inkarkat/vim-ReplaceWithRegister'
 Plug 'wellle/targets.vim'

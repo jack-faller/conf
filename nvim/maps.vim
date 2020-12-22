@@ -9,20 +9,6 @@ noremap <leader>gc :call  system("wl-copy --trim-newline", @")<CR>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {; {<CR>};<ESC>O
 
-"splits
-nnoremap <silent> <C-J> <C-W><C-J>
-nnoremap <silent> <C-K> <C-W><C-K>
-nnoremap <silent> <C-L> <C-W><C-L>
-nnoremap <silent> <C-H> <C-W><C-H>
-nnoremap <silent> <C-Up> <C-W>+
-nnoremap <silent> <C-Down> <C-W>-
-nnoremap <silent> <C-Left> <C-W><
-nnoremap <silent> <C-Right> <C-W>>
-nnoremap <silent> <Up> :split<CR>
-nnoremap <silent> <Down> :below split<CR>
-nnoremap <silent> <Left> :vsplit<CR>
-nnoremap <silent> <Right> :below vsplit<CR>
-
 "move
 noremap <M-e> ge
 noremap <M-E> gE
@@ -70,11 +56,6 @@ noremap <silent> <leader>ts :if (&scl == "yes") \| set scl=no \| else \| set scl
 
 "toggle indent guides
 nnoremap <silent> <leader>ti :IndentGuidesToggle<CR>
-
-"windowswap
-let g:windowswap_map_keys = 0 "prevent default bindings
-nnoremap <silent> <leader>w :call WindowSwap#EasyWindowSwap()<CR>
-noremap <silent> <C-q> :q<CR>
 
 "quit terminal insert
 tnoremap <C-q> <C-\><C-n>:q<CR>

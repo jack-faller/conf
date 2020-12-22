@@ -6,10 +6,22 @@ noremap <M-P> "0P
 "clipboard wayland
 noremap <leader>gc :call  system("wl-copy --trim-newline", @")<CR>
 
-noremap <silent> <C-q> :q<CR>
-
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {; {<CR>};<ESC>O
+
+"splits
+nnoremap <silent> <C-J>     <C-W><C-J>
+nnoremap <silent> <C-K>     <C-W><C-K>
+nnoremap <silent> <C-L>     <C-W><C-L>
+nnoremap <silent> <C-H>     <C-W><C-H>
+nnoremap <silent> <S-Up>    <C-W>+
+nnoremap <silent> <S-Down>  <C-W>-
+nnoremap <silent> <S-Left>  <C-W><
+nnoremap <silent> <S-Right> <C-W>>
+nnoremap <silent> <Up>      :split<CR>
+nnoremap <silent> <Down>    :below split<CR>
+nnoremap <silent> <Left>    :vsplit<CR>
+nnoremap <silent> <Right>   :below vsplit<CR>
 
 "move
 noremap <M-e> ge
@@ -24,13 +36,6 @@ map <silent> <M-k> <Plug>(IndentWisePreviousEqualIndent)
 map <silent> <M-K> <Plug>(IndentWiseBlockScopeBoundaryBegin)
 map <silent> <M-l> <Plug>(IndentWiseNextGreaterIndent)
 map <silent> <M-L> <Plug>(IndentWisePreviousGreaterIndent)
-
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap <leader>ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap <leader>ga <Plug>(EasyAlign)
-
 "move files
 noremap <silent> <M-]> :n<CR>
 noremap <silent> <M-[> :prev<CR>
@@ -66,6 +71,11 @@ noremap <silent> <leader>ts :if (&scl == "yes") \| set scl=no \| else \| set scl
 "toggle indent guides
 nnoremap <silent> <leader>ti :IndentGuidesToggle<CR>
 
+"windowswap
+let g:windowswap_map_keys = 0 "prevent default bindings
+nnoremap <silent> <leader>w :call WindowSwap#EasyWindowSwap()<CR>
+noremap <silent> <C-q> :q<CR>
+
 "quit terminal insert
 tnoremap <C-q> <C-\><C-n>:q<CR>
 
@@ -96,9 +106,9 @@ nnoremap <leader>Gs :G status<cr>
 autocmd FileType cpp inoremap <silent> <Home> <Esc>Istd::cout << <esc>A << '\n';
 autocmd FileType cpp inoremap <silent> <S-Home> <Esc>_v$:s/,/ << ' ' << /g<CR>Istd::cout << <esc>A << '\n';
 "cs
-autocmd FileType cs noremap <F6> :w<CR>:sp :terminal dotnet build<CR>
-autocmd FileType cs inoremap <F6> <esc>:w<CR>:sp :terminal dotnet build<CR>
-autocmd FileType cs noremap <silent> <F5> :w<CR>:sp :terminal dotnet run<CR><CR>
+autocmd FileType cs noremap  <F6>     :w<CR>:sp :terminal dotnet build<CR>
+autocmd FileType cs inoremap <F6>     <esc>:w<CR>:sp :terminal dotnet build<CR>
+autocmd FileType cs noremap  <silent> <F5> :w<CR>:sp :terminal dotnet run<CR><CR>
 autocmd FileType cs inoremap <silent> <F5> <esc>:w<CR>:sp :terminal dotnet run<CR><CR>
 autocmd FileType cs inoremap <silent> <Home> <Esc>IConsole.WriteLine(<Esc>A.ToString());
 

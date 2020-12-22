@@ -22,6 +22,13 @@ map <silent> <M-k> <Plug>(IndentWisePreviousEqualIndent)
 map <silent> <M-K> <Plug>(IndentWiseBlockScopeBoundaryBegin)
 map <silent> <M-l> <Plug>(IndentWiseNextGreaterIndent)
 map <silent> <M-L> <Plug>(IndentWisePreviousGreaterIndent)
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap <leader>ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap <leader>ga <Plug>(EasyAlign)
+
 "move files
 noremap <silent> <M-]> :n<CR>
 noremap <silent> <M-[> :prev<CR>

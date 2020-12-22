@@ -81,3 +81,20 @@ bindkey '^[^j' vi-down-line-or-history
 bindkey '^[^k' vi-up-line-or-history
 bindkey '^[^h' vi-backward-char
 bindkey '^[^l' vi-forward-char
+
+#start ssh agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+    ssh-add -q
+else
+    if [[ ! "$SSH_AUTH_SOCK" ]]; then
+        source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+    fi
+fi
+
+#start tmux
+if command -v tmux >/dev/null 2>&1 && [ "${DISPLAY}" ]; then
+    # if not inside a tmux session, and if no session is started, start a new session
+    [ -z "${TMUX}" ] && (tmux attach >/dev/null 2>&1 || tmux)
+fi

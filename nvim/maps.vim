@@ -6,6 +6,8 @@ noremap <M-P> "0P
 "clipboard wayland
 noremap <leader>gc :call  system("wl-copy --trim-newline", @")<CR>
 
+noremap <silent> <C-q> :q<CR>
+
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {; {<CR>};<ESC>O
 

@@ -141,4 +141,4 @@
 # Mako:
     bindsym Ctrl+Space exec makoctl dismiss
     bindsym Ctrl+Shift+Space exec makoctl dismiss --all
-    bindsym Ctrl+Alt+Space exec makoctl invoke
+    bindsym Ctrl+Alt+Space exec "makoctl invoke; makoctl dismiss"

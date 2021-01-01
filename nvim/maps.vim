@@ -29,13 +29,15 @@ noremap <M-E> gE
 
 "move indent wise
 map <silent> <M-h> <Plug>(IndentWisePreviousLesserIndent)
-map <silent> <M-H> <Plug>(IndentWiseNextLesserIndent)
 map <silent> <M-j> <Plug>(IndentWiseNextEqualIndent)
-map <silent> <M-J> <Plug>(IndentWiseBlockScopeBoundaryEnd)
 map <silent> <M-k> <Plug>(IndentWisePreviousEqualIndent)
-map <silent> <M-K> <Plug>(IndentWiseBlockScopeBoundaryBegin)
 map <silent> <M-l> <Plug>(IndentWiseNextGreaterIndent)
-map <silent> <M-L> <Plug>(IndentWisePreviousGreaterIndent)
+
+map <silent> <C-M-h> <Plug>(IndentWiseNextLesserIndent)
+map <silent> <C-M-j> <Plug>(IndentWiseBlockScopeBoundaryEnd)
+map <silent> <C-M-k> <Plug>(IndentWiseBlockScopeBoundaryBegin)
+map <silent> <C-M-l> <Plug>(IndentWisePreviousGreaterIndent)
+
 "move files
 noremap <silent> <M-]> :n<CR>
 noremap <silent> <M-[> :prev<CR>

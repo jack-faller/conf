@@ -61,9 +61,6 @@ alias fm="vifm ."
 alias please="sudo"
 alias tm="mv -t /tmp"
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export QT_STYLE_OVERRIDE=kvantum
 
@@ -90,6 +87,11 @@ else
         source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
     fi
 fi
+
+cat ~/.cache/wal/sequences
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #start tmux
 if command -v tmux >/dev/null 2>&1 && [ "${DISPLAY}" ]; then

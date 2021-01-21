@@ -1,3 +1,4 @@
+#! /bin/sh
 for file in "$@"
 do
     name=$(echo _"$file")

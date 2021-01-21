@@ -1,3 +1,4 @@
+#! /bin/sh
 old_name_list=$(command ls -A)
 
 echo "$old_name_list" | cat -n - > /tmp/efiles_list

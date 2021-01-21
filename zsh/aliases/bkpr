@@ -1,3 +1,4 @@
+#! /bin/sh
 mkdir -p "$HOME/bkp"
 name="$HOME/bkp/$(pwd | tr '/' '%' | tr " " "_").bkp"
 i=0

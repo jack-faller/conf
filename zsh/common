@@ -49,7 +49,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 export PS1="%K{red}%F{black}%n@%m%f%k %F{blue}%~%f %#"
 
-export PATH=$HOME/.config/zsh/aliases:$PATH
+export PATH="$HOME/.config/zsh/aliases:$PATH"
 alias vim="nvim"
 alias vi="nvim"
 alias la="lsd -a"
@@ -60,6 +60,11 @@ alias glances="glances -1"
 alias fm="vifm ."
 alias please="sudo"
 alias tm="mv -t /tmp"
+
+c() {
+  cd $@
+  ls
+}
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export QT_STYLE_OVERRIDE=kvantum

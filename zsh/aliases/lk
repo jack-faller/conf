@@ -1,0 +1,6 @@
+#! /bin/sh
+if [ -d "$1" ]; then
+    lsd "$1"
+elif [ -f "$1" ]; then
+    nvim "$1"
+fi

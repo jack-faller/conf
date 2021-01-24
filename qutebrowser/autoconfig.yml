@@ -20,12 +20,14 @@ settings:
       normal:
         '#': tab-focus
         ;gv: hint -r links spawn sh '-c' '~/.config/zsh/aliases/pla {hint-url}'
-        ;v: hint links spawn mpv {hint-url}
-        <Alt+b>: buffer
+        ;v: hint links spawn detach mpv {hint-url}
+        <Alt+b>: spawn --userscript ~/.config/qutebrowser/get.sh
         <Alt+f>: hint links spawn --detach mpv --force-window yes {hint-url}
         <Alt+j>: scroll down
         <Alt+k>: scroll up
         <Space>: tab-focus last
+        B: spawn --userscript ~/.config/qutebrowser/stow.sh -o
+        b: spawn --userscript ~/.config/qutebrowser/stow.sh
         et: open -t youtube.com/feed/subscriptions
         j: run-with-count 5 scroll down
         k: run-with-count 5 scroll up

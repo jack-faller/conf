@@ -1,12 +1,11 @@
 #! /bin/sh
 sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
-sleep 3s
+sleep 1s
+pw-jack carla ~/Projects/default.carxp &
 qutebrowser &
 steam &
 discord &
-pulseaudio &
-pulseeffects &
 qbittorrent &
 while :
 do

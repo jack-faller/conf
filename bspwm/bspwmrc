@@ -29,12 +29,12 @@ bspc rule -a mplayer2  state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-
 bspc rule -a mpv                 state=fullscreen
 bspc rule -a Gnome-mines         state=floating
 bspc rule -a Steam               desktop='^3' follow=off
 bspc rule -a discord             desktop='^4' follow=off
 bspc rule -a Pulseeffects        desktop='^5' follow=off
+bspc rule -a Carla2              desktop='^5' follow=off
 bspc rule -a 'qBittorrentv4.2.5' desktop='^6' follow=off
 bspc rule -a 'qBittorrent'       desktop='^6' follow=off
 bspc rule -a 'qbittorrent'       desktop='^6' follow=off

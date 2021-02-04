@@ -2,8 +2,7 @@
 pgrep backgroundScrip | sed "s/$$//g" | xargs kill 2> /dev/null
 sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
-sleep 3s
-pulseaudio &
+sleep 1s
 udiskie -N &
 gammastep -l 50.721680:-1.878530 &
 export QT_QPA_PLATFORMTHEME="qt5ct"

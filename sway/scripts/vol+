@@ -3,10 +3,10 @@
 
 volume=$(pamixer --get-volume)
 
-if [[ $(( $volume + 10 )) -ge 100 ]]; then
+if [[ $(( $volume + 5 )) -ge 100 ]]; then
 	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ 100%
-	volume=100
+	volume=50
 else
-	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ +10%
-	volume=$(($volume + 10))
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ +5%
+	volume=$(($volume + 5))
 fi

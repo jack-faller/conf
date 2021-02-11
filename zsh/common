@@ -62,10 +62,12 @@ alias fm="vifm ."
 alias please="sudo"
 alias tm="mv -t /tmp"
 
-c() {
-  cd $@
-  ls
+cd-then () {
+  cd $2
+  eval $1
 }
+
+alias cd="cd-then 'lsd -v'"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export QT_STYLE_OVERRIDE=kvantum

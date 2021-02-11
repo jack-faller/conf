@@ -10,6 +10,6 @@ fi
 
 if [ "$url" != "" ]; then
     echo "open -t $url" >> "$QUTE_FIFO"
-    grep -F -x -v "$line" "$QUTE_CONFIG_DIR/stowed" > "$QUTE_CONFIG_DIR/tmp_stowed" #remove url
+    grep -x -v --fixed-strings "$line" "$QUTE_CONFIG_DIR/stowed" > "$QUTE_CONFIG_DIR/tmp_stowed" #remove url
     mv "$QUTE_CONFIG_DIR/tmp_stowed" "$QUTE_CONFIG_DIR/stowed"
 fi

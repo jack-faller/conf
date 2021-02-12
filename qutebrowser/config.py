@@ -5,4 +5,4 @@ config.bind(':', 'set statusbar.show always;; set-cmd-text :')
 config.bind('/', 'set statusbar.show always;; set-cmd-text /')
 config.bind('<Escape>', 'mode-enter normal;; set statusbar.show in-mode', mode='command')
 config.bind('<Return>', 'command-accept;; set statusbar.show in-mode', mode='command')
-c.editor.command = ["alacritty", "-e", "zsh", "-c", "cat ~/.cache/wal/sequences ; nvim {file} -c \"normal {line}G{column0}l\""]
+c.editor.command = ["alacritty", "--class", "floating", "-e", "zsh", "-c", "cat ~/.cache/wal/sequences ; nvim {file} -c 'normal {line}G{column0}l'", "2> /dev/null"]

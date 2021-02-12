@@ -132,8 +132,9 @@
 #
     bindsym Print exec grim - | wl-copy
     bindsym Shift+Print exec grim -g "$(slurp)" - | wl-copy
-    bindsym $mod+Print exec grim $(xdg-user-dir PICTURES)/$(date +'%s_grim.png')
-    bindsym $mod+Shift+Print exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'%s_grim.png')
+    set $get_name $(zenity --entry --text "screenshot name:" | sed 's/^$/'"$(date)"'_grim/').png
+    bindsym $mod+Print exec grim "$(xdg-user-dir PICTURES)/$get_name"
+    bindsym $mod+Shift+Print exec grim -g "$(slurp)" "$(xdg-user-dir PICTURES)/$get_name"
 
 # Passwords:
     bindsym $mod+SemiColon exec passmenu --type

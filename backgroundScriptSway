@@ -6,8 +6,3 @@ sleep 1s
 udiskie -N &
 gammastep -l 50.721680:-1.878530 &
 export QT_QPA_PLATFORMTHEME="qt5ct"
-while :
-do
-	sleep 10m
-	wal -i "$HOME/Pictures/wallpapers"
-done

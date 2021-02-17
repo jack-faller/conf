@@ -62,8 +62,6 @@ endif
 "auto-complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 so ~/.config/nvim/CoC.vim
-"change coc colours
-hi CocFloating ctermbg=black
 "coc spelling
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
@@ -105,14 +103,15 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-"change tab colours
-hi TabLine cterm=NONE ctermbg=0 ctermfg=4
-hi TabLineFill ctermbg=4 ctermfg=0
-hi TabLineSel ctermbg=NONE ctermfg=8
-
 "this needs to be at the bottom
 colorscheme wal
 hi CursorLine cterm=NONE
 set cmdheight=1 "merge text and cmd at bottom
+"change tab colours
+hi TabLine cterm=NONE ctermbg=0 ctermfg=4
+hi TabLineFill ctermbg=4 ctermfg=0
+hi TabLineSel ctermbg=NONE ctermfg=8
+"change coc colours
+hi CocFloating ctermbg=black
 
 so ~/.config/nvim/maps.vim "maps

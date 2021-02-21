@@ -2,7 +2,7 @@
 sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
 sleep 1s
-pw-jack carla ~/Projects/default.carxp &
+pulseeffects &
 qutebrowser &
 steam &
 discord &

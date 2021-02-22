@@ -17,6 +17,8 @@ settings:
     global: true
   bindings.commands:
     global:
+      command:
+        <Escape>: mode-leave
       normal:
         '#': tab-focus
         ;gv: hint -r links spawn sh '-c' '~/.config/zsh/aliases/pla {hint-url}'
@@ -28,9 +30,12 @@ settings:
         <Space>: tab-focus last
         B: spawn --userscript ~/.config/qutebrowser/stow.sh -o
         b: spawn --userscript ~/.config/qutebrowser/stow.sh
+        e4: open -t 4chan.org/g/catalog
         et: open -t youtube.com/feed/subscriptions
         j: run-with-count 5 scroll down
         k: run-with-count 5 scroll up
+  content.blocking.enabled:
+    global: true
   content.headers.accept_language:
     global: en-US,en;q=0.5
   content.headers.custom:
@@ -39,11 +44,16 @@ settings:
   content.headers.user_agent:
     global: Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko)
       {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}
-  content.host_blocking.enabled:
-    global: true
   content.notifications:
+    https://alison.com: false
+    https://de.aliexpress.com: false
+    https://www.aliexpress.com: false
     https://www.reddit.com: false
     https://www.wcostream.com: false
+  content.proxy:
+    global: system
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: true
   downloads.location.directory:
     global: ~/Downloads
   editor.command:
@@ -54,8 +64,14 @@ settings:
     - '{file}'
     - -c
     - normal {line}G{column0}l
+  fonts.web.family.fixed:
+    global: Iosevka
+  hints.auto_follow:
+    global: always
   hints.chars:
     global: abcdefghijklmnopqrstuvwxyz
+  scrolling.bar:
+    global: overlay
   spellcheck.languages:
     global:
     - en-GB
@@ -63,5 +79,7 @@ settings:
     global: in-mode
   tabs.new_position.unrelated:
     global: next
+  tabs.position:
+    global: top
   tabs.show:
-    global: always
+    global: multiple

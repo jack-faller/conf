@@ -2,14 +2,14 @@
 
 brightness_file=$HOME/.config/sway/scripts/brightness_value
 
-brightness_percent=$(cat $brightness_file || echo "50")
+brightness_percent=$(cat "$brightness_file" || echo "50")
 
-new_brightness=$(($brightness_percent - 10))
+new_brightness=$((brightness_percent - 10))
 
 if [ "$new_brightness" -le 0 ]; then
 	brightnessctl s 0
-	echo 0 > $brightness_file
+	echo 0 > "$brightness_file"
 else
-	brightnessctl s $new_brightness%
-	echo $new_brightness > $brightness_file
+	brightnessctl s "$new_brightness"%
+	echo "$new_brightness" > "$brightness_file"
 fi

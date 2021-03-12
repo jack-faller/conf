@@ -2,11 +2,10 @@
 # requires pamixer package to read out volume
 
 volume=$(pamixer --get-volume)
+volume=$(((volume + 4) / 5 * 5)) #round up to nearest 5
 
-if [[ $(( $volume - 5 )) -le 0 ]]; then
+if [ $(( volume - 5 )) -le 0 ]; then
 	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ 0%
-	volume=0
 else
-	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ -5%
-	volume=$(($volume - 5))
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ $((volume - 5))%
 fi

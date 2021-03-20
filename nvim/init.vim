@@ -81,7 +81,8 @@ let g:indentguides_tabchar = '|'
 
 Plug 'dylanaraps/wal.vim' "pywal colours
 
-Plug 'preservim/nerdcommenter' "comment lines
+"Plug 'preservim/nerdcommenter' "comment lines
+Plug 'tpope/vim-commentary'
 
 "optional color previews, i do not use as would require termguicolors which messes with my wal colorscheme
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' } "show colours

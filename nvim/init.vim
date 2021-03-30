@@ -45,6 +45,8 @@ Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
 Plug 'kovisoft/slimv'
+let g:slimv_leader='\'
+let g:paredit_leader='\'
 
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'junegunn/vim-easy-align'

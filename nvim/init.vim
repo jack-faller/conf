@@ -44,6 +44,8 @@ so ~/.config/nvim/local_plugins
 Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
+Plug 'vlime/vlime'
+Plug 'kovisoft/paredit'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-peekaboo'

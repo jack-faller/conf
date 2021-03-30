@@ -75,9 +75,8 @@ nmap <leader>a <Plug>(coc-codeaction-selected)
 Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
 
 Plug 'mbbill/undotree'
-
+Plug 'wesQ3/vim-windowswap'
 Plug 'tpope/vim-fugitive' "git commands
-
 Plug 'jeetsukumaran/vim-indentwise' "move by indent
 
 Plug 'thaerkh/vim-indentguides' "indent guides

@@ -44,10 +44,7 @@ so ~/.config/nvim/local_plugins
 Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
-Plug 'vlime/vlime', {'rtp': 'vim/'}
-let g:vlime_leader='\|'
-Plug 'guns/vim-sexp'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'kovisoft/slimv'
 
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'junegunn/vim-easy-align'

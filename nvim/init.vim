@@ -45,13 +45,16 @@ Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
 Plug 'vlime/vlime'
-Plug 'kovisoft/paredit'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-peekaboo'
 
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-surround' "delete surrounding
+Plug 'tpope/vim-repeat'
 Plug 'inkarkat/vim-ReplaceWithRegister'
 Plug 'wellle/targets.vim'
 Plug 'preservim/nerdtree'

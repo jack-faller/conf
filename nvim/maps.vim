@@ -123,4 +123,4 @@ autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :sp<CR>:terminal cargo build 
 
 autocmd FileType rust inoremap <silent> <Home> <Esc>Idbg!(&<Esc>A);
 
-autocmd FileType lisp nnoremap <silent> \\ :sb [Command Line]<CR>
+autocmd FileType lisp nnoremap <silent> <Insert> :sb [Command Line]<CR>

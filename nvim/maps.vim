@@ -107,14 +107,14 @@ nnoremap <leader>Gs :G status<cr>
 
 autocmd FileType cpp inoremap <silent> <Home> <Esc>Istd::cout << <esc>A << '\n';
 autocmd FileType cpp inoremap <silent> <S-Home> <Esc>_v$:s/,/ << ' ' << /g<CR>Istd::cout << <esc>A << '\n';
-"cs
+
+"c#
 autocmd FileType cs noremap  <F6>     :w<CR>:sp :terminal dotnet build<CR>
 autocmd FileType cs inoremap <F6>     <esc>:w<CR>:sp :terminal dotnet build<CR>
 autocmd FileType cs noremap  <silent> <F5> :w<CR>:sp :terminal dotnet run<CR><CR>
 autocmd FileType cs inoremap <silent> <F5> <esc>:w<CR>:sp :terminal dotnet run<CR><CR>
 autocmd FileType cs inoremap <silent> <Home> <Esc>IConsole.WriteLine(<Esc>A.ToString());
 
-"rust
 autocmd FileType rust noremap <F5> :wa <bar> :sp<CR>:terminal cargo run <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 autocmd FileType rust noremap <F6> :wa <bar> :sp<CR>:terminal cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 
@@ -122,3 +122,5 @@ autocmd FileType rust noremap! <F5> <Esc>:wa <bar> :sp<CR>:terminal cargo run <C
 autocmd FileType rust noremap! <F6> <Esc>:wa <bar> :sp<CR>:terminal cargo build <CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>G
 
 autocmd FileType rust inoremap <silent> <Home> <Esc>Idbg!(&<Esc>A);
+
+autocmd FileType lisp nnoremap <silent> \\ :sb [Command Line]<CR>

@@ -44,10 +44,15 @@ so ~/.config/nvim/local_plugins
 Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
-Plug 'vlime/vlime', {'rtp': 'vim/'}
-let g:vlime_leader='\|'
+Plug 'kovisoft/slimv'
+let g:slimv_leader='\'
+let g:paredit_mode=0
+autocmd FileType lisp set noshowcmd "hide the command in the bottom right, as they flash f^[
+let g:slimv_repl_split=0
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
+let maplocalleader=" "
+
 
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'junegunn/vim-easy-align'

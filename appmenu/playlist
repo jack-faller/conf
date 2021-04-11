@@ -1,4 +1,4 @@
-out=`mpv --playlist=$HOME/Videos/playlist.txt | tac - | sed '1q'`
-if [ "$out" = 'Exiting... (End of file)' ]; then
+out=$(mpv --playlist="$HOME/Videos/playlist.txt" | grep '^Saving state\.$')
+if [ "$out" != '' ]; then
     echo "" > ~/Videos/playlist.txt
 fi;

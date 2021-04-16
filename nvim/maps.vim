@@ -3,8 +3,9 @@ nnoremap Y y$
 "paste from paste register
 noremap <M-p> "0p
 noremap <M-P> "0P
-"clipboard wayland
-noremap <leader>gc :call  system("wl-copy --trim-newline", @")<CR>
+"clipboard
+noremap gp :let @+=@"<CR>
+noremap gP :let @*=@"<CR>
 
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {; {<CR>};<ESC>O

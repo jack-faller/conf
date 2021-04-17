@@ -45,6 +45,7 @@ Plug 'vim-airline/vim-airline'
 let g:airline_section_z = "%#__accent_bold#%l%#__restore__#%#__accent_bold#/%L%#__restore__# %v"
 
 Plug 'kovisoft/slimv'
+autocmd BufNewFile,BufRead *.asd set filetype=lisp
 let g:slimv_leader='\'
 let g:paredit_mode=0
 autocmd FileType lisp set noshowcmd "hide the command in the bottom right, as they flash f^[

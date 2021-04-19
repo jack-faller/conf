@@ -1,6 +1,7 @@
 config.load_autoconfig()
 config.bind('o', 'set statusbar.show always;; set-cmd-text -s :open')
 config.bind('O', 'set statusbar.show always;; set-cmd-text -s :open -t')
+config.bind('T', 'set statusbar.show always;; set-cmd-text -s :tab-focus')
 config.bind(':', 'set statusbar.show always;; set-cmd-text :')
 config.bind('/', 'set statusbar.show always;; set-cmd-text /')
 config.bind('<Escape>', 'mode-enter normal;; set statusbar.show in-mode', mode='command')

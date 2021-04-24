@@ -14,7 +14,7 @@ set {
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-    $menu dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
+    $menu dmenu -fn "Iosevka:pixelsize=9" -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
 }
 
 xwayland enable

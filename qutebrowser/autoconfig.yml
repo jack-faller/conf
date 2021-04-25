@@ -34,6 +34,8 @@ settings:
         et: open -t youtube.com/feed/subscriptions
         j: run-with-count 5 scroll down
         k: run-with-count 5 scroll up
+  colors.webpage.preferred_color_scheme:
+    global: dark
   content.blocking.enabled:
     global: true
   content.headers.accept_language:
@@ -44,7 +46,9 @@ settings:
   content.headers.user_agent:
     global: Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko)
       {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}
-  content.notifications:
+  content.media.audio_capture:
+    https://plymouth.zoom.us: true
+  content.notifications.enabled:
     https://alison.com: false
     https://de.aliexpress.com: false
     https://www.aliexpress.com: false
@@ -64,14 +68,18 @@ settings:
     - '{file}'
     - -c
     - normal {line}G{column0}l
+  fonts.tabs.selected:
+    global: FreeSans
+  fonts.tabs.unselected:
+    global: FreeSans
   fonts.web.family.fixed:
-    global: Iosevka
+    global: iosevka
   hints.auto_follow:
     global: always
   hints.chars:
     global: abcdefghijklmnopqrstuvwxyz
   scrolling.bar:
-    global: overlay
+    global: always
   spellcheck.languages:
     global:
     - en-GB
@@ -79,7 +87,5 @@ settings:
     global: in-mode
   tabs.new_position.unrelated:
     global: next
-  tabs.position:
-    global: top
   tabs.show:
     global: multiple

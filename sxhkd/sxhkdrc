@@ -6,7 +6,7 @@ super + Return
 # program launcher
 super + @space
     . "${HOME}/.cache/wal/colors.sh"; \
-    dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
+    dmenu_run -fn "Iosevka:pixelsize=12" -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
 
 ctrl + alt + Delete
     sudo reboot

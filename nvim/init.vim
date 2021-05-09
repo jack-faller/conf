@@ -80,6 +80,7 @@ nmap <leader>a <Plug>(coc-codeaction-selected)
 
 Plug 'sheerun/vim-polyglot' "lots of syntax highlighting
 
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree'
 Plug 'wesQ3/vim-windowswap'
 Plug 'tpope/vim-fugitive' "git commands

@@ -11,11 +11,6 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {; {<CR>};<ESC>O
 
 "splits
-nnoremap <silent> <C-J>     <C-W><C-J>
-nnoremap <silent> <C-K>     <C-W><C-K>
-nnoremap <silent> <C-L>     <C-W><C-L>
-nnoremap <silent> <C-H>     <C-W><C-H>
-nnoremap <silent> <S-Up>    <C-W>+
 nnoremap <silent> <S-Down>  <C-W>-
 nnoremap <silent> <S-Left>  <C-W><
 nnoremap <silent> <S-Right> <C-W>>

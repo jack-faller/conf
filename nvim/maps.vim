@@ -39,6 +39,17 @@ map <silent> <C-M-j> <Plug>(IndentWiseBlockScopeBoundaryEnd)
 map <silent> <C-M-k> <Plug>(IndentWiseBlockScopeBoundaryBegin)
 map <silent> <C-M-l> <Plug>(IndentWisePreviousGreaterIndent)
 
+map [- <Plug>(IndentWisePreviousLesserIndent)
+map [= <Plug>(IndentWisePreviousEqualIndent)
+map [+ <Plug>(IndentWisePreviousGreaterIndent)
+map ]- <Plug>(IndentWiseNextLesserIndent)
+map ]= <Plug>(IndentWiseNextEqualIndent)
+map ]+ <Plug>(IndentWiseNextGreaterIndent)
+map [_ <Plug>(IndentWisePreviousAbsoluteIndent)
+map ]_ <Plug>(IndentWiseNextAbsoluteIndent)
+map [% <Plug>(IndentWiseBlockScopeBoundaryBegin)
+map ]% <Plug>(IndentWiseBlockScopeBoundaryEnd)
+
 "move files
 noremap <silent> <M-]> :n<CR>
 noremap <silent> <M-[> :prev<CR>

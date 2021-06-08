@@ -1,16 +1,16 @@
 #! /bin/sh
 sleep 2s
-wal -i "$HOME/Pictures/wallpapers"
+wal -a 90 -i "$HOME/Pictures/wallpapers"
 sleep 1s
 pulseeffects &
 qutebrowser &
 steam &
 discord &
 qbittorrent &
-while :
-do
-	sleep 10m
-	eval $(xdotool getmouselocation --shell)
-	wal -i "$HOME/Pictures/wallpapers"
-	xdotool mousemove $X $Y
-done
+# while :
+# do
+# 	sleep 10m
+# 	eval $(xdotool getmouselocation --shell)
+# 	wal -a 90 -i "$HOME/Pictures/wallpapers"
+# 	xdotool mousemove $X $Y
+# done

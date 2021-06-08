@@ -1,7 +1,7 @@
 #! /bin/sh
 pgrep backgroundScrip | sed "s/$$//g" | xargs kill 2> /dev/null
 sleep 2s
-wal -i "$HOME/Pictures/wallpapers"
+wal -a 90 -i "$HOME/Pictures/wallpapers"
 sleep 1s
 qbittorrent &
 udiskie -N &

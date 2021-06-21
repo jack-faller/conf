@@ -7,10 +7,10 @@ qutebrowser &
 steam &
 discord &
 qbittorrent &
-while :
-do
-	sleep 10m
-	eval $(xdotool getmouselocation --shell)
-	wal -i "$HOME/Pictures/wallpapers"
-	xdotool mousemove $X $Y
-done
+# while :
+# do
+# 	sleep 10m
+# 	eval $(xdotool getmouselocation --shell)
+# 	wal -i "$HOME/Pictures/wallpapers"
+# 	xdotool mousemove $X $Y
+# done

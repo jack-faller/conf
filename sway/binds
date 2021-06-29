@@ -137,7 +137,7 @@
     bindsym $mod+Shift+Print exec grim -g "$(slurp)" "$(xdg-user-dir PICTURES)/screenshots/$get_name"
 
 # Passwords:
-    bindsym $mod+SemiColon exec passmenu --type
+    bindsym $mod+SemiColon exec passmenu
 
 # Mako:
     bindsym Ctrl+Space exec makoctl dismiss

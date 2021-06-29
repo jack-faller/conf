@@ -138,7 +138,7 @@ super + Caps_Lock
 
 #pass
 super + semicolon
-        passmenu --type
+        passmenu
 
 #reload net
 super + n

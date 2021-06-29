@@ -1,4 +1,4 @@
 texfile="$1"
 pdffile=$(echo "$1" | sed 's/\.tex$/.pdf/')
 echo $pdffile
-echo "$texfile" | entr -s "pkill evince; pdflatex '$texfile'; evince '$pdffile' &"
+echo "$texfile" | entr -s "pkill evince ; pdflatex -halt-on-error '$texfile' ; evince '$pdffile' &"

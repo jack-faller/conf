@@ -19,6 +19,8 @@ config.bind("<Space>", "tab-focus last")
 config.bind("B", "spawn --userscript ~/.config/qutebrowser/stow.sh -o")
 config.bind("b", "spawn --userscript ~/.config/qutebrowser/stow.sh")
 config.bind("et", "open -t youtube.com/feed/subscriptions")
+config.bind("el", "open -t https://www.livechart.me/users/xeere/library?completed=false&considering=true&layout=grid")
+config.bind("eL", "open -t https://www.livechart.me/users/xeere/library?completed=false&considering=false&layout=grid")
 config.bind("j", "run-with-count 5 scroll down")
 config.bind("k", "run-with-count 5 scroll up")
 

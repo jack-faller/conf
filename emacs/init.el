@@ -47,6 +47,8 @@
   :config
   (global-evil-surround-mode 1))
 
+; (pkg targets :config (targets-setup))
+
 ; centre line on scroll
 (add-hook 'post-command-hook #'recenter)
 
@@ -73,12 +75,12 @@
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 
-(setq evil-emacs-state-cursor '("black" box)
-      evil-normal-state-cursor '("black" box)
-      evil-visual-state-cursor '("black" box)
-      evil-insert-state-cursor '("black" bar)
-      evil-replace-state-cursor '("black" bar)
-      evil-operator-state-cursor '("black" hollow))
+(setq evil-emacs-state-cursor 'box
+      evil-normal-state-cursor 'box
+      evil-visual-state-cursor 'box
+      evil-insert-state-cursor 'bar
+      evil-replace-state-cursor 'bar
+      evil-operator-state-cursor 'hollow)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

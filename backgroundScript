@@ -2,6 +2,7 @@
 sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
 sleep 1s
+xset -b &
 pulseeffects &
 qutebrowser &
 steam &

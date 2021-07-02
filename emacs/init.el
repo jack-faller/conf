@@ -2,16 +2,29 @@
 (toggle-scroll-bar -1)
 (tool-bar-mode -1)
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
-(unless package-archive-contents
-  (package-refresh-contents))
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 
+(straight-use-package 'use-package)
 (defmacro pkg (name &rest args)
-  `(use-package ,name :ensure t ,@args))
+  `(use-package ,name :straight t ,@args))
+(defmacro pkg-github (name repo &rest args)
+  `(use-package ,name
+                :straight (el-patch
+                            :type git
+                            :host github
+                            :repo ,repo)
+                ,@args))
 
 (pkg goto-chg)
 (pkg undo-tree
@@ -47,7 +60,8 @@
   :config
   (global-evil-surround-mode 1))
 
-; (pkg targets :config (targets-setup))
+(pkg targets "noctuid/targets.el"
+     :config (targets-setup))
 
 ; centre line on scroll
 (add-hook 'post-command-hook #'recenter)
@@ -93,4 +107,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ ) 

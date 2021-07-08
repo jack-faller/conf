@@ -47,6 +47,16 @@
      (evil-undo-system 'undo-tree)
      (evil-set-undo-system 'undo-tree)
      (evil-ex-substitute-global t)
+     (evil-want-C-u-scroll t)
+     (evil-want-visual-char-semi-exclusive t)
+     (evil-want-Y-yank-to-eol t)
+     (evil-ex-search-vim-style-regexp t)
+     (evil-ex-substitute-global t)
+     (evil-ex-visual-char-range t)  ; column range for ex commands this doesn't work
+     ;; more vim-like behavior
+     (evil-symbol-word-search t)
+     ;; don't activate mark on shift-click
+     (shift-select-mode nil)
      (setq evil-emacs-state-cursor 'box
 	   evil-normal-state-cursor 'box
 	   evil-visual-state-cursor 'box
@@ -84,7 +94,8 @@
      (evil-define-key 'visual 'global (kbd "ge") 'evil-eval)
      (evil-define-key 'normal 'global (kbd "gs") 'evil-replace-with-reg)
      (evil-define-key 'visual 'global (kbd "gs") 'evil-replace-with-reg)
-     (evil-define-key 'normal 'global (kbd "C-u") 'evil-scroll-up)
+     (defun subst-% () (interactive) (evil-ex (concat range "s/")))
+     (evil-define-key 'normal 'global (kbd "S") 'subst-%)
      (evil-mode 1))
 
 (pkg auto-package-update

@@ -1,2 +1,5 @@
 #! /bin/sh
-ssh-add ~/.ssh/myKey
+if [ ! -e /tmp/loaded-ssh-key ]; then
+    touch /tmp/loaded-ssh-key
+    ssh-add ~/.ssh/myKey
+fi

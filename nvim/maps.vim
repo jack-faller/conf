@@ -97,12 +97,10 @@ fu! CommandMaps()
   map <buffer> s s<C-c>
   map <buffer> o o<C-c>
   map <buffer> O O<C-c>
-  map <buffer> <CR> <CR><C-c>
+  map <buffer> <CR> <C-c><CR>
   map <buffer> <ESC> <C-q>
 endfunction
-
-
-nmap S :%s//g<Left><Left>
+nmap S :%s/
 
 nnoremap <M-u> :UndotreeToggle<cr>
 nnoremap <F2> :NERDTreeToggle<cr>

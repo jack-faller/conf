@@ -89,10 +89,19 @@ noremap <silent> <C-q> :q<CR>
 tnoremap <C-q> <C-\><C-n>:q<CR>
 
 "better cmd line
-nnoremap <silent> : q::let b:coc_suggest_disable = 1<CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>i
-nnoremap <silent> <M-:> :
-nnoremap <silent> <M-/> q/:let b:coc_suggest_disable = 1<CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>i
-nnoremap <silent> <M-?> q?:let b:coc_suggest_disable = 1<CR>:nnoremap <buffer> <C-v><Esc> :q<C-v><CR><CR>i
+cmap <silent> <ESC> <C-f>:call CommandMaps()<CR>
+fu! CommandMaps()
+  map <buffer> i i<C-c>
+  map <buffer> a a<C-c>
+  map <buffer> A A<C-c>
+  map <buffer> s s<C-c>
+  map <buffer> o o<C-c>
+  map <buffer> O O<C-c>
+  map <buffer> <CR> <CR><C-c>
+  map <buffer> <ESC> <C-q>
+endfunction
+
+
 nmap S :%s//g<Left><Left>
 
 nnoremap <M-u> :UndotreeToggle<cr>

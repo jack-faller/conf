@@ -94,7 +94,7 @@
      (evil-define-key 'visual 'global (kbd "ge") 'evil-eval)
      (evil-define-key 'normal 'global (kbd "gs") 'evil-replace-with-reg)
      (evil-define-key 'visual 'global (kbd "gs") 'evil-replace-with-reg)
-     (defun subst-% () (interactive) (evil-ex (concat range "s/")))
+     (defun subst-% () (interactive) (evil-ex "%s/"))
      (evil-define-key 'normal 'global (kbd "S") 'subst-%)
      (evil-mode 1))
 
@@ -164,6 +164,43 @@
 				slurp/barf-cp
 				additional
 				(escape insert))))
+
+(pkg which-key
+     :config (which-key-mode))
+
+(pkg ivy
+     :config
+     (ivy-mode))
+
+(pkg diminish
+     :demand t)
+
+(pkg eldoc
+     :ensure nil
+     :diminish eldoc-mode
+     :config
+     (setq eldoc-idle-delay 0.4))
+
+(pkg company
+     :custom
+     (company-idle-delay 0) ;; how long to wait until popup
+     ;; (company-begin-commands nil) ;; uncomment to disable popup
+     :config
+     (global-company-mode)
+     )
+
+(pkg yasnippet
+     :config
+     (yas-reload-all)
+     (add-hook 'prog-mode-hook 'yas-minor-mode)
+     (add-hook 'text-mode-hook 'yas-minor-mode))
+
+(pkg company-box
+  :hook (company-mode . company-box-mode))
+
+(pkg eglot)
+
+(pkg rust-mode)
 
 (add-to-list 'default-frame-alist '(font . "Iosevka 9"))
 (set-face-attribute 'default t :font "Iosevka")

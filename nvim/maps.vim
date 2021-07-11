@@ -66,7 +66,8 @@ inoremap <C-l> <Del>
 inoremap  
 
 "escape tab complete
-inoremap <A-t> <C-e>
+inoremap <M-Tab> <C-e>
+inoremap <A-t> <tab>
 
 "toggle hlsearch
 nnoremap <silent> <leader>th :set hls!<CR>

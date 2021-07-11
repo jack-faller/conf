@@ -90,13 +90,15 @@ tnoremap <C-q> <C-\><C-n>:q<CR>
 
 "better cmd line
 cmap <silent> <ESC> <C-f>:call CommandMaps()<CR>
+
 fu! CommandMaps()
-  map <buffer> i i<C-c>
-  map <buffer> a a<C-c>
-  map <buffer> A A<C-c>
-  map <buffer> s s<C-c>
-  map <buffer> o o<C-c>
-  map <buffer> O O<C-c>
+  "add 0<BS> to reset cmdline and update inccommand
+  map <buffer> i i<C-c>0<BS>
+  map <buffer> a a<C-c>0<BS>
+  map <buffer> A A<C-c>0<BS>
+  map <buffer> s s<C-c>0<BS>
+  map <buffer> o o<C-c>0<BS>
+  map <buffer> O O<C-c>0<BS>
   map <buffer> <CR> <C-c><CR>
   map <buffer> <ESC> <C-q>
 endfunction

@@ -16,6 +16,7 @@ set updatetime=300 "auto-complete update
 set timeoutlen=1500 "change speed of input timeout in normal mode
 set spell spelllang=en_gb
 set nohls
+set inccommand=nosplit
 
 "centre cursor
 augroup VCenterCursor

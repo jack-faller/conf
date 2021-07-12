@@ -89,7 +89,8 @@ noremap <silent> <C-q> :q<CR>
 tnoremap <C-q> <C-\><C-n>:q<CR>
 
 "better cmd line
-cmap <silent> <ESC> <C-f>:call CommandMaps()<CR>
+set cedit=<ESC>
+autocmd CmdwinEnter * call CommandMaps()
 
 fu! CommandMaps()
   "add 0<BS> to reset cmdline and update inccommand
@@ -99,6 +100,9 @@ fu! CommandMaps()
   map <buffer> s s<C-c>0<BS>
   map <buffer> o o<C-c>0<BS>
   map <buffer> O O<C-c>0<BS>
+  map <buffer> C C<C-c>0<BS>
+  " TODO make this work somehow
+  " au InsertEnter <buffer> norm 
   map <buffer> <CR> <C-c><CR>
   map <buffer> <ESC> <C-q>
 endfunction

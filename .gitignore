@@ -33,4 +33,5 @@
 !kminesrc
 !backgroundScriptSway
 !backgroundScript
+!rustfmt
 !rustfmt/**

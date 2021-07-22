@@ -60,7 +60,7 @@ alias vifm="~/.config/vifm/scripts/vifmrun"
 alias glances="glances -1"
 alias fm="vifm ."
 alias please="sudo"
-alias tm="mv -t /tmp"
+alias tm="mv --verbose --backup --target-directory ~/trash"
 
 cd-then () {
   cd $2
@@ -111,3 +111,4 @@ if command -v tmux >/dev/null 2>&1 && [ "${DISPLAY}" ]; then
         [ -z "${TMUX}" ] && (tmux attach >/dev/null 2>&1 || tmux)
     fi
 fi
+al

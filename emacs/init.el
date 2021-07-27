@@ -33,7 +33,7 @@
   `(use-package ,name :straight t ,@args))
 (defmacro pkg-github (name repo &rest args)
   `(use-package ,name
-     :straight (el-patch
+     :straight (,name
 		:type git
 		:host github
 		:repo ,repo)

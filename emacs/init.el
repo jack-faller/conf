@@ -2,6 +2,12 @@
 (toggle-scroll-bar -1)
 (tool-bar-mode -1)
 
+;; disable gc during startup
+(setq startup/gc-cons-threshold gc-cons-threshold)
+(setq gc-cons-threshold most-positive-fixnum)
+(defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
+(add-hook 'emacs-startup-hook 'startup/reset-gc)
+
 (setq show-paren-delay 0)
 (show-paren-mode)
 (electric-pair-mode)
@@ -33,10 +39,16 @@
 		:repo ,repo)
      ,@args))
 
-(pkg diminish
-     :demand t)
+(pkg auto-package-update
+     :init
+     (setq auto-package-update-delete-old-versions t)
+     (setq auto-package-update-hide-results t)
+     :config
+     (auto-package-update-maybe))
 
+(pkg diminish)
 (pkg goto-chg)
+
 (pkg undo-tree
      :diminish undo-tree-mode
      :init
@@ -108,6 +120,7 @@
      (defun subst-% () (interactive) (evil-ex "%s/"))
      (evil-define-key 'normal 'global
        "S" 'subst-%
+       "gb" 'ibuffer
        (leader ";") 'execute-extended-command)
      (evil-define-key nil 'global
       (kbd "C-h") 'evil-window-left
@@ -118,13 +131,6 @@
       (kbd "M-RET") 'evil-window-vnew
       (kbd "M-DEL") 'evil-window-new)
      (evil-mode 1))
-
-(pkg auto-package-update
-     :init
-     (setq auto-package-update-delete-old-versions t)
-     (setq auto-package-update-hide-results t)
-     :config
-     (auto-package-update-maybe))
 
 (pkg evil-surround
      :config
@@ -286,6 +292,10 @@
        (leader "r") 'lsp-rename
        "K" 'lsp-describe-thing-at-point))
 
+(pkg dashboard
+  :config
+  (dashboard-setup-startup-hook))
+
 (add-to-list 'default-frame-alist '(font . "Iosevka 9"))
 (set-face-attribute 'default t :font "Iosevka")
 
@@ -293,16 +303,3 @@
 (setq-default display-line-numbers t
 	      display-line-numbers-widen t
 	      display-line-numbers-type 'relative)
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages '(centered-scroll lispyville evil-surround lispy evil)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

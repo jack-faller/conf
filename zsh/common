@@ -60,7 +60,7 @@ alias vifm="~/.config/vifm/scripts/vifmrun"
 alias glances="glances -1"
 alias fm="vifm ."
 alias please="sudo"
-alias tm="mv -t /tmp"
+alias tm="mv --verbose --backup --target-directory ~/trash"
 
 cd-then () {
   cd $2

@@ -1,0 +1,1 @@
+QT_QPA_PLATFORM=xcb dolphin-emu "$HOME/Downloads/Rhythm Heaven Fever (SOME01).iso" &

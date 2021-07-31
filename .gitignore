@@ -18,6 +18,7 @@
 !mako/**
 !mpv
 !mpv/**
+mpv/watch_later
 !nvim
 !nvim/CoC.vim
 !nvim/init.vim
@@ -32,12 +33,14 @@
 !qutebrowser/config.py
 !sway
 !sway/**
+sway/scripts/brightness_value
 !sxhkd
 !sxhkd/**
 !tmux
 !tmux/**
 !vifm
 !vifm/**
+vifm/vifminfo.json
 !waybar
 !waybar/**
 !x

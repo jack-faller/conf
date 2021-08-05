@@ -7,7 +7,8 @@ pulseeffects &
 qutebrowser &
 steam &
 discord &
-qbittorrent &
+transmission-gtk &
+automatic -f -c ~/.config/automatic/automatic.conf > /tmp/automatic.log &
 # while :
 # do
 # 	sleep 10m

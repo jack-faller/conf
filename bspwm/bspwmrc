@@ -40,3 +40,4 @@ bspc rule -a Carla2              desktop='^5' follow=off
 bspc rule -a 'qBittorrentv4.2.5' desktop='^6' follow=off
 bspc rule -a 'qBittorrent'       desktop='^6' follow=off
 bspc rule -a 'qbittorrent'       desktop='^6' follow=off
+bspc rule -a 'Transmission'       desktop='^6' follow=off

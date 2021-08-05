@@ -187,6 +187,7 @@
 		 :config (evil-exchange-install))
 
 (pkg centered-cursor-mode
+		 :diminish centered-cursor-mode
 		 :config
 		 (setq-default require-final-newline nil)
 		 (setq mode-require-final-newline nil)
@@ -199,12 +200,11 @@
 		 (setq evil-collection-setup-minibuffer t)
 		 :config
 		 (setq evil-collection-mode-list (delete 'lispy evil-collection-mode-list))
-		 ; (dolist (i evil-collection-minibuffer-maps)
-			;  (evil-define-key 'normal (eval i)
-			; 	 "cc" "cc<delete>"
-			; 	 "j" 'previous-complete-history-element
-			; 	 "k" 'next-complete-history-element))
-		 (evil-collection-init))
+		 (evil-collection-init)
+		 (dolist (i evil-collection-minibuffer-maps)
+			 (evil-define-key 'normal (eval i)
+				 "j" 'previous-complete-history-element
+				 "k" 'next-complete-history-element)))
 
 (pkg lispy
 		 :diminish lispy-mode
@@ -426,6 +426,7 @@
 		 (page-break-lines-mode))
 
 (pkg highlight-indent-guides
+		 :diminish highlight-indent-guides-mode
 		 :config
 		 (setq highlight-indent-guides-method 'character)
 		 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode))

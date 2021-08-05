@@ -7,7 +7,6 @@ pulseeffects &
 qutebrowser &
 # steam &
 discord --start-minimized &
-qbittorrent &
 transmission-gtk &
 automatic -f -c ~/.config/automatic/automatic.conf > /tmp/automatic.log &
 # while :

@@ -1,6 +1,8 @@
 *
 # !automatic
 # !automatic/**
+!transmission
+!transmission/settings.json
 !alacritty
 !alacritty/**
 !appmenu

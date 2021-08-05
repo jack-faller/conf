@@ -8,7 +8,7 @@ qutebrowser &
 # steam &
 discord --start-minimized &
 transmission-gtk &
-automatic -f -c ~/.config/automatic/automatic.conf > /tmp/automatic.log &
+automatic -c ~/.config/automatic/automatic.conf -l /tmp/automatic.log
 # while :
 # do
 # 	sleep 10m

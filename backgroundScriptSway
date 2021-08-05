@@ -4,7 +4,7 @@ sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
 sleep 1s
 transmission-gtk &
-automatic -f -c ~/.config/automatic/automatic.conf > /tmp/automatic.log &
+automatic -c ~/.config/automatic/automatic.conf -l /tmp/automatic.log
 udiskie -N &
 gammastep -l 50.721680:-1.878530 &
 export QT_QPA_PLATFORMTHEME="qt5ct"

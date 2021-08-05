@@ -18,6 +18,8 @@
 !foot/**
 !git
 !git/**
+!gtk
+!./gtk-3.0/settings.ini
 !kitty
 !kitty/**
 !mako

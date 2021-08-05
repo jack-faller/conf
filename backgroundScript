@@ -5,8 +5,8 @@ sleep 1s
 xset -b &
 pulseeffects &
 qutebrowser &
-steam &
-discord &
+# steam &
+discord --start-minimized &
 qbittorrent &
 # while :
 # do

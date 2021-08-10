@@ -75,15 +75,10 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 # Created by `userpath` on 2020-05-20 11:08:33
 export PATH="$PATH:/home/jack/.local/bin"
 
-# needs to be twice for some reason
-bindkey '^[[3~' vi-delete-char
-bindkey '^L' vi-delete-char
-bindkey '^H' vi-backward-delete-char
-
-bindkey '^[^j' vi-down-line-or-history
-bindkey '^[^k' vi-up-line-or-history
-bindkey '^[^h' vi-backward-char
-bindkey '^[^l' vi-forward-char
+# fix delete
+bindkey "^?" backward-delete-char
+bindkey "^W" backward-kill-word 
+bindkey "^U" backward-kill-line            
 
 #start ssh agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then

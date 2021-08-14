@@ -11,9 +11,6 @@
 !bspwm/**
 !dunst
 !dunst/**
-!emacs
-!emacs/init.el
-!emacs/init.el
 !foot
 !foot/**
 !git

@@ -1,6 +1,7 @@
 *
 # !automatic
 # !automatic/**
+!ssh_conf
 !transmission
 !transmission/settings.json
 !alacritty

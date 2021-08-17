@@ -10,6 +10,8 @@ c.editor.command = ["kitty", "--class", "floating", "zsh", "-c", "(cat ~/.cache/
 
 config.bind("#", "tab-focus")
 config.bind(";gv", "hint -r links spawn sh '-c' '~/.config/zsh/aliases/pla {hint-url}'")
+config.bind(";s", "hint all run open https://yandex.com/images/search?rpt=imageview&url={hint-url}")
+config.bind(";S", "hint all run open -t https://yandex.com/images/search?rpt=imageview&url={hint-url}")
 config.bind(";v", "hint links spawn detach mpv {hint-url}")
 config.bind("<Alt+b>", "spawn --userscript ~/.config/qutebrowser/get.sh")
 config.bind("<Alt+f>", "hint links spawn --detach mpv --force-window yes {hint-url}")

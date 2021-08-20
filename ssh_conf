@@ -1,3 +1,5 @@
 Host github.com
   IdentitiesOnly yes
   IdentityFile ~/.ssh/myKey
+
+AddKeysToAgent yes

@@ -5,6 +5,9 @@
     # Start a terminal
     bindsym $mod+Return exec $term
 
+    # Start Emacs
+    bindsym $mod+BackSpace exec emacsclient -c
+
     # Kill focused window
     bindsym $mod+w kill
 

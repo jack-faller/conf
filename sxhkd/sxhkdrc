@@ -3,6 +3,9 @@
 super + Return
     kitty || xterm
 
+super + BackSpace
+    emacsclient -c
+
 # program launcher
 super + @space
     . "${HOME}/.cache/wal/colors.sh"; \

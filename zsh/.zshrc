@@ -1,4 +1,4 @@
-source ~/.config/zsh/common
+source ~/.config/zsh/common.sh
 #load x setings
 xrdb ~/.config/Xresources
 

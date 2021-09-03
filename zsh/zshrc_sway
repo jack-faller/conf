@@ -1,4 +1,4 @@
-source ~/.config/zsh/common
+source ~/.config/zsh/common.sh
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   sway
 fi

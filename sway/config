@@ -24,6 +24,8 @@ include $HOME/.cache/wal/colors-sway
 for_window [title="mpv"] fullscreen enable
 for_window [app_id="zenity"] floating enable
 for_window [app_id="floating"] floating enable
+assign [title="Discord"] workspace 3
+assign [app_id="transmission"] workspace 4
 focus_wrapping no
 
 default_border pixel 3

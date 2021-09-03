@@ -46,4 +46,5 @@ smart_borders on
 exec_always "$HOME/.config/mako/launch.sh"
 
 include /etc/sway/config.d/*
-exec ~/.config/backgroundScriptSway
+exec gammastep -l 50.721680:-1.878530
+exec ~/.config/backgroundScript

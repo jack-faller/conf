@@ -1,18 +1,12 @@
 #! /bin/sh
+pgrep backgroundScript | sed "s/$$//g" | xargs kill 2> /dev/null
 sleep 2s
 wal -i "$HOME/Pictures/wallpapers"
 sleep 1s
-xset -b &
-pulseeffects &
 qutebrowser &
-# steam &
-discord --start-minimized &
 transmission-gtk &
-automatic -c ~/.config/automatic/automatic.conf -l /tmp/automatic.log
-# while :
-# do
-# 	sleep 10m
-# 	eval $(xdotool getmouselocation --shell)
-# 	wal -i "$HOME/Pictures/wallpapers"
-# 	xdotool mousemove $X $Y
-# done
+discord --start-minimized &
+emacs --daemon &
+automatic -c ~/.config/automatic/automatic.conf -l /tmp/automatic.log &
+udiskie -N &
+export QT_QPA_PLATFORMTHEME="qt5ct"

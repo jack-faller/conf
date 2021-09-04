@@ -5,8 +5,9 @@ wal -i "$HOME/Pictures/wallpapers"
 sleep 1s
 qutebrowser &
 transmission-gtk &
+# Wait for transmission to start.
+(sleep 5 && automatic -c ~/.config/automatic/automatic.conf -l /tmp/automatic.log) &
 discord --start-minimized &
 emacs --daemon &
-automatic -c ~/.config/automatic/automatic.conf -l /tmp/automatic.log &
 udiskie -N &
 export QT_QPA_PLATFORMTHEME="qt5ct"

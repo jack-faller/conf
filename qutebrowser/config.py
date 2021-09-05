@@ -6,7 +6,13 @@ config.bind(':', 'set statusbar.show always;; set-cmd-text :')
 config.bind('/', 'set statusbar.show always;; set-cmd-text /')
 config.bind('<Escape>', 'mode-enter normal;; set statusbar.show in-mode', mode='command')
 config.bind('<Return>', 'command-accept;; set statusbar.show in-mode', mode='command')
-c.editor.command = ["emacsclient", "-c", "--frame-parameters=((name . \"floating\") (width . 80) (height . 40))", "+{line}:{column}", "{file}"]
+c.editor.command = ["emacsclient", "-c",
+                    "--frame-parameters=((name . \"floating\") (width . 80) (height . 40))",
+                    "--eval",
+                    "(find-file \"{file}\")",
+                    "(text-mode)",
+                    "(goto-line {line})",
+                    "(right-char {column0})"]
 
 config.bind("#", "tab-focus")
 config.bind(";gv", "hint -r links spawn sh '-c' '~/.config/zsh/aliases/pla {hint-url}'")

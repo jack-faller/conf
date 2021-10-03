@@ -1,6 +1,6 @@
 *
-# !automatic
-# !automatic/**
+!automatic
+!automatic/**
 !make-conf-links.sh
 !ssh_conf
 !transmission

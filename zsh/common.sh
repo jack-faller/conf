@@ -61,6 +61,7 @@ alias glances="glances -1"
 alias fm="vifm ."
 alias please="sudo"
 alias tm="mv --verbose --backup --target-directory ~/trash"
+alias pass="EDITOR='nvim -u NONE' pass"
 
 cd-then () {
   cd $2

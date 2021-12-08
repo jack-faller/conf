@@ -151,3 +151,16 @@ super + n
 #reload pulse
 super + p
         pkill pulseeffects; wait $(pgrep pulseeffects); pulseeffects
+        
+#dunst
+ctrl + @space
+        dunstctl close
+
+ctrl + shift + @space
+        dunstctl close-all
+
+ctrl + shift + period
+        dunstctl context
+
+ctrl + shift + grave
+        dunstctl history-pop

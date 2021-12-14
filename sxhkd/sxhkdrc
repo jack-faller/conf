@@ -9,7 +9,7 @@ super + BackSpace
 # program launcher
 super + @space
     . "${HOME}/.cache/wal/colors.sh"; \
-    dmenu_run -fn "Iosevka:pixelsize=12" -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
+    dmenu_run -fn "Iosevka:pixelsize=12.5" -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
 
 ctrl + alt + Delete
     sudo reboot
@@ -18,7 +18,7 @@ ctrl + alt + Delete
 super + shift + @space
     . "${HOME}/.cache/wal/colors.sh"; \
     "$HOME/.config/appmenu/$(ls $HOME/.config/appmenu/ \
-        | dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15")"
+        | dmenu -fn "Iosevka:pixelsize=12.5" -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15")"
 
 # make sxhkd reload its configuration files:
 super + Escape

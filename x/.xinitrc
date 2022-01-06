@@ -39,7 +39,7 @@ xcompmgr &
 redshift -l 50.721680:-1.878530 &
 xset -b &
 xsetroot -cursor_name left_ptr &
-pulseeffects &
+easyeffects &
 ~/.config/backgroundScript &
 sxhkd &
 exec bspwm

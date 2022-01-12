@@ -15,3 +15,5 @@
 	keepBackup = true
 [core]
 	editor = nvim
+[gc]
+	auto = 1

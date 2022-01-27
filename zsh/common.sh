@@ -64,8 +64,7 @@ alias tm="mv --verbose --backup --target-directory ~/trash"
 alias pass="EDITOR='nvim -u NONE' pass"
 
 cd-then () {
-  cd $2
-  eval $1
+  cd $2 && eval $1
 }
 
 alias cd="cd-then 'lsd -v'"

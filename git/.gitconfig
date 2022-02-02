@@ -3,8 +3,6 @@
 	email = jack.t.faller@gmail.com
 [http]
 	postBuffer = 15728640
-[url "https://"]
-	insteadOf = git://
 [credential]
 	helper = store
 [credentials]

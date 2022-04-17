@@ -1,11 +1,12 @@
+from qutebrowser.keyinput import keyutils
 config.load_autoconfig()
-config.bind('o', 'set statusbar.show always;; set-cmd-text -s :open')
-config.bind('O', 'set statusbar.show always;; set-cmd-text -s :open -t')
-config.bind('T', 'set statusbar.show always;; set-cmd-text -s :tab-focus')
-config.bind(':', 'set statusbar.show always;; set-cmd-text :')
-config.bind('/', 'set statusbar.show always;; set-cmd-text /')
 config.bind('<Escape>', 'mode-enter normal;; set statusbar.show in-mode', mode='command')
 config.bind('<Return>', 'command-accept;; set statusbar.show in-mode', mode='command')
+config.bind('eo', 'set-cmd-text :open google.com/search?q=')
+config.bind('eO', 'set-cmd-text :open -t google.com/search?q=')
+for i in ['o', 'O', 'T', ':', '/', 'eo', 'eO', 'go', 'gO']:
+    config.bind(i, 'set statusbar.show always;; '
+                + config._keyconfig.get_command(keyutils.KeySequence.parse(i), 'normal'))
 c.editor.command = ["emacswindow", "{file}", "--eval", "(text-mode)",
                     "--position", "{line}", "{column}"]
 

@@ -11,3 +11,4 @@ fi
 ln -s ~/.config/tmux/tmux.conf  ~/.tmux.conf 
 ln -s ~/.config/ssh_conf  ~/.ssh/config
 ln -s ~/.config/git/.gitconfig  ~/.gitconfig 
+ln -s ~/.local/share/Trash/files/ ~/trash

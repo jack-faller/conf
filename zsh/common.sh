@@ -16,7 +16,9 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 bindkey '^[[Z' reverse-menu-complete
 bindkey '^[[Z' reverse-menu-complete
 
-export EDITOR="/bin/nvim"
+export PATH="$HOME/.config/zsh/aliases:$PATH"
+export EDITOR=$(which em)
+export VISUAL="$EDITOR"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
@@ -49,12 +51,12 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 export PS1="%K{red}%F{black}%n@%m%f%k %F{blue}%~%f %#"
 
-export PATH="$HOME/.config/zsh/aliases:$PATH"
 alias vim="nvim"
 alias vi="nvim"
 alias ls="lsd -v"
 alias la="lsd -Av"
 alias ll="lsd -lAv"
+alias se="sudoedit"
 alias off="sudo shutdown now"
 alias vifm="~/.config/vifm/scripts/vifmrun"
 alias glances="glances -1"

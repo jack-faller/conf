@@ -2,4 +2,8 @@ Host github.com
   IdentitiesOnly yes
   IdentityFile ~/.ssh/myKey
 
+Host gitlab.com
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/myKey
+
 AddKeysToAgent yes

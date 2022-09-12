@@ -65,7 +65,7 @@
         "tooltip": false 
     },
     "clock": {
-        "format": "{:%a, %b %d %I:%M %p}",
+        "format": "{:%a, %b %d %H:%M %p}",
         "tooltip": false
     }
 }

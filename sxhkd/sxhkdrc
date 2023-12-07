@@ -135,6 +135,12 @@ super + {_, shift, ctrl} + Print
 {_, shift, ctrl} + Print
         maim {_,-s,-i $(xdotool getactivewindow)} | xclip -selection clipboard -t image/png
 
+alt + {_, shift, ctrl} + Print
+        date=`date`; \
+    maim {_,-s,-i $(xdotool getactivewindow)} "/tmp/$date.png"; \
+    name=`Xdialog --stdout --inputbox "Screenshot name:" 400x150`; \
+    rename $date $name "/tmp/$date.png"
+
 #make capslock work
 super + Caps_Lock
         xdotool key Caps_Lock

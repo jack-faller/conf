@@ -32,12 +32,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 		unset f
 fi
 
-setxkbmap gb -option "caps:escape"
+setxkbmap gb -option "caps:escape,compose:menu"
 xrdb ~/.config/Xresources
 udiskie -N &
 xcompmgr &
 redshift -l 50.721680:-1.878530 &
-xset -b &
+xset -b -dpms s off &
 xsetroot -cursor_name left_ptr &
 easyeffects &
 ~/.config/backgroundScript &

@@ -126,20 +126,30 @@ super + shift + r
     pkill -x --signal 'SIGUSR1' recordmydesktop
 
 #print screen
-super + {_, shift, ctrl} + Print
-        date=`date`; \
-    maim {_,-s,-i $(xdotool getactivewindow)} "$HOME/Pictures/screenshots/$date.png"; \
-    name=`Xdialog --stdout --inputbox "Screenshot name:" 400x150`; \
-    rename $date $name "$HOME/Pictures/screenshots/$date.png"
-
 {_, shift, ctrl} + Print
-        maim {_,-s,-i $(xdotool getactivewindow)} | xclip -selection clipboard -t image/png
+	date=`date`; \
+	maim {_,-s,-i $(xdotool getactivewindow)} > "/tmp/$date.png"; \
+	xclip -selection clipboard -t image/png "/tmp/$date.png"; \
+	echo "/tmp/$date.png" > /tmp/last-screenshot.txt
 
-alt + {_, shift, ctrl} + Print
-        date=`date`; \
-    maim {_,-s,-i $(xdotool getactivewindow)} "/tmp/$date.png"; \
-    name=`Xdialog --stdout --inputbox "Screenshot name:" 400x150`; \
-    rename $date $name "/tmp/$date.png"
+super + Print; n
+    name=`Xdialog --stdout --inputbox "Screenshot name:" 400x150` && \
+    old_name="$(cat /tmp/last-screenshot.txt)" && \
+	new_name="$(dirname "$old_name")/$name.png" && \
+	mv "$old_name" "$new_name" && \
+	echo "$new_name" > /tmp/last-screenshot.txt
+
+super + Print; s
+    old_name="$(cat /tmp/last-screenshot.txt)" && \
+    new_name="$(xdg-user-dir PICTURES)/screenshots/$(basename "$old_name")" && \
+    mv "$old_name" "$new_name" && \
+	echo "$new_name" > /tmp/last-screenshot.txt
+
+super + Print; v
+	feh "$(cat /tmp/last-screenshot.txt)"
+
+super + Print; r
+	rm "$(cat /tmp/last-screenshot.txt)" /tmp/last-screenshot.txt
 
 #make capslock work
 super + Caps_Lock
@@ -154,10 +164,6 @@ super + n
         connmanctl disconnect wifi_7c8bca1ddac5_564d36383136323033_managed_psk; \
         connmanctl connect wifi_7c8bca1ddac5_564d36383136323033_managed_psk
 
-#reload pulse
-super + p
-        pkill pulseeffects; wait $(pgrep pulseeffects); pulseeffects
-        
 #dunst
 ctrl + @space
         dunstctl close
